@@ -1,0 +1,318 @@
+---
+title: "Using 🧰 this Site"
+#author:
+#  - name: "Jarrod J Scott"
+#    orcid_id: 0000-0001-9863-1318
+#    url: https://metacrobe.github.io/
+#    affiliation: Smithsonian Tropical Research Institute
+#    affiliation_url: https://stri.si.edu/
+date: 2022-04-04
+description: |
+  A quick reference for key elements used on this site; designed to help make the information more accessible and help you learn more effectively.
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+#is_html = knitr::is_html_output()
+library(reticulate)
+use_condaenv("python_4_r")
+pacman::p_load(tidyverse, reactable, fontawesome,
+               magrittr,
+               install = FALSE, update = FALSE)
+```
+
+```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clone fa-2x\" style=\"color: #4682B4\"></i>",
+    success_text = "<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r, echo=FALSE, eval=TRUE}
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
+```
+
+```{r echo=FALSE, eval=TRUE}
+ldir <-  normalizePath(".")
+finf <- file.info(paste(ldir, "using-this-site.Rmd", sep = "/"), 
+                  extra_cols = FALSE)
+
+bytes <- finf$size
+words <- bytes/10
+minutes <- words/200
+```
+
+I would like to take a few moments to share some quick tips on how to use this site. Everything discussed here will be covered more extensively in future lessons. In this post I simply want to highlight some of the key elements I use on this site for (what I hope) is a more enjoyable learning experience.
+
+<aside>
+Estimated reading time: `r round(minutes, digits = 0)` minute(s), based on an average speed of 200 words per minute.
+</aside>
+
+First, the site is written in R Markdown and constructed using the [Distill blog template](https://rstudio.github.io/distill/blog.html)---one of the template choices you have for your projects. Therefore, this site both ***hosts all of the lessons*** and ***itself is a teaching/learning tool***.
+
+> Bookmark the [Distill site](https://rstudio.github.io/distill/). You will use it a lot. The site is also linked in the dropdown menu on the navigation bar under Resources.
+
+Lessons will be posted in order on the [homepage](https://str-mcgoll-neo.github.io/2022/). Please work through these lessons before the course starts. Most lessons will be relatively short and include reading times at the top of each lesson so you know what you're getting into. I recognize that there is a range of coding expertise and experience in our group. These lessons are written for the beginner, so for some of you this material may be rudimentary. But please do work through the lessons---you may learn something new or you will almost certainly find mistakes I have made.  
+
+## Elements
+
+Keep you eye out for [asides and footnotes](https://rstudio.github.io/distill/basics.html#footnotes-and-asides). Asides are little notes in the gutter of a page (immediately to the right of the article text) while footnotes usually contain more information and are linked in the Appendix like this^[This is a footnote.].
+
+<aside>
+This is an aside.
+</aside>
+
+Within each lesson, I also will use a few different [FontAwesome](https://fontawesome.com/icons) icons to highlight particular material, specifically:
+
+- I use this icon  `r fa(name = "edit", fill = "steelblue")` to indicate an assignment you should complete.   
+- I use this icon `r fa(name = "lightbulb", fill = "steelblue")` to highlight little tricks I use to do something, like embed a tweet or insert these icons^[To add icons to your project install the `fontawesome` R package and use the function `fa` within inline R code. We will cover inline code in a future lesson.]. These tricks are mostly beyond what is expected of you but are included in case you want to jazz up your projects a bit.
+
+I also use inline text formatting to highlight specific coding elements like file types (e.g., R Markdown or `.Rmd`), R packages (e.g., `fontawesome`), commands (e.g., `ggplot`), and so on.
+
+One other tool I will use on occasion are panels or tab sets. This allows me to display related information in a relatively small space. For example, let's say I wanted to show you several different options for displaying tabular data using the `kable` function from the `knitr` package.
+
+::: l-body
+::: {.panelset}
+::: {.panel}
+#### Basic HTML table
+
+```{r, eval=TRUE}
+data(iris)
+knitr::kable(summary(iris))
+```
+:::
+
+::: {.panel}
+#### Bootstrap theme
+
+```{r, eval=TRUE}
+data(iris)
+knitr::kable(summary(iris)) %>%
+  kableExtra::kable_styling()
+```
+
+:::
+
+::: {.panel}
+#### Paper theme
+
+```{r, eval=TRUE}
+data(iris)
+knitr::kable(summary(iris)) %>%
+  kableExtra::kable_paper("hover", full_width = TRUE)
+```
+
+:::
+
+::: {.panel}
+#### Minimal theme
+
+```{r, eval=TRUE}
+data(iris)
+knitr::kable(summary(iris)) %>%
+  kableExtra::kable_minimal("hover", full_width = TRUE)
+```
+
+:::
+:::
+:::
+
+## Code
+
+Let's talk about code for a minute. Remember, a R Markdown document is Markdown text **plus** (R) code. As you will learn, R is not the only type code you can run in a R Markdown document. You can also use [Python](https://rstudio.github.io/reticulate/articles/r_markdown.html) and [Bash](https://www.educative.io/blog/bash-shell-command-cheat-sheet). We will go through the details of all of this in a future lesson, but for now I want to give you a few visual cues of how code is shown on this site. Code---be it R, Python, or Bash---is written and displayed in what are called [code chunks](https://rmarkdown.rstudio.com/lesson-3.html). Here are examples of the way code chunks are rendered on this site for R, Python, and Bash  (basically the left boarder color is different). 
+
+Each of these commands do the same thing---they tell you what directory you are currently in.
+
+```{r, echo=TRUE, eval=TRUE}
+## R code chunks look like this
+getwd()
+```
+
+```{python, echo=TRUE, eval=TRUE}
+## Python code chunks look like this
+import os
+os.getcwd()
+```
+
+```{bash, echo=TRUE, eval=TRUE}
+## Bash code chunks look like this
+pwd
+```
+
+How about a little example of R code execution. I load the library `ggplot2`, and run the command `qplot` on the demo data set called [iris](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html).
+
+```{r echo=TRUE, eval=FALSE}
+library(ggplot2)
+# This is a comment.
+# Anything following the # is not interpreted as code.
+data(iris)
+qplot(speed, dist, data = iris) + geom_smooth()
+```
+
+If you hover over this code box you should see a button like this `r fa(name = "clone", fill = "steelblue")`. If you click on that button, you can copy the code and paste it into your document.
+
+And here is the output for running the `qplot` command on the `iris` data set.
+
+```{r echo=FALSE, eval=TRUE, fig.height=3}
+library(ggplot2)
+data(iris)
+qplot(Sepal.Length, Petal.Length, data = iris) + geom_smooth()
+```
+
+## Displaying code
+
+There are several options for displaying code in your document. This goes for any language you use.
+
+1. In R Markdown you have the option to **show** or **hide** code using what are called [chunk options](https://rmarkdown.rstudio.com/lesson-3.html)^[To show code you set the code chunk option `echo=TRUE`. To hide code you set `echo=FALSE`]. I usually only show code for an important analysis, like a statistical test. If I have a code chunk for displaying something like a table, I usually hide that code to make the final document more readable^[That said, the source code is still available in the `.Rmd` file. See below for instructions on accessing the source code]. For example, let's say I wanted to display a fancy, *interactive* table of the iris data using the package `reactable`.  The code for this table is super long and really not important for the analysis, so I hide it in the final HTML file. Here you only see the table and **not** the code that generated it.
+
+```{r, echo=FALSE, eval=TRUE}
+iris2 <- dplyr::relocate(iris, "Species", .before = "Sepal.Length")
+iris2$Species <- gsub('^', 'Iris ', iris2$Species)
+
+border_style <- list(borderRight = "5px solid #eee")
+header_style <- list(borderRight = "5px solid #eee", fontSize = "0.9em")
+header_style_grp <- list(borderRight = "5px solid #eee", fontSize = "1em")
+
+reactable(iris2,
+defaultColDef = colDef(headerStyle = list(fontSize = "0.9em"),
+  header = function(value) gsub("_", " ", value, fixed = TRUE),
+  cell = function(value) format(value, nsmall = 0),
+  align = "center", filterable = FALSE, sortable = TRUE, resizable = TRUE
+  ),
+columns = list(
+  Species = colDef(name = "Species", sticky = "left", style = border_style,
+                     headerStyle = header_style, align = "left",
+                     minWidth = 100, filterable = TRUE),
+
+  `Sepal.Length` = colDef(name = "Length"),
+  `Sepal.Width` = colDef(name = "Width", style = border_style, 
+                         headerStyle = header_style),
+  `Petal.Length` = colDef(name = "Length"),
+  `Petal.Width` = colDef(name = "Width")
+  ),
+columnGroups = list(
+    colGroup(name = "Sepal", sticky = "left",
+           columns = c("Sepal.Length", "Sepal.Width"),
+           headerStyle = header_style_grp),
+    colGroup(name = "Petal", align = "center",
+           columns = c("Petal.Length", "Petal.Width"))
+    ),
+searchable = TRUE, defaultPageSize = 5,
+pageSizeOptions = c(5, 10, nrow(iris2)),
+showPageSizeOptions = TRUE, highlight = TRUE,
+bordered = TRUE, striped = TRUE, compact = FALSE,
+wrap = FALSE, showSortable = TRUE, fullWidth = TRUE,
+theme = reactableTheme(style = list(fontSize = "0.8em")))
+```
+
+2. If on the other hand, you were say writing a tutorial on creating tables with `reactable`, you may not want to hide the code. So you display the code chunk like so.
+
+```{r, echo=TRUE, eval=FALSE}
+iris2 <- dplyr::relocate(iris, "Species", .before = "Sepal.Length")
+iris2$Species <- gsub('^', 'Iris ', iris2$Species)
+
+border_style <- list(borderRight = "5px solid #eee")
+header_style <- list(borderRight = "5px solid #eee", fontSize = "0.9em")
+header_style_grp <- list(borderRight = "5px solid #eee", fontSize = "1em")
+
+reactable(iris2,
+defaultColDef = colDef(headerStyle = list(fontSize = "0.9em"),
+  header = function(value) gsub("_", " ", value, fixed = TRUE),
+  cell = function(value) format(value, nsmall = 0),
+  align = "center", filterable = FALSE, sortable = TRUE, resizable = TRUE
+  ),
+columns = list(
+  Species = colDef(name = "Species", sticky = "left", style = border_style,
+                     headerStyle = header_style, align = "left",
+                     minWidth = 100, filterable = TRUE),
+
+  `Sepal.Length` = colDef(name = "Length"),
+  `Sepal.Width` = colDef(name = "Width", style = border_style, 
+                         headerStyle = header_style),
+  `Petal.Length` = colDef(name = "Length"),
+  `Petal.Width` = colDef(name = "Width")
+  ),
+columnGroups = list(
+    colGroup(name = "Sepal", sticky = "left",
+           columns = c("Sepal.Length", "Sepal.Width"),
+           headerStyle = header_style_grp),
+    colGroup(name = "Petal", align = "center",
+           columns = c("Petal.Length", "Petal.Width"))
+    ),
+searchable = TRUE, defaultPageSize = 5,
+pageSizeOptions = c(5, 10, nrow(iris2)),
+showPageSizeOptions = TRUE, highlight = TRUE,
+bordered = TRUE, striped = TRUE, compact = FALSE,
+wrap = FALSE, showSortable = TRUE, fullWidth = TRUE,
+theme = reactableTheme(style = list(fontSize = "0.8em")))
+```
+
+3. But a big block of code like this can be aesthetically unpleasant and distracting. In this case, you have a third option which is to fold the entire chunk in a drop down by using the `code_folding` chunk option.
+
+```{r, eval=FALSE, echo=TRUE, code_folding=TRUE}
+iris2 <- dplyr::relocate(iris, "Species", .before = "Sepal.Length")
+iris2$Species <- gsub('^', 'Iris ', iris2$Species)
+
+border_style <- list(borderRight = "5px solid #eee")
+header_style <- list(borderRight = "5px solid #eee", fontSize = "0.9em")
+header_style_grp <- list(borderRight = "5px solid #eee", fontSize = "1em")
+
+reactable(iris2,
+defaultColDef = colDef(headerStyle = list(fontSize = "0.9em"),
+  header = function(value) gsub("_", " ", value, fixed = TRUE),
+  cell = function(value) format(value, nsmall = 0),
+  align = "center", filterable = FALSE, sortable = TRUE, resizable = TRUE
+  ),
+columns = list(
+  Species = colDef(name = "Species", sticky = "left", style = border_style,
+                     headerStyle = header_style, align = "left",
+                     minWidth = 100, filterable = TRUE),
+
+  `Sepal.Length` = colDef(name = "Length"),
+  `Sepal.Width` = colDef(name = "Width", style = border_style, headerStyle = header_style),
+  `Petal.Length` = colDef(name = "Length"),
+  `Petal.Width` = colDef(name = "Width")
+  ),
+columnGroups = list(
+    colGroup(name = "Sepal", sticky = "left",
+           columns = c("Sepal.Length", "Sepal.Width"),
+           headerStyle = header_style_grp),
+    colGroup(name = "Petal", align = "center",
+           columns = c("Petal.Length", "Petal.Width"))
+    ),
+searchable = TRUE, defaultPageSize = 5,
+pageSizeOptions = c(5, 10, nrow(iris2)),
+showPageSizeOptions = TRUE, highlight = TRUE,
+bordered = TRUE, striped = TRUE, compact = FALSE,
+wrap = FALSE, showSortable = TRUE, fullWidth = TRUE,
+theme = reactableTheme(style = list(fontSize = "0.8em")))
+```
+
+In our lessons, I will **rarely** hide code chunks completely. I will however use `code_folding` a lot so keep your `r fa(name = "eye", fill = "steelblue")` out for this drop down.
+
+## Getting code
+
+If you see something on this site that you like but cannot figure out how to code it, you have a few of options.
+
+1. If the code is displayed (as above), you can simply hover over the code box and hit the copy code button  `r fa(name = "clone", fill = "steelblue")`.
+
+2. You can also look the source code for each individual page, which can be accessed from the page's appendix under [`Source Code`](#source-code). This will also take you to the course GitHub repo but this time straight to the page you are interested in.
+
+3. Another option is to access the source code for the entire project by clicking on the GitHub icon `r fa(name = "github", fill = "steelblue")` in the right corner of the navigation bar. This will take you to the GitHub repo for the course where you can download the full site. In fact, any web product I create has a link somewhere to the source code. Just look for GitHub icon `r fa(name = "github", fill = "steelblue")`.
+
+Again, we will go through the details of everything in due course. I just wanted to give you a brief introduction to some of the important pieces of this puzzle.
+
+## Source Code {.appendix}
+
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-04-using-this-site/using-this-site.Rmd).
