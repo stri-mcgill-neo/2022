@@ -1,1 +1,12 @@
 public/
+figure_maker/
+page_build/
+public_build/
+files/
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+.DS_Store

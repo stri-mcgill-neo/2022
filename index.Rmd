@@ -1,0 +1,13 @@
+---
+title: "R Markdown Fieldguide"
+site: distill::distill_website
+listing: 
+    posts: 
+    - 2022-04-13-lesson-2-build-your-working-environment
+    - 2022-04-11-lesson-1-module-overview
+    - 2022-04-04-using-this-site
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

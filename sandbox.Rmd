@@ -1,0 +1,137 @@
+---
+title: "Sandbox"
+description: |
+  A page for testing.   
+preview: files/feature.png
+#author:
+#  - name: "Jarrod J Scott"
+#    orcid_id: 0000-0001-9863-1318
+#    url: https://metacrobe.github.io/
+#    affiliation: Smithsonian Tropical Research Institute
+#    affiliation_url: https://stri.si.edu/
+date: 2022-04-11
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+bibliography: assets/cite.bib  
+repository_url: "https://github.com/stri-mcgill-neo/2022/"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+pacman::p_load(slickR, magick, dplyr, lubridate, hashids, gallerier,
+               install = FALSE, update = FALSE)
+```
+
+
+```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"></i>",
+    success_text = "<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r, echo=FALSE, eval=FALSE}
+## May need to add this to the doc
+#<link rel="stylesheet" href="www/lightbox-2-2.11.3/css/lightbox.min.css">
+#<script src="www/lightbox-2-2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+```
+
+<link rel="stylesheet" href="www/lightbox-2-2.11.3/css/lightbox.min.css">
+<script src="www/lightbox-2-2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+```{r, echo=FALSE, eval=FALSE}
+lightbox_rmd <- function(){
+  cat('<link rel="stylesheet" href="www/lightbox-2-2.11.3/css/lightbox.min.css">\n',
+      '<script src="www/lightbox-2-2.11.3/js/lightbox.min.js"></script>')
+}
+```
+
+
+```{r, echo=FALSE, eval=TRUE}
+#https://restlessdata.com.au/p/shiny-image-gallery-examples/
+#https://github.com/mrjoh3/gallerier
+images <- data.frame(src = list.files('files/images/')) %>%
+  tidyr::separate(col = 'src', 
+                  c('txt', 'date', 'time', 'msec'), 
+                  sep = '_|\\.', 
+                  remove = FALSE) %>%
+  rowwise() %>%
+  mutate(date = as.character(lubridate::ymd(date)),
+         key = hashids::encode(1e3 + as.integer(msec), 
+                               hashid_settings(salt = 'this is my salt')))
+images$src <- gsub("^", "files/images/", images$src)
+
+#knitr::kable(head(images))
+```
+
+```{r, echo=FALSE, eval=TRUE}
+images$info <- ""
+for (i in 1:nrow(images)) {
+  images$info[i] <- stringi::stri_rand_lipsum(1, start_lipsum = FALSE)
+  images$info[i] <- stringr::str_sub(images$info[i], start = 1, end = 100)
+}
+```
+
+
+```{r, echo=FALSE, eval=TRUE}
+images[, 2:5] <- NULL
+lightbox_gallery(images[sample(1:nrow(images), 9, replace = FALSE),], 'gallery', display = TRUE)
+```
+
+
+```{r echo=FALSE, eval=FALSE}
+fish <- c("abudefduf_1", "abudefduf_2", "anisotremus", 
+          "cephalopholis", "chaetodon", "chromis", 
+          "holacanthus", "ophioblennius")
+for (i in fish) {
+  tmp_img <- knitr::include_graphics(paste("files/originals/", i, ".png", sep = ""))
+  tmp_name <- paste("fish", i, sep = "_")
+  assign(tmp_name, tmp_img)
+  rm(list = ls(pattern = "tmp_"))
+}
+```
+
+```{r echo=FALSE, eval=FALSE, code_folding=TRUE}
+tmp_list <- list.files("files/originals/")
+tmp_list <- tmp_list %>% stringr::str_replace(".png", "")
+
+test <- tidyr::as_tibble(tmp_list)
+test$path <- test$value
+
+test$path <- gsub("^", "files/originals/", test$path)
+test$path <- gsub("$", ".png", test$path)
+test$info <- ""
+for (i in 1:nrow(test)) {
+  test$info[i] <- stringi::stri_rand_lipsum(1, start_lipsum = FALSE)
+  test$info[i] <- stringr::str_sub(test$info[i], start = 1, end = 400)
+
+}
+#stringi::stri_rand_strings(10, 4, pattern = "[A-Za-z0-9]")
+```
+
+
+::: l-body
+```{r echo=FALSE, eval=FALSE, layout='l-body', fig.height=7}
+(slickR(obj = test$path, height = 500, width = "95%", objLinks = test$path) + 
+  slickR::settings(focusOnSelect = TRUE)) %synch% 
+  (slickR(test$info, slideType = 'p') + 
+     slickR::settings(arrows = FALSE, adaptiveHeight = TRUE)
+   )
+#[![Click me](files/images/abudefduf_1.png)](files/images/abudefduf_1.png)
+```
+:::
+
+`r stringi::stri_rand_lipsum(1, start_lipsum = FALSE)`
+
+`r stringi::stri_rand_lipsum(1, start_lipsum = FALSE)`
+
+`r stringi::stri_rand_lipsum(1, start_lipsum = FALSE)`
+

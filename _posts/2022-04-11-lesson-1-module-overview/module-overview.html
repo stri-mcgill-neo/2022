@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Lesson 1: Module 🦉 Overview</title>
+
+  <meta property="description" itemprop="description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-04-11"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-04-11"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Lesson 1: Module 🦉 Overview"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Lesson 1: Module 🦉 Overview"/>
+  <meta property="twitter:description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=1,500 scientists lift the lid on reproducibility;citation_publication_date=2016;citation_volume=533;citation_author=Monya Baker"/>
+  <meta name="citation_reference" content="citation_title=What does research reproducibility mean?;citation_publication_date=2016;citation_volume=8;citation_author=Steven N Goodman;citation_author=Daniele Fanelli;citation_author=John PA Ioannidis"/>
+  <meta name="citation_reference" content="citation_title=A manifesto for reproducible science;citation_publication_date=2017;citation_volume=1;citation_author=Marcus R Munafò;citation_author=Brian A Nosek;citation_author=Dorothy VM Bishop;citation_author=Katherine S Button;citation_author=Christopher D Chambers;citation_author=Nathalie Percie du Sert;citation_author=Uri Simonsohn;citation_author=Eric-Jan Wagenmakers;citation_author=Jennifer J Ware;citation_author=John Ioannidis"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","date","output","bibliography","repository_url"]}},"value":[{"type":"character","attributes":{},"value":["Lesson 1: Module 🦉 Overview"]},{"type":"character","attributes":{},"value":["In the first lesson, we provide an overview for this module of the course. We cover the main objectives & expectations, introduce the various tools we will use, & layout some of the motivation and rationale for the module.   \n"]},{"type":"character","attributes":{},"value":["files/feature.png"]},{"type":"character","attributes":{},"value":["2022-04-11"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../assets/cite.bib"]},{"type":"character","attributes":{},"value":["https://github.com/stri-mcgill-neo/2022/"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["files/code_availabilty.png","files/feature.png","files/flow 2.png","files/flow.png","files/metal_af.png","module-overview_files/anchor-4.2.2/anchor.min.js","module-overview_files/bowser-1.9.3/bowser.min.js","module-overview_files/clipboard-2.0.6/clipboard.min.js","module-overview_files/distill-2.2.21/template.v2.js","module-overview_files/font-awesome-5.1.0/css/all.css","module-overview_files/font-awesome-5.1.0/css/v4-shims.css","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff2","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff2","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff2","module-overview_files/header-attrs-2.13/header-attrs.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.min.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.min.map","module-overview_files/popper-2.6.0/popper.min.js","module-overview_files/tippy-6.2.7/tippy-bundle.umd.min.js","module-overview_files/tippy-6.2.7/tippy-light-border.css","module-overview_files/tippy-6.2.7/tippy.css","module-overview_files/tippy-6.2.7/tippy.umd.min.js","module-overview_files/webcomponents-2.0.0/webcomponents.js","module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css","module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="module-overview_files/header-attrs-2.13/header-attrs.js"></script>
+  <script src="module-overview_files/clipboard-2.0.6/clipboard.min.js"></script>
+  <link href="module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+  <script src="module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+  <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"><\/i>","success":"<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"><\/i>"})</script>
+  <link href="module-overview_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+  <link href="module-overview_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+  <script src="module-overview_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="module-overview_files/popper-2.6.0/popper.min.js"></script>
+  <link href="module-overview_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="module-overview_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="module-overview_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="module-overview_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="module-overview_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="module-overview_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="module-overview_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Lesson 1: Module 🦉 Overview","description":"In the first lesson, we provide an overview for this module of the course. We cover the main objectives & expectations, introduce the various tools we will use, & layout some of the motivation and rationale for the module.","authors":[],"publishedDate":"2022-04-11T00:00:00.000-05:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Lesson 1: Module 🦉 Overview</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>In the first lesson, we provide an overview for this module of the
+course. We cover the main objectives &amp; expectations, introduce the
+various tools we will use, &amp; layout some of the motivation and
+rationale for the module.</p></p>
+</div>
+
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#overview-objectives">Overview &amp; Objectives</a>
+<ul>
+<li><a href="#what-is-a-web-product">What is a web product?</a></li>
+</ul></li>
+<li><a href="#motivation">Motivation</a>
+<ul>
+<li><a href="#why-a-web-product">Why a web product?</a></li>
+<li><a href="#why-r-rstudio-r-markdown">Why R, RStudio, &amp; R
+Markdown?</a></li>
+<li><a href="#why-distill">Why Distill?</a></li>
+</ul></li>
+<li><a href="#expectations">Expectations</a>
+<ul>
+<li><a href="#student-role">Student role</a></li>
+<li><a href="#instructor-role">Instructor role</a></li>
+</ul></li>
+<li><a href="#housekeeping">Housekeeping</a>
+<ul>
+<li><a href="#source-code">Source Code</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h1 id="overview-objectives">Overview &amp; Objectives</h1>
+<aside>
+Estimated reading time: 16 minute(s).
+</aside>
+<p>Welcome to the Data Curation/R Markdown module of the STRI-McGill
+2022 course on Neotropical Biology, Environments, and Conservation (BIOL
+640/553) &amp; Foundations of Environmental Policy (ENVR 610). This
+module is meant as a complement for the rest of the curriculum and our
+main goals here are two-fold. First, is to <strong>create interactive,
+data-driven, web products</strong> that capture analytical workflows,
+raw data, and data outputs. Second is to give you the tools, motivation,
+and inspiration to make your science more <strong>accessible</strong>,
+<strong>transparent</strong>, and <strong>reproducible</strong>.</p>
+<blockquote>
+<p>If you have not already done so, please read the short post on <a
+href="../2022-04-04-using-this-site/index.html">Using this Site</a>
+before continuing.</p>
+</blockquote>
+<p>We will use <a href="https://rmarkdown.rstudio.com/">R Markdown</a>
+and the <a href="https://rstudio.github.io/distill/">Distill</a>
+framework to build our web products. This site itself is not only the
+guidebook for your web products but is also <strong><em>created with the
+same tools you will use for your projects</em></strong>. More on that
+below.</p>
+<p>In this module of the course, we will learn how to:</p>
+<ol type="1">
+<li><p>Set up a working environment by installing <a
+href="https://www.r-project.org/">R</a>, <a
+href="https://www.rstudio.com/">RStudio</a>, and various R packages
+(e.g., <a
+href="https://cran.r-project.org/web/packages/knitr/index.html">knitr</a>,
+<a
+href="https://cran.r-project.org/web/packages/distill/index.html">distill</a>,
+<a href="https://glin.github.io/reactable/">reactable</a>).</p></li>
+<li><p>Render interactive data tables, figures, graphics, maps,
+diagrams, and more.</p></li>
+<li><p>Troubleshoot problems using effective web searches, <a
+href="https://github.com/">GitHub</a> repositories, forums like <a
+href="https://stackoverflow.com/">Stack Overflow</a>, and of course, our
+wit.</p></li>
+<li><p>Reference other works and create citeable articles.</p></li>
+<li><p>(if there is interest) Use <a href="https://git-scm.com/">git</a>
+and <a href="https://pages.github.com/">GitHub Pages</a> for hosting our
+work (<strong>this is not a requirement of the
+course</strong>).</p></li>
+</ol>
+<h2 id="what-is-a-web-product">What is a web product?</h2>
+<p>Ok, first things first. What do we mean by a <strong><em>web
+product</em></strong>? Well, for the purposes of this module, we
+consider a web product to be, primarily, a collection of HTML documents
+that can be opened with a browser like Chrome, Firefox, etc. That
+doesn’t necessarily mean that it needs to be <em>hosted on the web</em>,
+just that anyone can access the information without installing special
+software or understanding specific tools.</p>
+<blockquote>
+<p>It is NOT a requirement of this course to publish your web product
+online.</p>
+</blockquote>
+<p>Furthermore, we will use R Markdown and the Distill framework to
+create what are called <strong>static</strong> (as opposed to
+<strong>dynamic</strong>) web products. The difference is
+straightforward. <em>Dynamic</em><a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> means that anytime a
+page loads, the content and look are tailored to the user, like Facebook
+or Twitter. <em>Static</em> means that everyone who visits the site sees
+the same thing.</p>
+<p>Just because your web product is <em>static</em> does not mean it
+will be dull. Unlike PDF documents, your web products will have dynamic,
+interactive components like tables, figures, maps, and so on. Consider
+this example of Supplementary Material that we submitted for a recent
+paper. Here is the <a href="files/Johnson_Supplementary_PDF.pdf">pdf
+version</a> (written in R Markdown &amp; <a
+href="https://www.latex-project.org/">LaTeX</a>) and here is the <a
+href="https://hypocolypse.github.io/som.html">HTML version</a>. While
+the content of the two documents are identical, their functionalities
+are not. The first thing to notice is that most of the data tables in
+the PDF document (called <em>Supplementary Data</em>) were too big to
+fit in the document and instead are uploaded as separate, stand-alone,
+text files to the journal’s website. On the other hand, in the HTML
+version, every data table is embedded in the document.</p>
+<p>Go ahead and check out the <a
+href="https://hypocolypse.github.io/som.html#content-description">Content
+Description</a> section and click on any of the links that say
+<strong>Supplementary Data</strong>. Supplementary Data 2 for example
+has 13 columns and 911 rows, far to large to fit (comfortably) in a PDF
+document. Have a look at <a
+href="https://hypocolypse.github.io/som.html#supplementary-data-3">Supplementary
+Data 3</a>. Notice that you can copy or download the contents of the
+table, sort, search (try searching for <em>invertebrate</em>), and
+expand the full table (under <strong>Show entries</strong>, select
+<em>All</em>). This table even contains hyperlinks that lead to other
+important information. Go ahead and click on one of the links. Movin
+on.</p>
+<h1 id="motivation">Motivation</h1>
+<p>Next, I want take a moment to explore some of the motivation and
+rationale behind this module of the course. In subsequent lessons we get
+into more specific details on many of these topics, but for now let’s
+just stick with the high level stuff.</p>
+<h2 id="why-a-web-product">Why a web product?</h2>
+<p>Good question. For me the answer is Open Science—a movement to make
+scientific research (including publications, data, physical samples, and
+software) and its dissemination <em>accessible to all levels of
+society</em>, amateur or professional <span class="citation"
+data-cites="woelfle2011open">(<a href="#ref-woelfle2011open"
+role="doc-biblioref">Woelfle, Olliaro, and Todd 2011</a>)</span>.
+Creating a web product can help make your science more
+<strong>accessible</strong>, <strong>transparent</strong>, and
+<strong>reproducible</strong>.</p>
+<p>Consider that many journals and journal articles sit behind pay walls
+that most people can’t access without paying an unreasonable price. That
+sucks, and while people are pushing back against this paradigm, for now
+this is the reality. We do our best to publish open access articles but
+sometimes this is not possible. A webpage allows you to share your
+science with a wider audience. By and large, journal articles are highly
+technical documents. There is nothing wrong with this; it is just the
+nature of the medium. But this can make the information inaccessible to
+non-experts. By also presenting your work as a web product you have the
+opportunity to tell the story behind the science, which can have
+important outreach implications <span class="citation"
+data-cites="forrester2017next">(<a href="#ref-forrester2017next"
+role="doc-biblioref">Forrester 2017</a>)</span>.</p>
+<p>A typical journal article is just a few pages, but we all know that a
+lot more goes into a study than what we usually see in print. Even with
+extensive Supplementary Material, authors are limited by what they can
+include in their publication. With a web product you are liberated from
+these limitations. A webpage gives you a venue to discuss all of the
+stuff that didn’t make it into your publication and to tell a more
+complete story of your science. Do you have a gallery of photos from
+your fieldwork? What about a bunch of statistical tests you tried that
+didn’t work? Or some personal thoughts on the system you study? In most
+cases this information would be inappropriate for a journal article but
+it is still useful and interesting information to share.</p>
+<p>I think it is an important obligation of all scientists is to make
+their studies transparent and reproducible. If you publish a study I
+should––with minimal effort––be able to find your data, carry out the
+same analyses, and reach the same conclusions. There should be no
+mystery. Sadly, this is not always the case. In my own field of
+microbial ecology, it can be a daunting task to find raw data from other
+studies and even harder to figure out exactly how the data was analyzed.
+Without proper documentation, you may even forget how you did something.
+Here is a sobering quote from a Nature News Feature from about results
+of a survey given to to 1,500 scientists on the state of reproducible
+science. .</p>
+<blockquote>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+More than 70% of researchers have tried and failed to reproduce another
+scientist’s experiments, and more than half have failed to reproduce
+their own experiments. Those are some of the telling figures that
+emerged from Nature’s survey of 1,576 researchers who took a brief
+online questionnaire on reproducibility in research.
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg>
+<span class="citation" data-cites="baker20161">(<a
+href="#ref-baker20161" role="doc-biblioref">Baker 2016</a>)</span></p>
+</blockquote>
+<aside>
+As of today, this article has been cited at least 1705 times.
+<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:1em;width:0.69em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>
+</aside>
+<p>If however, you build a web product around your project, where you
+document everything you do no matter how trivial, you can avoid these
+pitfalls and produce truly reproducible and transparent science.
+Everything I do now ends up on a project webpage. I can easily share the
+information and I no longer have directories filled with random bits of
+information on my computer. My websites have a much better memory than I
+do. So what is reproducible and transparent science? Turns out there
+really isn’t a starndard, well-defined definition</p>
+<p>According to this article in Science Translational Medicine,
+reproducibility …</p>
+<blockquote>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+… [is a] set of procedures that permit the reader of a paper to see the
+entire processing trail from the raw data and code to figures and tables
+<span class="citation" data-cites="goodman2016does">(<a
+href="#ref-goodman2016does" role="doc-biblioref">Goodman, Fanelli, and
+Ioannidis 2016</a>)</span>.
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
+</blockquote>
+<p>Or the U.S. National Science Foundation (NSF) defines it this way
+…</p>
+<blockquote>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+… refers to the ability of a researcher to duplicate the results of a
+prior study using the same materials as were used by the original
+investigator <span class="citation" data-cites="cacioppo2015social">(<a
+href="#ref-cacioppo2015social" role="doc-biblioref">Cacioppo et al.
+2015</a>)</span>.
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
+</blockquote>
+<p>Of course, all of this is easier said than done. Researchers
+interested in reaching a wider audience and presenting tranparent and
+reproducible science face many challenges; they are under a lot of
+pressure to produce papers and often not given the chance to pursue
+these activities <span class="citation"
+data-cites="forrester2017next">(<a href="#ref-forrester2017next"
+role="doc-biblioref">Forrester 2017</a>)</span>. So what can we do about
+it? I think that a good first step is to create web products that
+embrace the concepts of accessibility, transparency, and
+reproducibility. Institutional outreach and media departments do an
+incredible job of presenting the highlights of science, but they do not
+have the time or resources to go much deeper. I believe that with a
+little organization, training, and support we can all create web
+products that add value to the science, whether as educational and
+reference tools, or as outreach components.</p>
+<p>Consider again the paper we recently published on an acute hypoxic
+event in Bocas del Toro published in Nature Communications. All Nature
+journals now require authors to adhere to <a
+href="https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards">Reporting
+standards and availability of data, materials, code and
+protocols</a>.</p>
+<blockquote>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
+… authors are required to make materials, data, code, and associated
+protocols promptly available to readers without undue qualifications.
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
+</blockquote>
+<p>Authors must include a <strong>Data availability</strong> and
+<strong>Code availability</strong> statements in their papers. Here is
+the Code availability statement from our paper.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><a href="https://www.nature.com/articles/s41467-021-24777-3#data-availability" target="_blank"><img src="files/code_availabilty.png" width="769" style="display: block; margin: auto;" /></a></p>
+</div>
+<p>And here is <a href="https://twitter.com/coraloha?s=20">@coraloha</a>
+reaction on Twitter. Some people get really jazzed about Open
+Science<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:18px;width:12.38px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<center>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Whoaaaaaa now this is open science to the next level! And the name, come
+on…Metal AF 🔥 🎸 🤘
+<a href="https://t.co/8sznPR5QYz">https://t.co/8sznPR5QYz</a>
+</p>
+— Dr. Chris Wall (<span class="citation" data-cites="coraloha">(<a
+href="#ref-coraloha"
+role="doc-biblioref"><strong>coraloha?</strong></a>)</span>)
+<a href="https://twitter.com/coraloha/status/1420774018668318721?ref_src=twsrc%5Etfw">July
+29, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+<h3
+id="assignment"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Assignment</h3>
+<p>So what do <em>you</em> think? Is Open Science important? Do you
+think web products can help communicate your science in a more
+accessible, transparent, and reproducible way? Your assignment is to
+read up on Open Science and reproducible research. There is a lot of
+debate on this subject and what I presented above is my view on the
+topic. It important that you form your own opinion. Here are a few
+articles to get you started but I do encourage you to dig deeper.</p>
+<ul>
+<li><a href="https://doi.org/10.1038/533452a">1,500 scientists lift the
+lid on reproducibility</a> <span class="citation"
+data-cites="baker20161">(<a href="#ref-baker20161"
+role="doc-biblioref">Baker 2016</a>)</span><br />
+</li>
+<li><a href="https://doi.org/10.1126/scitranslmed.aaf5027">What does
+research reproducibility mean?</a> <span class="citation"
+data-cites="goodman2016does">(<a href="#ref-goodman2016does"
+role="doc-biblioref">Goodman, Fanelli, and Ioannidis
+2016</a>)</span><br />
+</li>
+<li><a href="https://doi.org/10.1038/s41562-016-0021">A manifesto for
+reproducible science</a> <span class="citation"
+data-cites="munafo2017manifesto">(<a href="#ref-munafo2017manifesto"
+role="doc-biblioref">Munafò et al. 2017</a>)</span></li>
+</ul>
+<p>Moving along.</p>
+<h2 id="why-r-rstudio-r-markdown">Why R, RStudio, &amp; R Markdown?</h2>
+<p>There are many ways to make a website—–Squarespace, Wordpress, Wix,
+and so on. You can even code your own website in HTML, CSS, and
+JavaScript. However, in my experience, none of these platforms allow you
+to run and document code while constructing web products quite like the
+combination of R, RStudio, &amp; R Markdown. As with everything there
+are limitations, but I feel the benefits outweigh the drawbacks.</p>
+<h3 id="r">R</h3>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p><a href="https://www.r-project.org/">R</a> is both a programming
+language and a software environment for statistical computing and
+graphics. At some point, I imagine you will all need to need to embrace
+a programming environment to analyze your data and summarize your
+findings using figures, tables, etc. R is certainly not the only way to
+do this; however I believe this environment offers a valuable suite of
+tools for your scientific needs. The benefits of R include;
+<strong>a</strong>) it is free and open source, <strong>b</strong>) its
+capabilities are extended through user-created packages<a href="#fn4"
+class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>,
+<strong>c</strong>) it has a huge community of users (which means it is
+well supported), <strong>d</strong>) it is powerful and flexible.</p>
+<h3 id="rstudio">RStudio</h3>
+<p><a href="https://www.rstudio.com/">RStudio</a> is an integrated
+development environment (<a
+href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a>)
+for R language<a href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a>. Take a moment to familiarize
+yourself with the idea of an IDE—in a nutshell, RStudio provides a
+holistic working environment to process (R) code, generate
+figures/tables, and create websites.</p>
+<blockquote>
+<p>Imagine a car. Think of R as the engine and the RStudio IDE as the
+dashboard.</p>
+</blockquote>
+<h3 id="r-markdown">R Markdown</h3>
+<p><a href="https://rmarkdown.rstudio.com/">R Markdown</a> is really the
+bread and butter of what we will be doing. R Markdown is a file format
+(<code>.Rmd</code>) for making dynamic documents with R. R Markdown
+combines the syntax of Markdown with the language (and environment) of
+R. R Markdown documents are written in <a
+href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>—a
+<em>lightweight</em> <a
+href="https://en.wikipedia.org/wiki/Markup_language">markup language</a>
+(like HTML), that uses a relatively simple syntax to facilitate the
+<em>transformation</em> of human-readible text files into
+<code>.html</code> or <code>.pdf</code> documents. What this means is
+that rather than writing HTML and CSS code to make a website, you write
+your content in Markdown, which is then translated (by RStudio in this
+case) to web content. (R) code in your document is embedded within <a
+href="https://rmarkdown.rstudio.com/lesson-3.html">code chunks</a>.
+During the building of a page or site, RStudio identifies code chunks,
+runs the code, translates the results to Markdown, and then renders the
+output to a HTML file.</p>
+<blockquote>
+<p>You do not need to include R code to produce a R Markdown web
+product. If fact, I learned R by first writing R Markdown documents.</p>
+</blockquote>
+<p></br></p>
+<div id="image_map">
+<map name="map_example">
+<area target="_blank" alt="R" title="R" href="https://www.r-project.org/about.html" coords="54,30,30" shape="circle">
+<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="3,82,86,130" shape="rect">
+<area target="_blank" alt="R Markdown" title="R Markdown" href="https://bookdown.org/yihui/rmarkdown/" coords="149,45,187,23,222,45,222,84,185,105,148,84" shape="poly">
+<area target="_blank" alt="knitr" title="knitr" href="https://yihui.org/knitr/" coords="261,40,296,23,334,43,334,81,298,107,261,85" shape="poly">
+<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="378,39,459,88" shape="rect">
+<area target="_blank" alt="PanDoc" title="PanDoc" href="https://pandoc.org/" coords="500,41,530,32,549,39,568,28,599,41,584,96,548,86,516,96" shape="poly">
+<area target="_blank" alt="HTML5" title="HTML5" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" coords="630,39,687,38,681,98,657,105,632,98" shape="poly">
+</map>
+<img src="files/flow.png" alt="image map example" usemap="#map_example">
+<figcaption>
+The rendering process—creating HTML pages from R Markdown documents (R
+code plus Markdown). This figure contains clickable links.
+</figcaption>
+</div>
+<p></br></p>
+<p>When a page or site is rendered, the R code in your R Markdown
+document (<code>.Rmd</code>) is first processed by a program called
+<code>knitr</code>. Knitr executes all the R code, knits the results
+together with the Markdown text, and creates a new Markdown document.
+The new Markdown document is then processed by PanDoc, which converts
+the Markdown syntax into HTML and CSS code. PanDoc is like a swiss-army
+knife for Markdown—–it can covert many types of Markdown documents into
+a variety of other formats. Don’t worry, most of these steps happen
+behind the scenes. As long as you have a properly formatted R Markdown
+document, these tools will take care of the rest.
+<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:18px;width:12.38px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
+href="#fn6" class="footnote-ref" id="fnref6"
+role="doc-noteref"><sup>6</sup></a></p>
+<h2 id="why-distill">Why Distill?</h2>
+<p>In this module we will use the <a
+href="https://rstudio.github.io/distill/">Distill</a> framework to
+create our web products. Distill for R Markdown is a web publishing
+format optimized for scientific and technical communication. We are
+using Distill because it <strong>a</strong>) is a very stable format
+developed and actively maintained by RStudio; <strong>b</strong>) has a
+large and active user community; <strong>c</strong>) provides a good
+balance of functionality and ease of use; and <strong>d</strong>) is a
+minimal, lightly themed, template focused on writing and code.</p>
+<p>I think the main downside of Distill is that you are limited by how
+much customization you can do. Distill sites can be customized to some
+degree (with a bit of effort<a href="#fn7" class="footnote-ref"
+id="fnref7" role="doc-noteref"><sup>7</sup></a>) but not nearly to the
+degree of other R Markdown frameworks like <a
+href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a
+href="https://github.com/r-lib/hugodown">hugodown</a>, both of which use
+<a href="http://gohugo.io/">Hugo</a> for building sites. For a better
+idea of what I am talking about, have a look at <a
+href="https://istmobiome.rbind.io/">a site I built using blogdown and
+Hugo</a>.</p>
+<p>Some features of the Distill framework include:</p>
+<ul>
+<li>Reader-friendly typography that adapts well to mobile devices.</li>
+<li>Features essential to technical writing like <a
+href="https://rstudio.github.io/distill/#equations">LaTeX math</a>, <a
+href="https://rstudio.github.io/distill/#citations">citations</a>, and
+<a
+href="https://rstudio.github.io/distill/#footnotes-and-asides">footnotes</a>.</li>
+<li>Flexible <a
+href="https://rstudio.github.io/distill/figures.html">figure layout</a>
+options (e.g. displaying figures at a larger width than the article
+text).</li>
+<li>Attractively rendered <a
+href="https://rstudio.github.io/distill/tables.html">tables</a> with
+optional support for pagination.</li>
+<li>Support for a wide variety of <a
+href="https://rstudio.github.io/distill/diagrams.html">diagramming
+tools</a> for illustrating concepts.</li>
+<li>The ability to incorporate JavaScript and D3-based <a
+href="https://rstudio.github.io/distill/interactivity.html">interactive
+visualizations</a>.</li>
+</ul>
+<h1 id="expectations">Expectations</h1>
+<p>Let’s take a moment to go through what we expect of you and what you
+should expect of me as your instructor.</p>
+<h2 id="student-role">Student role</h2>
+<p>Throughout this field course, you will all be designing and running
+experiments, making observations and measurements, collecting data,
+etc., often as part of a group with fellow students. Your job for this
+module of the course is to take all the parts of your
+projects—hypotheses, background information, methods, results, and
+conclusions—and capture these elements in a <a
+href="https://rmarkdown.rstudio.com/">R Markdown</a> web product using
+the <a href="https://rstudio.github.io/distill/">Distill</a>
+framework.</p>
+<blockquote>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Regardless of whether you are part of a group or running solo, you will
+each create a web product that contains the details for <strong>at least
+two projects</strong> you work on in the course.</p>
+</blockquote>
+<p>You have two choices on how to present your projects.</p>
+<ol type="1">
+<li><p><strong>Website</strong>: You can present your projects in
+website style using the <a
+href="https://rstudio.github.io/distill/website.html">Distill website
+template</a>. Here is an example of a Distill website we created for a
+recent publication on an acute hypoxic event in Bocas del Toro called <a
+href="https://hypocolypse.github.io/">Hypocolypse</a>.</p></li>
+<li><p><strong>Blog</strong>: Or you can present your projects in blog
+style using the <a
+href="https://rstudio.github.io/distill/blog.html">Distill blog
+template</a>. Want an example of a blog created using Distill? Well,
+you’re looking at one right now :)</p></li>
+</ol>
+<p>We will get into the nitty-gritty of the differences between the two
+formats in subsequent lessons. For now, let’s summarize the key
+differences.</p>
+<p><strong>Structural difference</strong>: A website is simply a
+collection of pages that can be accessed via the navigation bar at the
+top of a page. A blog contains <strong>1</strong>) a collection of posts
+plus <strong>2</strong>) a dedicated page to list all posts, called a
+<strong>listing page</strong>. The listing page is usually, but not
+always, the home page. A Distill blog is basically a distill website
+with added blog posts.</p>
+<p><strong>Layout difference</strong>: Websites require you to manually
+set up links to pages on your site. Within a blog, Distill creates the
+listing page, which collects links to posts for you, displaying key
+metadata (like date published, author, categories, title, etc.) and a
+thumbnail image.</p>
+<p><strong>Workflow difference</strong>: All pages on a Distill website
+(and root pages of blogs) are re-rendered (i.e., re-built) each time the
+site is built. However, individual blog posts must be rendered on their
+own, with intent. Why? Well, it is because R packages are upgraded all
+the time and upgrades tend to break older code. So continuously
+re-rendering really old posts is nearly impossible to do without
+errors.</p>
+<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>
+So which is better, a Distill blog or website? Well, that depends on how
+you want to portray and display your projects.<br />
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>
+OK then, which is easier? Based on my experience using Distill (5
+websites and now 1 blog), I would have to say that building and managing
+a website is slightly more intuitive than a blog. This mainly has to do
+with how files are organized in your working directory, basically the
+structural differences I described above. The directory of a website has
+a flat structure, meaning all of your R Markdown documents
+(<code>.Rmd</code>) are in the main directory. With a blog, the
+<code>.Rmd</code> files are collected in the <code>_posts</code>
+directory. This structure can make it tricky sometimes to figure out how
+to create links that connect different parts of the site, so called
+<em>internal link</em>. But really, both have roughly the same learning
+curve; a tiny bit steep at the beginning then a plateau of smooth
+sailing. So my advivce is go with what works best for you.</p>
+<h3
+id="assignment-1"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Assignment</h3>
+<p>Your first assignment is to think about the format you want to use,
+<strong>website</strong> or <strong>blog</strong>. You do not have to
+decide now but do check out the examples provided above to get a better
+sense of the format differences between the two. If you’re up to it, go
+ahead and read through the <a
+href="https://rstudio.github.io/distill/website.html">Distill website
+template</a> and the <a
+href="https://rstudio.github.io/distill/blog.html">Distill blog
+template</a> pages. If you have little or no experience with this type
+of coding, most of the content on these pages will be gibberish. But
+fear not! Soon enough, this will all make sense.</p>
+<p>Lastly, I wanted to add that some of you may have a lot of experience
+with these tools already. That’s great––you can help your classmates
+with their projects. If you think something I say doesn’t make sense,
+please say something. I would rather do something the right way than be
+right about the way I am doing something.</p>
+<h2 id="instructor-role">Instructor role</h2>
+<p>As an instructor, my role is as guide and facilitator. My philosophy
+is that I teach the way I learn; to create a venue where you can be
+curious, get your hands dirty, make mistakes, and explore. I’m here to
+help you see what’s possible and help you create something you are proud
+of. Towards this end, I will write tutorials and lessons and help you
+work through the material to achieve your goals for the module. If you
+want to incorporate some particular functionality in your projects that
+I do not cover in the lessons, I will help you figure out how to do it.
+You can expect me to work with each of you individually on various
+aspects of your projects.</p>
+<p>You should also expect me to be patient. I know first hand how
+difficult some of this material can be to digest and a big part of my
+role is helping you avoid many of the potholes and pitfalls I stumbled
+over and fell in. I can promise you that, at times, this process will be
+a little frustrating. But I can also promise that with some hard work
+(and maybe a few tears), you will have the tools to create a range of
+useful and beautiful documents.</p>
+<p>Finally, I am happy to write additional tutorials and lessons
+covering material not included on the site already. So please, pretty
+please, let me know if there is something extra you want to learn and I
+will write a post so other students can follow along.</p>
+<h1 id="housekeeping">Housekeeping</h1>
+<p>A little housekeeping to finish up. Unfortunately this is
+<strong>not</strong> a formal course on R coding or statistics. Given
+the time we have, these topics are beyond the scope of this module—we
+want you in the field working on experiments as much as possible, not
+sitting in front of you computer the whole time :) This doesn’t mean you
+won’t be performing statistical analyses; it just means that we do not
+have any formal lectures planned for these topics. Of course, if there
+is a specific analysis you wish to perform or test you want to run, the
+instructors and/or your fellow students will help you write the
+code.</p>
+<p>To get the full benefit of using R Markdown, <strong><em>an
+understanding of R is helpful but not required</em></strong>. That said,
+if you persist with R Markdown you will learn R, specifically when
+running analyses and rendering the results as figures or tables. In
+fact, when I first started creating R Markdown documents a couple of
+years ago my knowledge of R itself was downright awful. Working with R
+Markdown dramatically increased my understanding of writing R code for
+statistical analyses.</p>
+<p>Next, we need to talk about operating systems (OS). I use Mac OSX and
+Linux but unfortunately I have little experience implementing these
+tools in Windows. If you are on a Windows machine, don’t worry; we will
+make it all work, it may just take a little more effort. Tons of people
+use Windows with R, RStudio, and R Markdown; sadly for you I do not
+happen to be one of them :(</p>
+<p>This website is a living document, meaning that it will be updated
+continuously. I will make announcements when new material is added. The
+structure of the site is simple. All lessons and homework are listed on
+the landing page in order. Start at the bottom and work your way up;
+that way the newest material is always first. The navigation bar at the
+top has quick links to tools, resources, etc.</p>
+<h3
+id="assignment-2"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Assignment</h3>
+<p>One more thing I would like you to do before we wrap up. Go back
+through this page from the top. You do not have to read the contents
+again (yawn) I just want you to make note of the different elements—text
+formatting (e.g., <em>italics</em> and <strong>bold</strong>), headers,
+<a
+href="https://rstudio.github.io/distill/basics.html#table-of-contents">table
+of contents</a>, <a
+href="https://rstudio.github.io/distill/basics.html#appendices">footnotes
+and asides</a>, hyperlinks, <a
+href="https://rstudio.github.io/distill/basics.html#appendices">appendices</a>,
+<a
+href="https://rstudio.github.io/distill/citations.html">citations</a>,
+images, etc. You will be incorporating many of these elements in your
+web products. Don’t worry about the details right now, we will cover
+them in more detail later.</p>
+<p>That’s all for now.</p>
+<h2 class="appendix" id="source-code">Source Code</h2>
+<p>The source code for this page can be accessed on GitHub
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+by <a
+href="https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-11-lesson-1-module-overview/module-overview.Rmd">clicking
+this link</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-baker20161" class="csl-entry" role="doc-biblioentry">
+Baker, Monya. 2016. <span>“1,500 Scientists Lift the Lid on
+Reproducibility.”</span> <em>Nature</em> 533 (7604). <a
+href="https://doi.org/10.1038/533452a">https://doi.org/10.1038/533452a</a>.
+</div>
+<div id="ref-cacioppo2015social" class="csl-entry"
+role="doc-biblioentry">
+Cacioppo, John T, Robert M Kaplan, Jon A Krosnick, James L Olds, and
+Heather Dean. 2015. <span>“Social, Behavioral, and Economic Sciences
+Perspectives on Robust and Reliable Science.”</span> <em>Report of the
+Subcommittee on Replicability in Science Advisory Committee to the
+National Science Foundation Directorate for Social, Behavioral, and
+Economic Sciences</em> 1.
+</div>
+<div id="ref-forrester2017next" class="csl-entry"
+role="doc-biblioentry">
+Forrester, N. 2017. <span>“The Next Generation of Science
+Outreach.”</span> <em>Nature Jobs</em>. <a
+href="http://blogs.nature.com/naturejobs/2017/04/14/the-next-generation-of-science-outreach">http://blogs.nature.com/naturejobs/2017/04/14/the-next-generation-of-science-outreach</a>.
+</div>
+<div id="ref-goodman2016does" class="csl-entry" role="doc-biblioentry">
+Goodman, Steven N, Daniele Fanelli, and John PA Ioannidis. 2016.
+<span>“What Does Research Reproducibility Mean?”</span> <em>Science
+Translational Medicine</em> 8 (341): 341ps12–12. <a
+href="https://doi.org/10.1126/scitranslmed.aaf5027">https://doi.org/10.1126/scitranslmed.aaf5027</a>.
+</div>
+<div id="ref-munafo2017manifesto" class="csl-entry"
+role="doc-biblioentry">
+Munafò, Marcus R, Brian A Nosek, Dorothy VM Bishop, Katherine S Button,
+Christopher D Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan
+Wagenmakers, Jennifer J Ware, and John Ioannidis. 2017. <span>“A
+Manifesto for Reproducible Science.”</span> <em>Nature Human
+Behaviour</em> 1 (1): 1–9. <a
+href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>.
+</div>
+<div id="ref-woelfle2011open" class="csl-entry" role="doc-biblioentry">
+Woelfle, Michael, Piero Olliaro, and Matthew H Todd. 2011. <span>“Open
+Science Is a Research Accelerator.”</span> <em>Nature Chemistry</em> 3
+(10): 745–48. <a
+href="https://doi.org/10.1038/nchem.1149">https://doi.org/10.1038/nchem.1149</a>.
+</div>
+</div>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Henceforth, I use the term
+<em>dynamic</em> throughout these lessons to refer to a component of a
+document that does something or is interactive, like a table that
+scrolls or a map you can zoom in on. Do not confuse this with a dynamic
+website.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>To get the number of citations for
+this article I used the function <code>cr_citation_count</code> from the
+<a
+href="https://cran.r-project.org/web/packages/rcrossref/index.html"><code>rcrossref</code></a>
+package. The function takes a Digital Object Identifier (DOI) as the
+input and searches CrossRef OpenURL to return the number of citations.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>If you want to embed a tweet on a
+page, click on the ellipsis icon at the top of the tweet
+<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>,
+select
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg><strong>Embed
+Tweet</strong>, copy the HTML code provided, &amp; plop it right into
+your <code>Rmd</code> file. The only thing is you need to do is wrap the
+entire code in the HTML <code>&lt;center&gt;</code> &amp;
+<code>&lt;/center&gt;</code> tags.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p><a
+href="https://cran.r-project.org/web/packages/">The Comprehensive R
+Archive Network (CRAN)</a>, R’s central software repository, currently
+contains 19017 packages. Hundreds more can be found in places like
+GitHub and Bioconductor<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Recent versions of RStudio now have
+the functionality to run <a
+href="https://www.rstudio.com/blog/three-ways-to-program-in-python-with-rstudio/">Python
+code</a> in your R Markdown document.<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>The figure above is called an image
+map, which is a HTML technique that allows you to create clickable areas
+on an image. I coded this so that each logo contains a different
+hyperlink. Try it out. <a
+href="https://gist.github.com/jarrodscott/31b8f7ab985a291c53538a97a1c3dcdc">Click
+here</a> if you are interested in the source code.<a href="#fnref6"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>We will cover some of this in future
+lessons on adding custom HTML and CSS code.<a href="#fnref7"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+<h3 id="updates-and-corrections">Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/stri-mcgill-neo/2022/issues/new">create an issue</a> on the source repository.</p>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
