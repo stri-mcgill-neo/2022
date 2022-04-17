@@ -270,4 +270,4 @@ And that's it for this lesson.
 
 ## Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-06-lesson-2-build-your-working-environment/build-working-environment.Rmd).
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-13-lesson-2-build-your-working-environment/build-working-environment.Rmd).
