@@ -3,22 +3,22 @@
       if (!/posts/.test(location.pathname)) {
         return;
       }
- 
+
       var script = document.createElement("script");
       script.src = "https://giscus.app/client.js";
       script.setAttribute("data-repo", "stri-mcgill-neo/2022");
-      script.setAttribute("data-repo-id", "R_kgDOHFzvrw");
+      script.setAttribute("data-repo-id", "R_kgDOHMMKVQ");
       script.setAttribute("data-category", "Comments & Questions");
-      script.setAttribute("data-category-id", "DIC_kwDOHFzvr84COfnC");
+      script.setAttribute("data-category-id", "DIC_kwDOHMMKVc4COoRd");
       script.setAttribute("data-mapping", "pathname");
       script.setAttribute("data-reactions-enabled", "1");
       script.setAttribute("data-emit-metadata", "0");
       script.setAttribute("data-theme", "light");
       script.setAttribute("data-lang", "en");
 
-      script.setAttribute("data-input-position", "bottom");
+      script.setAttribute("data-input-position", "top");
       script.setAttribute("crossorigin", "anonymous");
- 
+
       /* wait for article to load, append script to article element */
       var observer = new MutationObserver(function (mutations, observer) {
         var article = document.querySelector("d-article");
@@ -29,7 +29,7 @@
           article.appendChild(script);
         }
       });
- 
+
       observer.observe(document.body, { childList: true });
     });
   </script>
