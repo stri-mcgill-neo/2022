@@ -6,14 +6,18 @@ output_dir: "public_build"
 base_url: https://str-mcgoll-neo.github.io/2022/
 collections:
   posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    feed_items_max: 20 # default
 #    disqus:
 #      shortname: stri-mcgill-neo
 #      hidden: false
 #    share: [twitter, linkedin]
 #    subscribe: _subscribe.html
-#    citations: false
-creative_commons: CC BY
-exclude: ["public", "README.html", "README.md", "page_build", "public_build", "figure_maker"]
+    citations: false
+creative_commons: CC BY-SA
+exclude: ["public", "README.html", "README.md", "page_build", "public_build", "sandbox"]
 navbar:
   #source_url: https://github.com/rstudio/distill
   right:

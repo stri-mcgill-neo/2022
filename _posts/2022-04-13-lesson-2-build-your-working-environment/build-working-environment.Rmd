@@ -46,7 +46,8 @@ htmltools::tagList(
 
 ```{r echo=FALSE, eval=TRUE}
 ldir <-  normalizePath(".")
-finf <- file.info(paste(ldir, "build-working-environment.Rmd", sep = "/"), extra_cols = FALSE)
+rmd <- list.files(ldir, pattern = ".Rmd")
+finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
 
 bytes <- finf$size
 words <- bytes/10
@@ -249,7 +250,17 @@ Once R and RStudio are installed you can install some essential packages. Rememb
 -   [distill](https://cran.r-project.org/web/packages/distill/index.html): R Markdown format for scientific and technical writing.
 -   [tidyverse](https://cran.r-project.org/web/packages/tidyverse/index.html): [Tidyverse](https://www.tidyverse.org/) is an opinionated collection of almost 30 R packages designed for data science. The [core tidyverse packages](https://www.tidyverse.org/packages/) are [ggplot2](https://ggplot2.tidyverse.org/), [tidyr](https://tidyr.tidyverse.org/), [dplyr](https://dplyr.tidyverse.org/), [readr](https://readr.tidyverse.org/), [tibble](https://tibble.tidyverse.org/), [forcats](https://forcats.tidyverse.org/), [purrr](https://purrr.tidyverse.org/), and [stringr](https://stringr.tidyverse.org/). These packages are loaded automatically when you run `library(tidyverse)`. Other packages in tidyverse need to be loaded separately with their own call to `library()`.
 
-</br>
+
+> Note. If you are trying to install a package and get an error message containing something like `Timeout of 60 seconds was reached` you need to do the following:
+
+First run `getOption("timeout")` to see what the timeout option is. I think the default is 60 seconds. If so, change it to something larger by running `options(timeout = seconds)` where `seconds` is an integer value. 
+
+```{r}
+getOption("timeout")
+options(timeout = 1000)
+```
+
+This will only change the timeout for the current session. Once you quit R the setting will revert to 60 seconds. 
 
 If you have problems with any of these steps, we will help.
 

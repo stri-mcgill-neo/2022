@@ -3,7 +3,7 @@ figure_maker/
 page_build/
 public_build/
 files/
-
+sandbox/
 .Rproj.user
 .Rhistory
 .RData

@@ -365,11 +365,4 @@ And that's it for this mini lesson. The next lesson will focus primarily on sett
 As we move forward keep your  <i class="fa fa-eye"></i> out for the <i class="fa fa-pencil" aria-hidden="true"></i> icon.  This is where you can find a link to the raw code for the page on GitHub. The little button on the top of the page (the one that looks like a cat) will take you to the main GitHub repo for this site.
 
 
-```{r, echo=FALSE}
-blogdown::shortcode('edit', 'https://github.com/stri-con/data-curation/blob/master/content/post/lesson-0.Rmd')
-```
-
-```{r, echo=FALSE}
-blogdown::shortcode('anchor')
-```
 

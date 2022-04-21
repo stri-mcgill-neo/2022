@@ -1,0 +1,8 @@
+---
+title: "Tips & Tricks"
+preview: images/distillery.png
+listing: 
+    posts: 
+    - 2022-04-21-naming-things
+    - 2022-04-04-using-this-site
+---
