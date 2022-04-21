@@ -1,0 +1,71 @@
+---
+title: "R style guide"
+description: |
+  A brief introduction to best practices for file and directory naming that will help keep you sane.
+#preview: files/feature.png
+#author:
+#  - name: "Jarrod"
+#    orcid_id: 0000-0001-9863-1318
+#    url: https://metacrobe.github.io/
+#    affiliation: Smithsonian Tropical Research Institute
+#    affiliation_url: https://stri.si.edu/
+date: 2022-04-21
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    #css: ../../assets/styles.css
+bibliography: ../../assets/cite.bib  
+repository_url: "https://github.com/stri-mcgill-neo/2022/"
+#collections:
+#  posts:
+#    disqus: reproducible-finance-with-r
+#    share: [twitter, linkedin]
+#    citations: false
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+is_html = knitr::is_html_output()
+
+pacman::p_load(tidyverse, fontawesome, slickR,
+               install = FALSE, update = FALSE)
+```
+
+```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"></i>",
+    success_text = "<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r echo=FALSE, eval=TRUE}
+ldir <-  normalizePath(".")
+rmd <- list.files(ldir, pattern = ".Rmd")
+finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
+
+bytes <- finf$size
+words <- bytes/10
+minutes <- words/200
+```
+
+As with [file and directory naming]("_posts/2022-04-21-naming-things/naming-things.html) there is no universally accepted best practices when it comes to naming things in R. 
+
+
+
+
+
+
+
+
+
+
+
+
+

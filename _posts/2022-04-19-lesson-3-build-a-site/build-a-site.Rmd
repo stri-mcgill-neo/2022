@@ -1,0 +1,165 @@
+---
+title: "Lesson 3: Build 📖 a Site"
+description: |
+  In this lesson we go through the steps building your first site. 
+#preview: files/feature.png
+#author:
+#  - name: "Jarrod"
+#    orcid_id: 0000-0001-9863-1318
+#    url: https://metacrobe.github.io/
+#    affiliation: Smithsonian Tropical Research Institute
+#    affiliation_url: https://stri.si.edu/
+date: 2022-04-19
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    #css: ../../assets/styles.css
+bibliography: ../../assets/cite.bib  
+repository_url: "https://github.com/stri-mcgill-neo/2022/"
+#collections:
+#  posts:
+#    disqus: reproducible-finance-with-r
+#    share: [twitter, linkedin]
+#    citations: false
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+is_html = knitr::is_html_output()
+
+pacman::p_load(tidyverse, fontawesome, slickR,
+               install = FALSE, update = FALSE)
+```
+
+```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"></i>",
+    success_text = "<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r echo=FALSE, eval=TRUE}
+ldir <-  normalizePath(".")
+rmd <- list.files(ldir, pattern = ".Rmd")
+finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
+
+bytes <- finf$size
+words <- bytes/10
+minutes <- words/200
+```
+
+
+# Learning Objectives
+
+In this lesson, you will create your first site. Remember, you have the choice of a [Distill website](https://rstudio.github.io/distill/website.html) or a [Distill blog](https://rstudio.github.io/distill/blog.html). Since the structure of a Distill website is a bit simpler we will start there. This lesson is designed to lay down the conceptual and mechanical framework you need to get started. Your job is to understand this material because it is the basis for everything that comes after. If you do not understand something, please ask. Chance are pretty good that you are not alone.
+
+<aside>
+Estimated reading time: `r round(minutes, digits = 0)` minute(s).
+</aside>
+
+# Build a Distill Website
+
+Let's begin with a quick demo on creating a Distill website. Here we go through the process step-by-step. If you prefer a graphical representation, scroll down a little to see images of this process.
+
+## Step by step
+
+-   **Step 1**: Open RStudio and go to the `File` menu and select `New Project`. A window called `New Project Wizard` will pop up. Select `New Directory`.
+-   **Step 2**: Under `Project Type` scroll down until you see `Distill Website`. Hit the arrow on the right.
+-   **Step 3**: Fill in the part that says `Directory Name`. In this example I simply call it `distill_website.` Also, under `Create project as subdirectory of:` select a path to write the project. You can ignore the rest for now.
+-   **Step 4**: Boom! Site created. You should see three files in your RStudio IDE---`index.Rmd`, `about.Rmd`, and `_site.yml`. We will go through the details in a minute, but in a nutshell:
+
+| **File type**    | **Description**             |
+|------------------|-----------------------------|
+| `_site.yml`      | Website configuration file. |
+| `index.Rmd`      | Website home page.          |
+| `about.Rmd`      | Website about page.         |
+
+: Files created by Distill that should show up in the RStudio IDE. 
+
+-   **Step 5**: Navigate to your project directory. Notice that in addition to the three files we saw in Step 4 there is also a `_site/` directory and a `.Rproj` file^[This file contains various project options and can also be used as a shortcut for opening the project directly from the filesystem.]. Open the `_site/` and double-click `index.html` to open. This is your new homepage.
+
+> For any Distill site, you must have the `_site.yml` and `index.Rmd` for the site to build. Other items, like `about.Rmd`, are optional. 
+
+***
+
+The same steps described above---in graphical format. 
+
+```{r echo=FALSE, eval=TRUE, code_folding=TRUE}
+tmp_list <- list.files("files/", pattern = "step_")
+tmp_list <- tmp_list %>% stringr::str_replace(".png", "")
+
+test <- tidyr::as_tibble(tmp_list)
+test$path <- test$value
+
+test$path <- gsub("^", "files/", test$path)
+test$path <- gsub("$", ".png", test$path)
+test$info <- ""
+## To add random text for captions
+#for (i in 1:nrow(test)) {
+#  test$info[i] <- stringi::stri_rand_lipsum(1, start_lipsum = FALSE)
+#  test$info[i] <- stringr::str_sub(test$info[i], start = 1, end = 400)
+#}
+#stringi::stri_rand_strings(10, 4, pattern = "[A-Za-z0-9]")
+```
+
+```{r echo=FALSE, eval=TRUE, code_folding=TRUE}
+test$info[1] <- "Step 1: Open RStudio and go to the File menu and select New Project. A window called New Project Wizard will pop up. Select New Directory. Proceed to Step 2."
+test$info[2] <- "Step 2: Under Project Type scroll down until you see Distill Website. Hit the arrow on the right. Proceed to Step 3."
+test$info[3] <- "Step 3: Fill in the part that says Directory Name. In this example I simply call it distill_website. Also, under Create project as subdirectory of: select a path to write the project. You can ignore the rest for now. Proceed to Step 4."
+test$info[4] <- "Step 4: Boom! Site created. You should see three files in your RStudio IDE---index.Rmd, about.Rmd, and _site.yml. We will go through each of these in a minute. For now proceed to Step 5."
+test$info[5] <- "Step 5: Navigate to your project directory. Notice that in addition to the three files we saw in Step 4 there is also a _site/ directory and a .Rproj file. Open the _site/ and double-click index.html to open. Here is your new homepage."
+```
+
+::: l-body
+```{r echo=FALSE, eval=TRUE, layout='l-body', fig.height=7}
+(slickR(obj = test$path, height = 500, width = "95%", objLinks = test$path) + 
+  slickR::settings(focusOnSelect = TRUE)) %synch% 
+  (slickR(test$info, slideType = 'p') + 
+     slickR::settings(arrows = FALSE, adaptiveHeight = FALSE, dots = TRUE)
+   )
+```
+:::
+
+***
+
+# Rendering R Markdown
+
+Ok, so what just happened? Whether we are working with a single R Markdown file or an entire website, our goal is to generate dynamic reports that weave together narrative text and code. Whether it is a PDF document or HTML page, R Markdown needs to be translated into a more readable product. The process is called **rendering**—--where the input file(s) are transformed to a specified output format, like HTML.
+
+When you render a R Markdown document you use a program called `knitr`. [Knitr](https://yihui.org/knitr/) **executes all the R code**, knits the results together with the [Markdown](https://www.markdownguide.org/) text, and creates a new Markdown document. The new Markdown document is then processed by [PanDoc](https://pandoc.org/), which converts the Markdown syntax into [HTML and CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) code. PanDoc is like a *swiss-army knife* for Markdown—--it can covert many types of Markdown documents into a variety of other formats. Don’t worry, all of these steps happen behind the scenes. As long as you have a properly formatted R Markdown document, these tools will take care of the rest.
+
+</br>
+
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<div id="image_map">	
+<map name="map_example">
+    <area target="_blank" alt="R" title="R" href="https://www.r-project.org/about.html" coords="54,29,28" shape="circle">
+    <area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="5,79,86,129" shape="rect">
+    <area target="_blank" alt="R Markdown" title="R Markdown" href="https://bookdown.org/yihui/rmarkdown/" coords="148,47,148,83,175,99,205,84,208,49,177,31" shape="poly">
+    <area target="_blank" alt="knitr" title="knitr" href="https://yihui.org/knitr/" coords="239,45,240,82,270,100,301,81,302,46,269,30" shape="poly">
+    <area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="426,42,337,93" shape="rect">
+    <area target="_blank" alt="PanDoc" title="PanDoc" href="href=&quot;https://pandoc.org/" coords="462,44,478,94,508,87,541,98,559,45,528,29,512,51,489,33" shape="poly">
+    <area target="_blank" alt="HTML5" title="HTML5" href="https://developer.mozilla.org/en-US/docs/Web/HTML" coords="593,43,595,86,610,90,623,85,622,40" shape="poly">
+    <area target="_blank" alt="CSS" title="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS" coords="664,56,662,96,647,103,630,99,633,58" shape="poly">
+    <area target="_blank" alt="JS" title="JS" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" coords="700,38,697,84,680,88,667,86,669,41" shape="poly">
+</map>
+<img src="files/flow.png" alt="image map example" usemap="#map_example"><figcaption>The rendering process---creating  web pages from R Markdown documents (R code plus Markdown). EXTENDED FUNCTION. This is an image map---an HTML technique that allows you to create clickable areas on an image. I coded this so that each logo contains a different hyperlink. Try it out.  <a href = "https://gist.github.com/jarrodscott/31b8f7ab985a291c53538a97a1c3dcdc">Click here </a> if you are interested in the source code.	
+</figcaption>	
+</div>
+
+</br>
+
+
+
+
+After you go through this lesson (and understand the concepts :), you will start working on your single page document. In parallel, I will release my own single page document with assignments and challenges. That way we can work on our documents together and I can demonstrate how to accomplish certain tasks. The entire session is designed to last two weeks.
+
+
+I included many links to additional resources, so if a concept is unclear, spend some time going through the links I provided. 
