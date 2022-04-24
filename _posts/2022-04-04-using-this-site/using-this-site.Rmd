@@ -77,7 +77,9 @@ This is an aside.
 Within each lesson, I also will use a few different [FontAwesome](https://fontawesome.com/icons) icons to highlight particular material, specifically:
 
 - I use this icon  `r fa(name = "edit", fill = "steelblue")` to indicate an assignment you should complete.   
-- I use this icon `r fa(name = "lightbulb", fill = "steelblue")` to highlight little tricks I use to do something, like embed a tweet or insert these icons^[To add icons to your project install the `fontawesome` R package and use the function `fa` within inline R code. We will cover inline code in a future lesson.]. These tricks are mostly beyond what is expected of you but are included in case you want to jazz up your projects a bit.
+- I use this icon `r fa(name = "lightbulb", fill = "steelblue")` to highlight little tricks I use to do something, like embed a tweet or insert these icons^[To add icons to your project install the `fontawesome` R package and use the function `fa` within inline R code. We will cover inline code in a future lesson.]. These tricks are mostly beyond what is expected of you but are included in case you want to jazz up your projects a bit.  
+- I use this icon  `r fa(name = "book-open", fill = "steelblue")` to point out additional readings and tutorials that can help you fine-tune your skills.    
+
 
 I also use inline text formatting to highlight specific coding elements like file types (e.g., R Markdown or `.Rmd`), R packages (e.g., `fontawesome`), commands (e.g., `ggplot`), and so on.
 
