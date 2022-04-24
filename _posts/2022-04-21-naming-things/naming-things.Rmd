@@ -2,7 +2,7 @@
 title: "Naming Things"
 description: |
   A brief introduction to best practices for file and directory naming that will help keep you sane.
-#preview: files/feature.png
+preview: files/feature.jpg
 #author:
 #  - name: "Jarrod"
 #    orcid_id: 0000-0001-9863-1318
@@ -79,7 +79,13 @@ You can begin a file/directory name with a number, just be sure to use sequentia
 
 Whatever approach you choose, I think the main key is to be consistent. If you use dashes `-` to separate words in a name, then try to stick with that for everything.  
 
+## Credits {.appendix}
 
+The feature photo for this post---[A small amateur insect collection by](https://commons.wikimedia.org/wiki/File:Small-insect-collection.jpg) [Debivort](https://en.wikipedia.org/wiki/User:Debivort) at the English-language Wikipedia---was retrieved from Wikimedia Commons and Licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). Original image found [here](https://upload.wikimedia.org/wikipedia/commons/1/1f/Small-insect-collection.jpg).
+
+## Source Code {.appendix}
+
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-21-naming-things/naming-things.Rmd).
 
 
 

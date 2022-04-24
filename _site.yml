@@ -1,9 +1,11 @@
 name: "web"
-title: "R Markdown Fieldguide"
-description: |
-  R Markdown Tutorials
+title: ".Rmd Fieldguide"
+#title: ""
+#description: |
+#  R Markdown Tutorials
 output_dir: "public_build"
-base_url: https://str-mcgoll-neo.github.io/2022/
+base_url: https://stri-mcgill-neo.github.io/2022/
+favicon: files/favicon_io/favicon.ico
 collections:
   posts:
     categories: true
@@ -14,12 +16,15 @@ collections:
 #      shortname: stri-mcgill-neo
 #      hidden: false
 #    share: [twitter, linkedin]
-#    subscribe: _subscribe.html
+    subscribe: _subscribe.html
     citations: false
 creative_commons: CC BY-SA
 exclude: ["public", "README.html", "README.md", "page_build", "public_build", "sandbox"]
 navbar:
-  #source_url: https://github.com/rstudio/distill
+#  logo:
+#    image: files/panama_logo_icon.png
+#    href: index.html
+  source_url: true
   right:
     - icon: fa-home
       href: index.html
@@ -43,7 +48,7 @@ output:
   distill::distill_article:
     includes:
       in_header: giscus.html
-    highlight_downlit: false
+    highlight_downlit: true
     highlight: haddock
     css: assets/css/styles.css
     toc: true

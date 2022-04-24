@@ -1,8 +1,9 @@
 ---
-title: "R Markdown Fieldguide"
+title: "Lessons"
 site: distill::distill_website
 listing: 
     posts: 
+    - 2022-04-19-lesson-3-build-a-basic-site
     - 2022-04-13-lesson-2-build-your-working-environment
     - 2022-04-11-lesson-1-module-overview
 ---
