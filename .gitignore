@@ -2,7 +2,7 @@ public/
 figure_maker/
 page_build/
 public_build/
-files/
+#files/
 sandbox/
 .Rproj.user
 .Rhistory
