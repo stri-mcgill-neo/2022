@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Welcome to the R Markdown Fieldguide",
+      "author": [],
+      "contents": "\n\n          \n          \n          .Rmd Fieldguide\n          \n          \n          \n          \n          \n          \n          \n          Resources\n           \n          ▾\n          \n          \n          Distill homepage\n          \n          \n          \n          \n          \n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Welcome to the R Markdown Fieldguide\n            \n            \n              \n                \n                    \n                      \n                        Lessons\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Tips & Tricks\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Showcase\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            Welcome to the Data Curation/R Markdown module of the\n            STRI-McGill Neotropical field course. This module is meant\n            as a complement for the rest of the curriculum and our main\n            goals here are to: a) create\n            interactive, data-driven, web products that capture\n            analytical workflows, raw data, and data outputs; and\n            b) give you the tools, motivation, and\n            inspiration to make your science more\n            accessible, transparent,\n            and reproducible.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Welcome to the R Markdown Fieldguide\n            \n            \n              \n                \n                                    \n                    \n                      Lessons\n                    \n                  \n                                    \n                    \n                      Tips & Tricks\n                    \n                  \n                                    \n                    \n                      Showcase\n                    \n                  \n                                  \n              \n            \n            \n              Welcome to the Data Curation/R Markdown module of the\n              STRI-McGill Neotropical field course. This module is meant\n              as a complement for the rest of the curriculum and our\n              main goals here are to: a) create\n              interactive, data-driven, web products that\n              capture analytical workflows, raw data, and data outputs;\n              and b) give you the tools, motivation,\n              and inspiration to make your science more\n              accessible, transparent,\n              and reproducible.\n            \n        \n      \n    \n\n    \n    \n    \n      ©Copyright 2022 metacrobe\n      & the STRI-McGill NEO Field Course\n      Site constructed using Distill for R\n      Markdown.\n      \n      \n\n  \n  ",
+      "last_modified": "2022-04-24T14:20:11-05:00"
+    },
+    {
+      "path": "lessons.html",
+      "title": "Lessons",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-04-24T14:20:15-05:00"
+    },
+    {
+      "path": "showcase.html",
+      "title": "Showcase",
+      "description": "A showcase of R Markdown Projects. If you have a project you would like to share, let me know and I will post it here!\n",
+      "author": [],
+      "contents": "\nThis page1 is currently just a collection of\nsome web products I have created with R Markdown. It is not that I think\nthese are particularly amazing, it is just that since I coded\neverything, I know how all of this works. So if you are looking for\nideas and inspiration have a look around.\nIf you would like to share something you have created, let me know\nand I will post it on this page :)\nSites and source code are linked on the right of each image. Use the\nbuttons to filter the showcase by category:\n\nShow\nall\nDistill\nPublication\nPresentation\nBlogdown\nCourse\n\n\n\n\nBocasBiome\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nCacao fermentation\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nHow the Isthmus of Panama changed the world\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nHypocolypse\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nIstmobiome\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nProjectDIGEST\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nRethinking Diversity\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nSTRI-McGill-NEO-2020\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nSTRI-McGill-NEO-2022\n\n\n\n\n\n\n\nSite  \n Source \n\n\n\nThe inspiration for this page comes\nfrom the Distillery\nshowcase page. The code was harvested and modified from the Distillery GitHub\nrepop↩︎\n",
+      "last_modified": "2022-04-24T14:20:19-05:00"
+    },
+    {
+      "path": "tips-n-tricks.html",
+      "title": "Tips & Tricks",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-04-24T14:20:21-05:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
