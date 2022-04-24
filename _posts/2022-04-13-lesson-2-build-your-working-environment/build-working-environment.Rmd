@@ -54,13 +54,12 @@ words <- bytes/10
 minutes <- words/200
 ```
 
-<aside>
-
-Estimated reading time: `r round(minutes, digits = 0)` minute(s).
-
-</aside>
 
 We have a wide range of experience levels in this course, so this lesson is devoted to the basics of setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. Let's begin.
+
+<aside>
+Estimated reading time: `r round(minutes, digits = 0)` minute(s).
+</aside>
 
 In this lesson you will install the basic tools needed for the course, namely R, R Studio, and a few R packages. At its simplest, R is like the engine of a car while RStudio is like the dashboard. More precisely, R is the programming language that runs computations, while RStudio is an integrated development environment (IDE) that provides an interface with many convenient features and tools. Just as having access to a speedometer, rear view mirrors, and a navigation system makes driving much easier, using RStudio's interface makes using R much easier as well.
 
