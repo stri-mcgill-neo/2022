@@ -496,6 +496,6 @@ That's all for now. Coming up next we will go through Markdown syntax, incorpora
 
 ##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-19-lesson-3-build-a-basic-site/build-a-site.Rmd). 
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-19-lesson-3-build-a-basic-site/build-a-basic-site.Rmd). 
 
 

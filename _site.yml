@@ -16,7 +16,7 @@ collections:
 #      shortname: stri-mcgill-neo
 #      hidden: false
 #    share: [twitter, linkedin]
-    subscribe: _subscribe.html
+#    subscribe: _subscribe.html
     citations: false
 creative_commons: CC BY-SA
 exclude: ["public", "README.html", "README.md", "page_build", "public_build", "sandbox"]
