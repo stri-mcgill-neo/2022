@@ -1,0 +1,10 @@
+title,src,url,description,tags,Show all,Distill,Blogdown,Publication,Slides,Course
+BocasBiome,files/showcase/images/bocasbiome.png,https://bocasbiome.github.io/,Minimalist publication site written in R Markdown and made with the Distill website template.,Distill; Publication,1,1,0,1,0,0
+Cacao fermentation,files/showcase/images/cacao_fermentation.png,https://istmobiome.github.io/cacao/talk.html,Slide show about Cacao Fermentation. Written in R Markdown and created with reveal.js.,Slides,1,0,0,0,1,0
+Istmobiome,files/showcase/images/istmobiome.png,https://istmobiome.rbind.io/,Istmobiome Project site written in R Markdown and created with blogdown and Hugo. ,Blogdown; Publication,1,0,1,1,0,0
+Hypocolypse,files/showcase/images/hypocolypse.png,https://hypocolypse.github.io/,Hypocolypse project publication site written in R Markdown and made with the Distill website template.,Distill; Publication,1,1,0,1,0,0
+ProjectDIGEST,files/showcase/images/projectdigest.png,https://projectdigest.github.io/,ProjectDIGEST publication site written in R Markdown and made using the native website template.,Publication,1,0,0,1,0,0
+Rethinking Diversity,files/showcase/images/rethinking_diversity.png,https://istmobiome.github.io/rethink-d/rethink-d.html,Slide show about microbial diversity written in R Markdown and created with the xaringan package.,Slides,1,0,0,0,1,0
+How the Isthmus of Panama changed the world,files/showcase/images/how_the_isthmus_of_panama_changed_the_world.png,https://istmobiome.github.io/the-isthmus/the-isthmus.html,Slide show about the consequences of the Isthmus of Panama closing. Written in R Markdown and created with the xaringan package.,Slides,1,0,0,0,1,0
+STRI-McGill-NEO-2020,files/showcase/images/stri-mcgill-neo-2020.png,https://istmobiome.github.io/neo-bess/web-guide.html,STRI-McGill-NEO course site (2020) written in R Markdown and made with the flexdashboard framework.,Course,1,0,0,0,0,1
+STRI-McGill-NEO-2022,files/showcase/images/stri-mcgill-neo-2022.png,https://stri-mcgill-neo.github.io/2022/,STRI-McGill-NEO course site (2022) written in R Markdown and made with Distill blog template.,Distill; Course,1,1,0,0,0,1

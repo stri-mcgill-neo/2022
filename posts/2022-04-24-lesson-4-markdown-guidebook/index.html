@@ -85,78 +85,51 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-<style>
-  div.csl-bib-body { }
-  div.csl-entry {
-    clear: both;
-    }
-  .hanging div.csl-entry {
-    margin-left:2em;
-    text-indent:-2em;
-  }
-  div.csl-left-margin {
-    min-width:2em;
-    float:left;
-  }
-  div.csl-right-inline {
-    margin-left:2em;
-    padding-left:1em;
-  }
-  div.csl-indent {
-    margin-left: 2em;
-  }
-</style>
 
   <!--radix_placeholder_meta_tags-->
-<title>.Rmd Fieldguide: Lesson 1: Module 🦉 Overview</title>
+<title>.Rmd Fieldguide: Lesson 4: Markdown Guidebook</title>
 
-<meta property="description" itemprop="description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
+<meta property="description" itemprop="description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
 
-<link rel="canonical" href="https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/"/>
+<link rel="canonical" href="https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/"/>
 <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
 <link rel="icon" type="image/vnd.microsoft.icon" href="../../files/favicon_io/favicon.ico"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2022-04-11"/>
-<meta property="article:created" itemprop="dateCreated" content="2022-04-11"/>
+<meta property="article:published" itemprop="datePublished" content="2022-04-24"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-04-24"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content=".Rmd Fieldguide: Lesson 1: Module 🦉 Overview"/>
+<meta property="og:title" content=".Rmd Fieldguide: Lesson 4: Markdown Guidebook"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
-<meta property="og:url" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/"/>
-<meta property="og:image" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/files/feature.png"/>
-<meta property="og:image:width" content="1607"/>
-<meta property="og:image:height" content="754"/>
+<meta property="og:description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
+<meta property="og:url" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/"/>
+<meta property="og:image" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/files/feature.png"/>
+<meta property="og:image:width" content="1391"/>
+<meta property="og:image:height" content="677"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content=".Rmd Fieldguide"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content=".Rmd Fieldguide: Lesson 1: Module 🦉 Overview"/>
-<meta property="twitter:description" content="In the first lesson, we provide an overview for this module of the course. We cover the main objectives &amp; expectations, introduce the various tools we will use, &amp; layout some of the motivation and rationale for the module."/>
-<meta property="twitter:url" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/"/>
-<meta property="twitter:image" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/files/feature.png"/>
-<meta property="twitter:image:width" content="1607"/>
-<meta property="twitter:image:height" content="754"/>
+<meta property="twitter:title" content=".Rmd Fieldguide: Lesson 4: Markdown Guidebook"/>
+<meta property="twitter:description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
+<meta property="twitter:url" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/"/>
+<meta property="twitter:image" content="https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/files/feature.png"/>
+<meta property="twitter:image:width" content="1391"/>
+<meta property="twitter:image:height" content="677"/>
 
 <!--/radix_placeholder_meta_tags-->
   
-  <meta name="citation_reference" content="citation_title=The next generation of science outreach;citation_publication_date=2017;citation_author=N Forrester"/>
-  <meta name="citation_reference" content="citation_title=1,500 scientists lift the lid on reproducibility;citation_publication_date=2016;citation_volume=533;citation_author=Monya Baker"/>
-  <meta name="citation_reference" content="citation_title=What does research reproducibility mean?;citation_publication_date=2016;citation_volume=8;citation_author=Steven N Goodman;citation_author=Daniele Fanelli;citation_author=John PA Ioannidis"/>
-  <meta name="citation_reference" content="citation_title=Social, behavioral, and economic sciences perspectives on robust and reliable science;citation_publication_date=2015;citation_volume=1;citation_author=John T Cacioppo;citation_author=Robert M Kaplan;citation_author=Jon A Krosnick;citation_author=James L Olds;citation_author=Heather Dean"/>
-  <meta name="citation_reference" content="citation_title=Open science is a research accelerator;citation_publication_date=2011;citation_volume=3;citation_author=Michael Woelfle;citation_author=Piero Olliaro;citation_author=Matthew H Todd"/>
-  <meta name="citation_reference" content="citation_title=A manifesto for reproducible science;citation_publication_date=2017;citation_volume=1;citation_author=Marcus R Munafò;citation_author=Brian A Nosek;citation_author=Dorothy VM Bishop;citation_author=Katherine S Button;citation_author=Christopher D Chambers;citation_author=Nathalie Percie du Sert;citation_author=Uri Simonsohn;citation_author=Eric-Jan Wagenmakers;citation_author=Jennifer J Ware;citation_author=John Ioannidis"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","preview","date","output","bibliography","repository_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY-SA"]},{"type":"character","attributes":{},"value":["Lesson 1: Module 🦉 Overview"]},{"type":"character","attributes":{},"value":["In the first lesson, we provide an overview for this module of the course. We cover the main objectives & expectations, introduce the various tools we will use, & layout some of the motivation and rationale for the module."]},{"type":"character","attributes":{},"value":["files/feature.png"]},{"type":"character","attributes":{},"value":["2022-04-11"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../assets/cite.bib"]},{"type":"character","attributes":{},"value":["https://github.com/stri-mcgill-neo/2022/"]},{"type":"character","attributes":{},"value":["https://stri-mcgill-neo.github.io/2022/posts/2022-04-11-lesson-1-module-overview/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","preview","date","output","bibliography","repository_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY-SA"]},{"type":"character","attributes":{},"value":["Lesson 4: Markdown Guidebook"]},{"type":"character","attributes":{},"value":["A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."]},{"type":"character","attributes":{},"value":["files/feature.png"]},{"type":"character","attributes":{},"value":["2022-04-24"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../assets/cite.bib"]},{"type":"character","attributes":{},"value":["https://github.com/stri-mcgill-neo/2022/"]},{"type":"character","attributes":{},"value":["https://stri-mcgill-neo.github.io/2022/posts/2022-04-24-lesson-4-markdown-guidebook/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["files/code_availabilty.png","files/feature.png","files/flow.png","files/Johnson_Supplementary_PDF.pdf","files/metal_af.png","module-overview_files/anchor-4.2.2/anchor.min.js","module-overview_files/bowser-1.9.3/bowser.min.js","module-overview_files/clipboard-2.0.6/clipboard.min.js","module-overview_files/distill-2.2.21/template.v2.js","module-overview_files/font-awesome-5.1.0/css/all.css","module-overview_files/font-awesome-5.1.0/css/v4-shims.css","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff2","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff2","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.eot","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.svg","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.ttf","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff","module-overview_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff2","module-overview_files/header-attrs-2.13/header-attrs.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.min.js","module-overview_files/jquery-3.6.0/jquery-3.6.0.min.map","module-overview_files/popper-2.6.0/popper.min.js","module-overview_files/tippy-6.2.7/tippy-bundle.umd.min.js","module-overview_files/tippy-6.2.7/tippy-light-border.css","module-overview_files/tippy-6.2.7/tippy.css","module-overview_files/tippy-6.2.7/tippy.umd.min.js","module-overview_files/webcomponents-2.0.0/webcomponents.js","module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css","module-overview_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"]}
+  {"type":"character","attributes":{},"value":["files/feature.png","markdown_files/anchor-4.2.2/anchor.min.js","markdown_files/bowser-1.9.3/bowser.min.js","markdown_files/clipboard-2.0.6/clipboard.min.js","markdown_files/distill-2.2.21/template.v2.js","markdown_files/font-awesome-5.1.0/css/all.css","markdown_files/font-awesome-5.1.0/css/v4-shims.css","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff2","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff2","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff2","markdown_files/header-attrs-2.13/header-attrs.js","markdown_files/jquery-3.6.0/jquery-3.6.0.js","markdown_files/jquery-3.6.0/jquery-3.6.0.min.js","markdown_files/jquery-3.6.0/jquery-3.6.0.min.map","markdown_files/panelset-0.2.6/panelset.css","markdown_files/panelset-0.2.6/panelset.js","markdown_files/popper-2.6.0/popper.min.js","markdown_files/tippy-6.2.7/tippy-bundle.umd.min.js","markdown_files/tippy-6.2.7/tippy-light-border.css","markdown_files/tippy-6.2.7/tippy.css","markdown_files/tippy-6.2.7/tippy.umd.min.js","markdown_files/webcomponents-2.0.0/webcomponents.js","markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css","markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2092,7 +2065,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
   <link href="../../site_libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
   <script src="../../site_libs/panelset-0.2.6/panelset.js"></script>
-  <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"><\/i>","success":"<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"><\/i>"})</script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2628,7 +2600,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Lesson 1: Module 🦉 Overview","description":"In the first lesson, we provide an overview for this module of the course. We cover the main objectives & expectations, introduce the various tools we will use, & layout some of the motivation and rationale for the module.","authors":[],"publishedDate":"2022-04-11T00:00:00.000-05:00"}
+{"title":"Lesson 4: Markdown Guidebook","description":"A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements.","authors":[],"publishedDate":"2022-04-24T00:00:00.000-05:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2668,13 +2640,12 @@ Resources
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Lesson 1: Module 🦉 Overview</h1>
+<h1>Lesson 4: Markdown Guidebook</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>In the first lesson, we provide an overview for this module of the
-course. We cover the main objectives &amp; expectations, introduce the
-various tools we will use, &amp; layout some of the motivation and
-rationale for the module.</p></p>
+<p><p>A lesson devoted to developing and honing your skills writing
+Markdown-formatted text. Your assignment is to write text and
+incorporate Markdown-formatted elements.</p></p>
 </div>
 
 
@@ -2683,25 +2654,25 @@ rationale for the module.</p></p>
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#overview-objectives">Overview &amp; Objectives</a>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#elements">Elements</a>
 <ul>
-<li><a href="#what-is-a-web-product">What is a web product?</a></li>
+<li><a href="#headings">Headings</a></li>
+<li><a href="#paragraphs">Paragraphs</a></li>
+<li><a href="#line-breaks">Line Breaks</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#subscript">Subscript</a></li>
+<li><a href="#superscript">Superscript</a></li>
+<li><a href="#escaping-characters">Escaping Characters</a></li>
 </ul></li>
-<li><a href="#motivation">Motivation</a>
-<ul>
-<li><a href="#why-a-web-product">Why a web product?</a></li>
-<li><a href="#why-r-rstudio-r-markdown">Why R, RStudio, &amp; R
-Markdown?</a></li>
-<li><a href="#why-distill">Why Distill?</a></li>
-</ul></li>
-<li><a href="#expectations">Expectations</a>
-<ul>
-<li><a href="#student-role">Student role</a></li>
-<li><a href="#instructor-role">Instructor role</a></li>
-</ul></li>
-<li><a href="#housekeeping">Housekeeping</a>
+<li><a href="#resources">Resources</a>
 <ul>
 <li><a href="#source-code">Source Code</a></li>
+<li><a href="#credits">Credits</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2712,677 +2683,1125 @@ Markdown?</a></li>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<h1 id="overview-objectives">Overview &amp; Objectives</h1>
-<aside>
-Estimated reading time: 17 minute(s).
-</aside>
-<p>Welcome to the Data Curation/R Markdown module of the STRI-McGill
-2022 course on Neotropical Biology, Environments, and Conservation (BIOL
-640/553) &amp; Foundations of Environmental Policy (ENVR 610). This
-module is meant as a complement for the rest of the curriculum and our
-main goals here are two-fold. First, is to <strong>create interactive,
-data-driven, web products</strong> that capture analytical workflows,
-raw data, and data outputs. Second is to give you the tools, motivation,
-and inspiration to make your science more <strong>accessible</strong>,
-<strong>transparent</strong>, and <strong>reproducible</strong>.</p>
-<blockquote>
-<p>If you have not already done so, please read the short post on <a
-href="../2022-04-04-using-this-site/index.html">Using this Site</a>
-before continuing.</p>
-</blockquote>
-<p>We will use <a href="https://rmarkdown.rstudio.com/">R Markdown</a>
-and the <a href="https://rstudio.github.io/distill/">Distill</a>
-framework to build our web products. This site itself is not only the
-guidebook for your web products but is also <strong><em>created with the
-same tools you will use for your projects</em></strong>. More on that
-below.</p>
-<p>In this module of the course, we will learn how to:</p>
-<ol type="1">
-<li><p>Set up a working environment by installing <a
-href="https://www.r-project.org/">R</a>, <a
-href="https://www.rstudio.com/">RStudio</a>, and various R packages
-(e.g., <a
-href="https://cran.r-project.org/web/packages/knitr/index.html">knitr</a>,
-<a
-href="https://cran.r-project.org/web/packages/distill/index.html">distill</a>,
-<a href="https://glin.github.io/reactable/">reactable</a>).</p></li>
-<li><p>Render interactive data tables, figures, graphics, maps,
-diagrams, and more.</p></li>
-<li><p>Troubleshoot problems using effective web searches, <a
-href="https://github.com/">GitHub</a> repositories, forums like <a
-href="https://stackoverflow.com/">Stack Overflow</a>, and of course, our
-wit.</p></li>
-<li><p>Reference other works and create citeable articles.</p></li>
-<li><p>(if there is interest) Use <a href="https://git-scm.com/">git</a>
-and <a href="https://pages.github.com/">GitHub Pages</a> for hosting our
-work (<strong>this is not a requirement of the
-course</strong>).</p></li>
-</ol>
-<h2 id="what-is-a-web-product">What is a web product?</h2>
-<p>Ok, first things first. What do we mean by a <strong><em>web
-product</em></strong>? Well, for the purposes of this module, we
-consider a web product to be, primarily, a collection of HTML documents
-that can be opened with a browser like Chrome, Firefox, etc. That
-doesn’t necessarily mean that it needs to be <em>hosted on the web</em>,
-just that anyone can access the information without installing special
-software or understanding specific tools.</p>
-<blockquote>
-<p>It is NOT a requirement of this course to publish your web product
-online.</p>
-</blockquote>
-<p>Furthermore, we will use R Markdown and the Distill framework to
-create what are called <strong>static</strong> (as opposed to
-<strong>dynamic</strong>) web products. The difference is
-straightforward. <em>Dynamic</em><a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a> means that anytime a
-page loads, the content and look are tailored to the user, like Facebook
-or Twitter. <em>Static</em> means that everyone who visits the site sees
-the same thing.</p>
-<p>Just because your web product is <em>static</em> does not mean it
-will be dull. Unlike PDF documents, your web products will have dynamic,
-interactive components like tables, figures, maps, and so on. Consider
-this example of Supplementary Material that we submitted for a recent
-paper. Here is the <a href="files/Johnson_Supplementary_PDF.pdf">pdf
-version</a> (written in R Markdown &amp; <a
-href="https://www.latex-project.org/">LaTeX</a>) and here is the <a
-href="https://hypocolypse.github.io/som.html">HTML version</a>. While
-the content of the two documents are identical, their functionalities
-are not. The first thing to notice is that most of the data tables in
-the PDF document (called <em>Supplementary Data</em>) were too big to
-fit in the document and instead are uploaded as separate, stand-alone,
-text files to the journal’s website. On the other hand, in the HTML
-version, every data table is embedded in the document.</p>
-<p>Go ahead and check out the <a
-href="https://hypocolypse.github.io/som.html#content-description">Content
-Description</a> section and click on any of the links that say
-<strong>Supplementary Data</strong>. Supplementary Data 2 for example
-has 13 columns and 911 rows, far to large to fit (comfortably) in a PDF
-document. Have a look at <a
-href="https://hypocolypse.github.io/som.html#supplementary-data-3">Supplementary
-Data 3</a>. Notice that you can copy or download the contents of the
-table, sort, search (try searching for <em>invertebrate</em>), and
-expand the full table (under <strong>Show entries</strong>, select
-<em>All</em>). This table even contains hyperlinks that lead to other
-important information. Go ahead and click on one of the links. Movin
-on.</p>
-<h1 id="motivation">Motivation</h1>
-<p>Next, I want take a moment to explore some of the motivation and
-rationale behind this module of the course. In subsequent lessons we get
-into more specific details on many of these topics, but for now let’s
-just stick with the high level stuff.</p>
-<h2 id="why-a-web-product">Why a web product?</h2>
-<p>Good question. For me the answer is Open Science—a movement to make
-scientific research (including publications, data, physical samples, and
-software) and its dissemination <em>accessible to all levels of
-society</em>, amateur or professional <span class="citation"
-data-cites="woelfle2011open">(<a href="#ref-woelfle2011open"
-role="doc-biblioref">Woelfle, Olliaro, and Todd 2011</a>)</span>.
-Creating a web product can help make your science more
-<strong>accessible</strong>, <strong>transparent</strong>, and
-<strong>reproducible</strong>.</p>
-<p>Consider that many journals and journal articles sit behind pay walls
-that most people can’t access without paying an unreasonable price. That
-sucks, and while people are pushing back against this paradigm, for now
-this is the reality. We do our best to publish open access articles but
-sometimes this is not possible. A webpage allows you to share your
-science with a wider audience. By and large, journal articles are highly
-technical documents. There is nothing wrong with this; it is just the
-nature of the medium. But this can make the information inaccessible to
-non-experts. By also presenting your work as a web product you have the
-opportunity to tell the story behind the science, which can have
-important outreach implications <span class="citation"
-data-cites="forrester2017next">(<a href="#ref-forrester2017next"
-role="doc-biblioref">Forrester 2017</a>)</span>.</p>
-<p>A typical journal article is just a few pages, but we all know that a
-lot more goes into a study than what we usually see in print. Even with
-extensive Supplementary Material, authors are limited by what they can
-include in their publication. With a web product you are liberated from
-these limitations. A webpage gives you a venue to discuss all of the
-stuff that didn’t make it into your publication and to tell a more
-complete story of your science. Do you have a gallery of photos from
-your fieldwork? What about a bunch of statistical tests you tried that
-didn’t work? Or some personal thoughts on the system you study? In most
-cases this information would be inappropriate for a journal article but
-it is still useful and interesting information to share.</p>
-<p>I think it is an important obligation of all scientists is to make
-their studies transparent and reproducible. If you publish a study I
-should––with minimal effort––be able to find your data, carry out the
-same analyses, and reach the same conclusions. There should be no
-mystery. Sadly, this is not always the case. In my own field of
-microbial ecology, it can be a daunting task to find raw data from other
-studies and even harder to figure out exactly how the data was analyzed.
-Without proper documentation, you may even forget how you did something.
-Here is a sobering quote from a Nature News Feature from about results
-of a survey given to to 1,500 scientists on the state of reproducible
-science. .</p>
-<blockquote>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
-More than 70% of researchers have tried and failed to reproduce another
-scientist’s experiments, and more than half have failed to reproduce
-their own experiments. Those are some of the telling figures that
-emerged from Nature’s survey of 1,576 researchers who took a brief
-online questionnaire on reproducibility in research.
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg>
-<span class="citation" data-cites="baker20161">(<a
-href="#ref-baker20161" role="doc-biblioref">Baker 2016</a>)</span></p>
-</blockquote>
-<aside>
-As of today, this article has been cited at least 1713 times.
-<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:1em;width:0.69em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
-href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a>
-</aside>
-<p>If however, you build a web product around your project, where you
-document everything you do no matter how trivial, you can avoid these
-pitfalls and produce truly reproducible and transparent science.
-Everything I do now ends up on a project webpage. I can easily share the
-information and I no longer have directories filled with random bits of
-information on my computer. My websites have a much better memory than I
-do. So what is reproducible and transparent science? Turns out there
-really isn’t a starndard, well-defined definition</p>
-<p>According to this article in Science Translational Medicine,
-reproducibility …</p>
-<blockquote>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
-… [is a] set of procedures that permit the reader of a paper to see the
-entire processing trail from the raw data and code to figures and tables
-<span class="citation" data-cites="goodman2016does">(<a
-href="#ref-goodman2016does" role="doc-biblioref">Goodman, Fanelli, and
-Ioannidis 2016</a>)</span>.
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
-</blockquote>
-<p>Or the U.S. National Science Foundation (NSF) defines it this way
-…</p>
-<blockquote>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
-… refers to the ability of a researcher to duplicate the results of a
-prior study using the same materials as were used by the original
-investigator <span class="citation" data-cites="cacioppo2015social">(<a
-href="#ref-cacioppo2015social" role="doc-biblioref">Cacioppo et al.
-2015</a>)</span>.
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
-</blockquote>
-<p>Of course, all of this is easier said than done. Researchers
-interested in reaching a wider audience and presenting tranparent and
-reproducible science face many challenges; they are under a lot of
-pressure to produce papers and often not given the chance to pursue
-these activities <span class="citation"
-data-cites="forrester2017next">(<a href="#ref-forrester2017next"
-role="doc-biblioref">Forrester 2017</a>)</span>. So what can we do about
-it? I think that a good first step is to create web products that
-embrace the concepts of accessibility, transparency, and
-reproducibility. Institutional outreach and media departments do an
-incredible job of presenting the highlights of science, but they do not
-have the time or resources to go much deeper. I believe that with a
-little organization, training, and support we can all create web
-products that add value to the science, whether as educational and
-reference tools, or as outreach components.</p>
-<p>Consider again the paper we recently published on an acute hypoxic
-event in Bocas del Toro published in Nature Communications. All Nature
-journals now require authors to adhere to <a
-href="https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards">Reporting
-standards and availability of data, materials, code and
-protocols</a>.</p>
-<blockquote>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"/></svg>
-… authors are required to make materials, data, code, and associated
-protocols promptly available to readers without undue qualifications.
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:18px;width:18px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></svg></p>
-</blockquote>
-<p>Authors must include a <strong>Data availability</strong> and
-<strong>Code availability</strong> statements in their papers. Here is
-the Code availability statement from our paper.</p>
-<div class="layout-chunk" data-layout="l-body">
-<p><a href="https://www.nature.com/articles/s41467-021-24777-3#data-availability" target="_blank"><img src="files/code_availabilty.png" width="769" style="display: block; margin: auto;" /></a></p>
-</div>
-<p>And here is <a href="https://twitter.com/coraloha?s=20">@coraloha</a>
-reaction on Twitter. Some people get really jazzed about Open
-Science<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:18px;width:12.38px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
-href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></p>
-<center>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-Whoaaaaaa now this is open science to the next level! And the name, come
-on…Metal AF 🔥 🎸 🤘
-<a href="https://t.co/8sznPR5QYz">https://t.co/8sznPR5QYz</a>
-</p>
-— Dr. Chris Wall (<span class="citation" data-cites="coraloha">(<a
-href="#ref-coraloha"
-role="doc-biblioref"><strong>coraloha?</strong></a>)</span>)
-<a href="https://twitter.com/coraloha/status/1420774018668318721?ref_src=twsrc%5Etfw">July
-29, 2021</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-<h3
-id="assignment"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
-Assignment</h3>
-<p>So what do <em>you</em> think? Is Open Science important? Do you
-think web products can help communicate your science in a more
-accessible, transparent, and reproducible way? Your assignment is to
-read up on Open Science and reproducible research. There is a lot of
-debate on this subject and what I presented above is my view on the
-topic. It important that you form your own opinion. Here are a few
-articles to get you started but I do encourage you to dig deeper.</p>
-<ul>
-<li><a href="https://doi.org/10.1038/533452a">1,500 scientists lift the
-lid on reproducibility</a> <span class="citation"
-data-cites="baker20161">(<a href="#ref-baker20161"
-role="doc-biblioref">Baker 2016</a>)</span><br />
-</li>
-<li><a href="https://doi.org/10.1126/scitranslmed.aaf5027">What does
-research reproducibility mean?</a> <span class="citation"
-data-cites="goodman2016does">(<a href="#ref-goodman2016does"
-role="doc-biblioref">Goodman, Fanelli, and Ioannidis
-2016</a>)</span><br />
-</li>
-<li><a href="https://doi.org/10.1038/s41562-016-0021">A manifesto for
-reproducible science</a> <span class="citation"
-data-cites="munafo2017manifesto">(<a href="#ref-munafo2017manifesto"
-role="doc-biblioref">Munafò et al. 2017</a>)</span></li>
-</ul>
-<p>Moving along.</p>
-<h2 id="why-r-rstudio-r-markdown">Why R, RStudio, &amp; R Markdown?</h2>
-<p>There are many ways to make a website—–Squarespace, Wordpress, Wix,
-and so on. You can even code your own website in HTML, CSS, and
-JavaScript. However, in my experience, none of these platforms allow you
-to run and document code while constructing web products quite like the
-combination of R, RStudio, &amp; R Markdown. As with everything there
-are limitations, but I feel the benefits outweigh the drawbacks.</p>
-<h3 id="r">R</h3>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p><a href="https://www.r-project.org/">R</a> is both a programming
-language and a software environment for statistical computing and
-graphics. At some point, I imagine you will all need to need to embrace
-a programming environment to analyze your data and summarize your
-findings using figures, tables, etc. R is certainly not the only way to
-do this; however I believe this environment offers a valuable suite of
-tools for your scientific needs. The benefits of R include;
-<strong>a</strong>) it is free and open source, <strong>b</strong>) its
-capabilities are extended through user-created packages<a href="#fn4"
-class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>,
-<strong>c</strong>) it has a huge community of users (which means it is
-well supported), <strong>d</strong>) it is powerful and flexible.</p>
-<h3 id="rstudio">RStudio</h3>
-<p><a href="https://www.rstudio.com/">RStudio</a> is an integrated
-development environment (<a
-href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a>)
-for R language<a href="#fn5" class="footnote-ref" id="fnref5"
-role="doc-noteref"><sup>5</sup></a>. Take a moment to familiarize
-yourself with the idea of an IDE—in a nutshell, RStudio provides a
-holistic working environment to process (R) code, generate
-figures/tables, and create websites.</p>
+<aside>
+Estimated reading time: 17 minute(s).
+</aside>
+<h1 id="markdown">Markdown</h1>
+<p><a href="https://www.markdownguide.org/">Markdown</a> is a
+<em>lightweight markup language with plain-text-formatting syntax</em>.
+What this means is that Markdown is easy-to-write using any generic text
+editor and easy-to-read in its raw form. When you render a page or
+document, R Studio translates the Markdown syntax to HTML code. I
+structured this part of the lesson to show you the Markdown way of
+writing, the HTML equivalent, and what the rendered output looks like.
+You should take note of the structure of the HTML. There are exceptions,
+but most HTML elements are wrapped in <a
+href="https://www.w3schools.com/TAgs/default.asp">tags</a>—an opening
+tag at the beginning of the element that looks like this
+<code>&lt;tag&gt;</code> and a closing tag at the end that looks like
+this <code>&lt;/tag&gt;</code>. Say you want to write a level 1 header
+in HTML. You would code it like so: <code>&lt;h1&gt;</code>Header
+1<code>&lt;/h1&gt;</code>. Moving on.</p>
+<h1 id="learning-objectives">Learning Objectives</h1>
+<p>In this lesson, you will learn Markdown by writing it. You will learn
+how to add emphasis to text (e.g., <strong>bold</strong> or
+<em>italic</em>), create ordered and unordered lists, create links and
+headers, use blockquotes, add line breaks and hyperlink, and more. There
+are a few things I <strong>will not cover</strong> in this lesson,
+specifically Markdown formatting for code blocks, inserting images, and
+creating tables. These will each be covered as part of other
+lessons.</p>
+<h3
+id="assignment"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Assignment</h3>
+<p>Your assignment for this lesson is to open up the project you created
+in the previous lesson and start adding Markdown formatted text. You can
+use the <code>index.Rmd</code>, <code>about.Rmd</code>, or create a new
+page if you’re feeling bold. Write whatever you want. If you have field
+notes, you can totally use that text. If you have nothing, use this <a
+href="https://loremipsum.io/">Lorem ipsum generator</a> to make a bunch
+of plain text that you can add to your page.</p>
+<p>Be sure to check out the <a href="#resources">Resources</a> section
+of this lesson for suggested tutorials, references, and markdown
+editors. If you are a beginner, I suggest using a Markdown editor at
+first. Markdown editors are a great tool to learn Markdown because you
+can see a <strong>live preview</strong> of what the rendered text will
+look like.</p>
 <blockquote>
-<p>Imagine a car. Think of R as the engine and the RStudio IDE as the
-dashboard.</p>
+<p>Your task is to add at least one example of all Markdown elements
+listed below.</p>
 </blockquote>
-<h3 id="r-markdown">R Markdown</h3>
-<p><a href="https://rmarkdown.rstudio.com/">R Markdown</a> is really the
-bread and butter of what we will be doing. R Markdown is a file format
-(<code>.Rmd</code>) for making dynamic documents with R. R Markdown
-combines the syntax of Markdown with the language (and environment) of
-R. R Markdown documents are written in <a
-href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>—a
-<em>lightweight</em> <a
-href="https://en.wikipedia.org/wiki/Markup_language">markup language</a>
-(like HTML), that uses a relatively simple syntax to facilitate the
-<em>transformation</em> of human-readible text files into
-<code>.html</code> or <code>.pdf</code> documents. What this means is
-that rather than writing HTML and CSS code to make a website, you write
-your content in Markdown, which is then translated (by RStudio in this
-case) to web content. (R) code in your document is embedded within <a
-href="https://rmarkdown.rstudio.com/lesson-3.html">code chunks</a>.
-During the building of a page or site, RStudio identifies code chunks,
-runs the code, translates the results to Markdown, and then renders the
-output to a HTML file.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Headings</td>
+<td>Blockquotes</td>
+</tr>
+<tr class="even">
+<td>Paragraphs</td>
+<td>Links</td>
+</tr>
+<tr class="odd">
+<td>Line Breaks</td>
+<td>Subscript</td>
+</tr>
+<tr class="even">
+<td>Emphasis</td>
+<td>Superscript</td>
+</tr>
+<tr class="odd">
+<td>Lists</td>
+<td>Escape Characters</td>
+</tr>
+</tbody>
+</table>
+<p>I recommend using this lesson more as a reference or guide when you
+need to figure out out to format some text element. If you want to
+actually read through this lesson cover-to-cover, that is up to you.</p>
 <blockquote>
-<p>You do not need to include R code to produce a R Markdown web
-product. If fact, I learned R by first writing R Markdown documents.</p>
+<p>Remember. Knit often!!!</p>
+<p>Note: I heavily style my work with external CSS and this site is no
+different.</p>
 </blockquote>
-<p></br></p>
-<!-- Image Map Generated by http://www.image-map.net/ -->
-<div id="image_map">
-<map name="map_example">
-<area target="_blank" alt="R" title="R" href="https://www.r-project.org/about.html" coords="54,29,28" shape="circle">
-<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="5,79,86,129" shape="rect">
-<area target="_blank" alt="R Markdown" title="R Markdown" href="https://bookdown.org/yihui/rmarkdown/" coords="148,47,148,83,175,99,205,84,208,49,177,31" shape="poly">
-<area target="_blank" alt="knitr" title="knitr" href="https://yihui.org/knitr/" coords="239,45,240,82,270,100,301,81,302,46,269,30" shape="poly">
-<area target="_blank" alt="Markdown" title="Markdown" href="https://www.markdownguide.org/" coords="426,42,337,93" shape="rect">
-<area target="_blank" alt="PanDoc" title="PanDoc" href="href=&quot;https://pandoc.org/" coords="462,44,478,94,508,87,541,98,559,45,528,29,512,51,489,33" shape="poly">
-<area target="_blank" alt="HTML5" title="HTML5" href="https://developer.mozilla.org/en-US/docs/Web/HTML" coords="593,43,595,86,610,90,623,85,622,40" shape="poly">
-<area target="_blank" alt="CSS" title="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS" coords="664,56,662,96,647,103,630,99,633,58" shape="poly">
-<area target="_blank" alt="JS" title="JS" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" coords="700,38,697,84,680,88,667,86,669,41" shape="poly">
-</map>
-<img src="files/flow.png" alt="image map example" usemap="#map_example">
-<figcaption>
-The rendering process—creating web pages from R Markdown documents (R
-code plus Markdown). This figure contains clickable links if you are
-interested in learning more about these tools.
-</figcaption>
-</div>
-<p></br></p>
-<p>When a page or site is rendered, the R code in your R Markdown
-document (<code>.Rmd</code>) is first processed by a program called
-<code>knitr</code>. Knitr executes all the R code, knits the results
-together with the Markdown text, and creates a new Markdown document.
-The new Markdown document is then processed by PanDoc, which converts
-the Markdown syntax into HTML and CSS code. PanDoc is like a swiss-army
-knife for Markdown—–it can covert many types of Markdown documents into
-a variety of other formats. Don’t worry, most of these steps happen
-behind the scenes. As long as you have a properly formatted R Markdown
-document, these tools will take care of the rest.
-<svg aria-hidden="true" role="img" viewBox="0 0 352 512" style="height:18px;width:12.38px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"/></svg><a
-href="#fn6" class="footnote-ref" id="fnref6"
-role="doc-noteref"><sup>6</sup></a></p>
-<h2 id="why-distill">Why Distill?</h2>
-<p>In this module we will use the <a
-href="https://rstudio.github.io/distill/">Distill</a> framework to
-create our web products. Distill for R Markdown is a web publishing
-format optimized for scientific and technical communication. We are
-using Distill because it <strong>a</strong>) is a very stable format
-developed and actively maintained by RStudio; <strong>b</strong>) has a
-large and active user community; <strong>c</strong>) provides a good
-balance of functionality and ease of use; and <strong>d</strong>) is a
-minimal, lightly themed, template focused on writing and code.</p>
-<p>I think the main downside of Distill is that you are limited by how
-much customization you can do. Distill sites can be customized to some
-degree (with a bit of effort<a href="#fn7" class="footnote-ref"
-id="fnref7" role="doc-noteref"><sup>7</sup></a>) but not nearly to the
-degree of other R Markdown frameworks like <a
-href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a
-href="https://github.com/r-lib/hugodown">hugodown</a>, both of which use
-<a href="http://gohugo.io/">Hugo</a> for building sites. For a better
-idea of what I am talking about, have a look at <a
-href="https://istmobiome.rbind.io/">a site I built using blogdown and
-Hugo</a>.</p>
-<p>Some features of the Distill framework include:</p>
-<ul>
-<li>Reader-friendly typography that adapts well to mobile devices.</li>
-<li>Features essential to technical writing like <a
-href="https://rstudio.github.io/distill/#equations">LaTeX math</a>, <a
-href="https://rstudio.github.io/distill/#citations">citations</a>, and
-<a
-href="https://rstudio.github.io/distill/#footnotes-and-asides">footnotes</a>.</li>
-<li>Flexible <a
-href="https://rstudio.github.io/distill/figures.html">figure layout</a>
-options (e.g. displaying figures at a larger width than the article
-text).</li>
-<li>Attractively rendered <a
-href="https://rstudio.github.io/distill/tables.html">tables</a> with
-optional support for pagination.</li>
-<li>Support for a wide variety of <a
-href="https://rstudio.github.io/distill/diagrams.html">diagramming
-tools</a> for illustrating concepts.</li>
-<li>The ability to incorporate JavaScript and D3-based <a
-href="https://rstudio.github.io/distill/interactivity.html">interactive
-visualizations</a>.</li>
-</ul>
-<h1 id="expectations">Expectations</h1>
-<p>Let’s take a moment to go through what we expect of you and what you
-should expect of me as your instructor.</p>
-<h2 id="student-role">Student role</h2>
-<p>Throughout this field course, you will all be designing and running
-experiments, making observations and measurements, collecting data,
-etc., often as part of a group with fellow students. Your job for this
-module of the course is to take all the parts of your
-projects—hypotheses, background information, methods, results, and
-conclusions—and capture these elements in a <a
-href="https://rmarkdown.rstudio.com/">R Markdown</a> web product using
-the <a href="https://rstudio.github.io/distill/">Distill</a>
-framework.</p>
-<blockquote>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
-Regardless of whether you are part of a group or running solo, you will
-each create a web product that contains the details for <strong>at least
-two projects</strong> you work on in the course.</p>
-</blockquote>
-<p>You have two choices on how to present your projects.</p>
+<p>So if you render something and it does not look exactly like the
+examples below, this is likely because of CSS.</p>
+<h1 id="elements">Elements</h1>
+<h2 id="headings">Headings</h2>
+<p>To create a heading, add number signs (<code>#</code>) in front of a
+word or phrase. The number of signs you use should correspond to the
+heading level you want. For example, to create a heading level two
+(&lt;h2&gt;), use two number signs (e.g.,
+<code>## This is a Header</code> ). There are 6 header levels. Level 1
+is the largest and mostly used for titles.</p>
+<table class="table table-bordered">
+<thead class="thead-light">
+<tr>
+<th>
+Markdown
+</th>
+<th>
+HTML
+</th>
+<th>
+Rendered Output
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code class="highlighter-rouge"># Header L1</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h1&gt;Header L1&lt;/h1&gt;</code>
+</td>
+<td>
+<h1 class="no-anchor" data-toc-skip>
+Header L1
+</h1>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">## Header L2</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h2&gt;Header L2&lt;/h2&gt;</code>
+</td>
+<td>
+<h2 class="no-anchor" data-toc-skip>
+Header L2
+</h2>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">### Header L3</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h3&gt;Header L3&lt;/h3&gt;</code>
+</td>
+<td>
+<h3 class="no-anchor" data-toc-skip>
+Header L3
+</h3>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">#### Header L4</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h4&gt;Header L 4&lt;/h4&gt;</code>
+</td>
+<td>
+<h4 class="no-anchor">
+Header L4
+</h4>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">##### Header L5</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h5&gt;Header L5&lt;/h5&gt;</code>
+</td>
+<td>
+<h5 class="no-anchor">
+Header L5
+</h5>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">###### Header L6</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h6&gt;Header L6&lt;/h6&gt;</code>
+</td>
+<td>
+<h6 class="no-anchor">
+Header L6
+</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="heading-best-practices">Heading Best Practices</h3>
+<p>Applications that use Markdown do not agree on how to handle a
+missing space between the number signs (<code>#</code>) and the heading
+text. For compatibility, <strong>always put a space between the number
+signs and the heading name</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></br># A Heading</br></br></td>
+<td></br>#A Heading</br></br></td>
+</tr>
+</tbody>
+</table>
+<p>For the same reason, you should also <strong>put blank lines before
+and after a heading</strong>.</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br># Heading</br></br>…and after a
+heading.</td>
+<td>Without blank lines, </br># Heading</br>might not render
+correctly.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="paragraphs">Paragraphs</h2>
+<p>To create paragraphs, simply use a blank line to separate one or more
+lines of text.</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 35%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>I really like using Markdown.</code></td>
+<td>&lt;p&gt;I really like using Markdown.&lt;/p&gt;</td>
+<td>I really like using Markdown.</td>
+</tr>
+<tr class="even">
+<td><code>I think I'll use it to format</code> </br>
+<code>all of my documents from now on.</code></td>
+<td>&lt;p&gt;I think I’ll use it to format all of my documents from now
+on.&lt;/p&gt;</td>
+<td>I think I’ll use it to format all of my documents from now on.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="paragraph-best-practices">Paragraph Best Practices</h3>
+<p>Unless the paragraph is in a list, do not indent paragraphs with
+spaces or tabs. If you must indent <a
+href="https://www.markdownguide.org/hacks/#indent-tab">try this little
+hack</a></p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Don’t put tabs or spaces <br> in front of your paragraphs.</td>
+<td>    This can result in unexpected <br> formatting problems.</td>
+</tr>
+<tr class="even">
+<td>Keep lines left-aligned like this.</td>
+<td>    Don’t add tabs or spaces <br> in front of paragraphs.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="line-breaks">Line Breaks</h2>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 37%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>This is the first line.</code><br>
+<code>And this is the second line.</code></td>
+<td>&lt;p&gt;This is the first line.&lt;br&gt; <br> And this is the
+second line.&lt;/p&gt;</td>
+<td>This is the first line. <br> And this is the second line.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="line-break-best-practices">Line Break Best Practices</h3>
+<p>You can use two or more spaces (commonly referred to as <em>trailing
+whitespace</em>) for line breaks in most Markdown applications, but
+apparently this is a bit controversial. For one it is hard to see
+trailing whitespace in an editor, and many people (accidentally or
+intentionally) put two spaces after every sentence. For this reason, you
+may want to use something other than trailing whitespace for line
+breaks. If your Markdown application supports HTML, you can use the
+&lt;br&gt; HTML tag<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>. For compatibility, use trailing
+white space or the <br> HTML tag at the end of the line.</p>
+<h2 id="emphasis">Emphasis</h2>
+<p>Emphasis can be added by making text <strong>bold</strong> or
+<em>italic</em>.</p>
+<h3 id="bold">Bold</h3>
+<p>To bold text, add either two asterisks (<code>**</code>) or two
+underscores (<code>__</code>) before and after a word or phrase. To bold
+the middle of a word for emphasis, add two asterisks (<code>**</code>)
+without spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 45%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bold text **rocks**.</td>
+<td>Bold text &lt;strong&gt;rocks&lt;/strong&gt;.</td>
+<td>Bold text <strong>rocks</strong>.</td>
+</tr>
+<tr class="even">
+<td>Bold text __rocks__.</td>
+<td>Bold text &lt;b&gt;rocks&lt;/b&gt;.</td>
+<td>Bold text <strong>rocks</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Bold**text**rocks.</td>
+<td>Bold&lt;b&gt;text&lt;/b&gt; rocks.</td>
+<td>Bold<strong>text</strong>rocks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-best-practices">Bold Best Practices</h3>
+<p>Markdown applications do not agree on how to handle underscores
+(<code>_</code>) in the middle of a word. For compatibility, use
+asterisks to bold the middle of a word for emphasis.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bold**text**rocks.</td>
+<td>Bold__text__rocks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="italic">Italic</h3>
+<p>To italicize text, add one asterisk (<code>*</code>) or underscore
+(<code>_</code>) before and after a word or phrase. To italicize the
+middle of a word for emphasis, add one asterisk (<code>*</code>) without
+spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 38%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Italicized text is *awesome*.</td>
+<td>Italicized text is &lt;em&gt;awesome&lt;/em&gt;.</td>
+<td>Italicized text is <em>awesome</em>.</td>
+</tr>
+<tr class="even">
+<td>Italicized text is _awesome_.</td>
+<td>Italicized text is &lt;em&gt;awesome&lt;/em&gt;.</td>
+<td>Italicized text is <em>awesome</em>.</td>
+</tr>
+<tr class="odd">
+<td>Italicized*text*isawesome.</td>
+<td>Italicized&lt;em&gt;text&lt;/em&gt;isawesome.</td>
+<td>Italicized<em>text</em>isawesome.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="italic-best-practices">Italic Best Practices</h3>
+<p>As above, Markdown applications don’t agree on how to handle
+underscores in the middle of a word. For compatibility, use asterisks to
+italicize the middle of a word for emphasis.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Italicized text is *awesome*.</td>
+<td>Italicized text is _awesome_.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-and-italic">Bold and Italic</h3>
+<p>To emphasize text with <strong>bold</strong> and <em>italics</em> at
+the same time, add three asterisks (<code>***</code>) or three
+underscores (<code>___</code>) before and after a word or phrase. To
+bold and italicize the middle of a word for emphasis, add three
+asterisks without spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 43%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This text is ***really important***.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="even">
+<td>This text is ___really important___.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="odd">
+<td>This text is __*really important*__.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="even">
+<td>This text is **_really important_**.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="odd">
+<td>This textis***really***important.</td>
+<td>This
+textis&lt;em&gt;&lt;strong&gt;really&lt;/strong&gt;&lt;/em&gt;important.</td>
+<td>This textis<strong><em>really</em></strong>important.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-and-italic-best-practices">Bold and Italic Best
+Practices</h3>
+<p>For compatibility, use asterisks to bold and italicize the middle of
+a word for emphasis.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This textis***really***important.</td>
+<td>This textis___really___important.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lists">Lists</h2>
+<p>You can organize items into <strong>ordered</strong> and
+<strong>unordered</strong> lists.</p>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<p>To create an ordered list, add line items with numbers followed by
+periods. The numbers don’t have to be in numerical order, but if list
+starts with the number 1 subsequent list items will be rendered in
+sequential order. In fact, whatever number you start a list with becomes
+the smallest number in the list.</p>
+<p>To write an ordered list in HTML you must enclose each list item in
+the <code>&lt;li&gt;</code> tag and wrap the whole list in the
+<code>&lt;ol&gt;</code> tag.</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 51%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. First item <br> 2. Second item <br> 3. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="even">
+<td>1. First item <br> 1. Second item <br> 1. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="odd">
+<td>1. First item <br> 9. Second item <br> 2. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="even">
+<td>5. First item <br> 1. Second item <br> 9. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>5. First item <br> 6. Second item <br> 7. Third item<br></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ordered-list-best-practices">Ordered List Best Practices</h3>
+<p>Some markup languages let you use a parenthesis (<code>)</code>) as a
+delimiter (e.g., <code>1) First item</code>), but not all Markdown
+applications support this, so it isn’t a great option from a
+compatibility perspective. For compatibility, use periods only.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. First item</td>
+<td>1) First item</td>
+</tr>
+<tr class="even">
+<td>2. Second item</td>
+<td>2) Second item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<p>To create an unordered list, add a dash (<code>-</code>), an asterisk
+(<code>*</code>), or a plus sign (<code>+</code>) in front of line
+items.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 49%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item <br> - Second item <br> - Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+<tr class="even">
+<td>* First item <br> * Second item <br> * Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+<tr class="odd">
+<td>+ First item <br> + Second item <br> + Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+</tbody>
+</table>
+<p>Indent one or more items to create a nested list.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 52%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item <br> - Second item <br>   - Indented item <br>   -
+Indented item <br> - Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>     &lt;ul&gt; <br>      
+&lt;li&gt;Indented item&lt;/li&gt; <br>       &lt;li&gt;Indented
+item&lt;/li&gt; <br>     &lt;/ul&gt; <br>   &lt;li&gt;Third item
+&lt;/li&gt; <br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br>   ◦ Indented item <br>   ◦
+Indented item <br> • Third item<br></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unordered-list-best-practices">Unordered List Best
+Practices</h3>
+<p>Markdown applications do not agree on how to handle different
+delimiters in the same list. For compatibility, do not mix and match
+delimiters in the same list—pick one and stick with it.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item</td>
+<td>* First item</td>
+</tr>
+<tr class="even">
+<td>- Second item</td>
+<td>- Second item</td>
+</tr>
+<tr class="odd">
+<td>- Third item</td>
+<td>+ Third item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adding-elements-in-lists">Adding Elements in Lists</h3>
+<p>To add another element to a list, while preserving the continuity of
+the list, indent the element four spaces or one tab.</p>
+<h4 id="adding-a-paragraph">Adding a paragraph</h4>
+<pre><code>1. This is the first list item.
+2. Here is the second list item.
+
+    I need to add another paragraph below the second list item.
+
+3. And here is the third list item.</code></pre>
+<p>The rendered output looks like this:</p>
 <ol type="1">
-<li><p><strong>Website</strong>: You can present your projects in
-website style using the <a
-href="https://rstudio.github.io/distill/website.html">Distill website
-template</a>. Here is an example of a Distill website we created for a
-recent publication on an acute hypoxic event in Bocas del Toro called <a
-href="https://hypocolypse.github.io/">Hypocolypse</a>.</p></li>
-<li><p><strong>Blog</strong>: Or you can present your projects in blog
-style using the <a
-href="https://rstudio.github.io/distill/blog.html">Distill blog
-template</a>. Want an example of a blog created using Distill? Well,
-you’re looking at one right now :)</p></li>
+<li><p>This is the first list item.</p></li>
+<li><p>Here is the second list item.</p>
+<p>I need to add another paragraph below the second list item.</p></li>
+<li><p>And here is the third list item.</p></li>
 </ol>
-<p>We will get into the nitty-gritty of the differences between the two
-formats in subsequent lessons. For now, let’s summarize the key
-differences.</p>
-<p><strong>Structural difference</strong>: A website is simply a
-collection of pages that can be accessed via the navigation bar at the
-top of a page. A blog contains <strong>1</strong>) a collection of posts
-plus <strong>2</strong>) a dedicated page to list all posts, called a
-<strong>listing page</strong>. The listing page is usually, but not
-always, the home page. A Distill blog is basically a distill website
-with added blog posts.</p>
-<p><strong>Layout difference</strong>: Websites require you to manually
-set up links to pages on your site. Within a blog, Distill creates the
-listing page, which collects links to posts for you, displaying key
-metadata (like date published, author, categories, title, etc.) and a
-thumbnail image.</p>
-<p><strong>Workflow difference</strong>: All pages on a Distill website
-(and root pages of blogs) are re-rendered (i.e., re-built) each time the
-site is built. However, individual blog posts must be rendered on their
-own, with intent. Why? Well, it is because R packages are upgraded all
-the time and upgrades tend to break older code. So continuously
-re-rendering really old posts is nearly impossible to do without
-errors.</p>
-<p><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>
-So which is better, a Distill blog or website? Well, that depends on how
-you want to portray and display your projects.<br />
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>
-OK then, which is easier? Based on my experience using Distill (5
-websites and now 1 blog), I would have to say that building and managing
-a website is slightly more intuitive than a blog. This mainly has to do
-with how files are organized in your working directory, basically the
-structural differences I described above. The directory of a website has
-a flat structure, meaning all of your R Markdown documents
-(<code>.Rmd</code>) are in the main directory. With a blog, the
-<code>.Rmd</code> files are collected in the <code>_posts</code>
-directory. This structure can make it tricky sometimes to figure out how
-to create links that connect different parts of the site, so called
-<em>internal link</em>. But really, both have roughly the same learning
-curve; a tiny bit steep at the beginning then a plateau of smooth
-sailing. So my advivce is go with what works best for you.</p>
-<h3
-id="assignment-1"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
-Assignment</h3>
-<p>Your first assignment is to think about the format you want to use,
-<strong>website</strong> or <strong>blog</strong>. You do not have to
-decide now but do check out the examples provided above to get a better
-sense of the format differences between the two. If you’re up to it, go
-ahead and read through the <a
-href="https://rstudio.github.io/distill/website.html">Distill website
-template</a> and the <a
-href="https://rstudio.github.io/distill/blog.html">Distill blog
-template</a> pages. If you have little or no experience with this type
-of coding, most of the content on these pages will be gibberish. But
-fear not! Soon enough, this will all make sense.</p>
-<p>Lastly, I wanted to add that some of you may have a lot of experience
-with these tools already. That’s great––you can help your classmates
-with their projects. If you think something I say doesn’t make sense,
-please say something. I would rather do something the right way than be
-right about the way I am doing something.</p>
-<h2 id="instructor-role">Instructor role</h2>
-<p>As an instructor, my role is as guide and facilitator. My philosophy
-is that I teach the way I learn; to create a venue where you can be
-curious, get your hands dirty, make mistakes, and explore. I’m here to
-help you see what’s possible and help you create something you are proud
-of. Towards this end, I will write tutorials and lessons and help you
-work through the material to achieve your goals for the module. If you
-want to incorporate some particular functionality in your projects that
-I do not cover in the lessons, I will help you figure out how to do it.
-You can expect me to work with each of you individually on various
-aspects of your projects.</p>
-<p>You should also expect me to be patient. I know first hand how
-difficult some of this material can be to digest and a big part of my
-role is helping you avoid many of the potholes and pitfalls I stumbled
-over and fell in. I can promise you that, at times, this process will be
-a little frustrating. But I can also promise that with some hard work
-(and maybe a few tears), you will have the tools to create a range of
-useful and beautiful documents.</p>
-<p>Finally, I am happy to write additional tutorials and lessons
-covering material not included on the site already. So please, pretty
-please, let me know if there is something extra you want to learn and I
-will write a post so other students can follow along.</p>
-<h1 id="housekeeping">Housekeeping</h1>
-<p>A little housekeeping to finish up. Unfortunately this is
-<strong>not</strong> a formal course on R coding or statistics. Given
-the time we have, these topics are beyond the scope of this module—we
-want you in the field working on experiments as much as possible, not
-sitting in front of you computer the whole time :) This doesn’t mean you
-won’t be performing statistical analyses; it just means that we do not
-have any formal lectures planned for these topics. Of course, if there
-is a specific analysis you wish to perform or test you want to run, the
-instructors and/or your fellow students will help you write the
-code.</p>
-<p>To get the full benefit of using R Markdown, <strong><em>an
-understanding of R is helpful but not required</em></strong>. That said,
-if you persist with R Markdown you will learn R, specifically when
-running analyses and rendering the results as figures or tables. In
-fact, when I first started creating R Markdown documents a couple of
-years ago my knowledge of R itself was downright awful. Working with R
-Markdown dramatically increased my understanding of writing R code for
-statistical analyses.</p>
-<p>Next, we need to talk about operating systems (OS). I use Mac OSX and
-Linux but unfortunately I have little experience implementing these
-tools in Windows. If you are on a Windows machine, don’t worry; we will
-make it all work, it may just take a little more effort. Tons of people
-use Windows with R, RStudio, and R Markdown; sadly for you I do not
-happen to be one of them :(</p>
-<p>This website is a living document, meaning that it will be updated
-continuously. I will make announcements when new material is added. The
-structure of the site is simple. All lessons and homework are listed on
-the landing page in order. Start at the bottom and work your way up;
-that way the newest material is always first. The navigation bar at the
-top has quick links to tools, resources, etc.</p>
-<h3
-id="assignment-2"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
-Assignment</h3>
-<p>One more thing I would like you to do before we wrap up. Go back
-through this page from the top. You do not have to read the contents
-again (yawn) I just want you to make note of the different elements—text
-formatting (e.g., <em>italics</em> and <strong>bold</strong>), headers,
-<a
-href="https://rstudio.github.io/distill/basics.html#table-of-contents">table
-of contents</a>, <a
-href="https://rstudio.github.io/distill/basics.html#appendices">footnotes
-and asides</a>, hyperlinks, <a
-href="https://rstudio.github.io/distill/basics.html#appendices">appendices</a>,
-<a
-href="https://rstudio.github.io/distill/citations.html">citations</a>,
-images, etc. You will be incorporating many of these elements in your
-web products. Don’t worry about the details right now, we will cover
-them in more detail later.</p>
-<p>That’s all for now.</p>
+<h4 id="adding-a-blockquote">Adding a blockquote</h4>
+<pre><code>1. This is the first list item.
+2. Here&#39;s the second list item.
+
+     &gt; A blockquote would look great below the second list item.
+
+3. And here&#39;s the third list item.</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li><p>This is the first list item.</p></li>
+<li><p>Here’s the second list item.</p>
+<blockquote>
+<p>A blockquote would look great below the second list item.</p>
+</blockquote></li>
+<li><p>And here’s the third list item.</p></li>
+</ol>
+<h4 id="images">Images</h4>
+<pre><code>1. Check out the file containing the course badge.
+2. Do you know what the pattern is overlaying the map?
+
+    &lt;img src=&quot;../../files/panama_logo.png&quot; width=&quot;250&quot;&gt;
+
+3. Let me know what you think it is!</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li><p>Check out the file containing the course badge.</p></li>
+<li><p>Do you know what the pattern is overlaying the map?</p>
+<p><img src="../../files/panama_logo.png" width="250"></p></li>
+<li><p>Let me know what you think it is!</p></li>
+</ol>
+<h4 id="lists-1">Lists</h4>
+<p>You can nest an unordered list in an ordered list, or vice versa.</p>
+<pre><code>1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul></li>
+<li>Fourth item</li>
+</ol>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>To create a blockquote, add a <code>&gt;</code> in front of a
+paragraph.</p>
+<pre><code>&gt; Ants have the most complicated social organization on earth next to humans.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Ants have the most complicated social organization on earth next to
+humans<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>.</p>
+</blockquote>
+<h3 id="blockquotes-with-multiple-paragraphs">Blockquotes with Multiple
+Paragraphs</h3>
+<pre><code>&gt; Ants have the most complicated social organization on earth next to humans.
+&gt;
+&gt; When you have seen one ant, one bird, one tree, you have not seen them all.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Ants have the most complicated social organization on earth next to
+humans.</p>
+<p>When you have seen one ant, one bird, one tree, you have not seen
+them all<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>.</p>
+</blockquote>
+<h3 id="nested-blockquotes">Nested Blockquotes</h3>
+<p>Blockquotes can be nested by adding a <code>&gt;&gt;</code> in front
+of the paragraph you want to nest.</p>
+<pre><code>&gt; Geometry has two great treasures; one is the Theorem of Pythagoras; the other, the division of a line into extreme and mean ratio.
+&gt;
+&gt;&gt; The first we may compare to a measure of gold; the second we may name a precious jewel.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Geometry has two great treasures; one is the Theorem of Pythagoras;
+the other, the division of a line into extreme and mean ratio.</p>
+<blockquote>
+<p>The first we may compare to a measure of gold; the second we may name
+a precious jewel<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+</blockquote>
+</blockquote>
+<h3 id="blockquotes-with-other-elements">Blockquotes with Other
+Elements</h3>
+<p>Blockquotes can contain other Markdown formatted elements. Not all
+elements can be used—you will need to experiment to see which ones
+work.</p>
+<pre><code>&gt; ### The sequencing data looks great.
+&gt;
+&gt; - The reads are long.
+&gt; - The error rate is low.
+&gt;
+&gt;  Now we are **ready*** analysis.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<h3 id="the-sequencing-data-looks-great.">The sequencing data looks
+great.</h3>
+<ul>
+<li>The reads are long.</li>
+<li>The error rate is low.</li>
+</ul>
+<p>Now we are <strong>ready</strong> for analysis.</p>
+</blockquote>
+<h3 id="blockquotes-best-practices">Blockquotes Best Practices</h3>
+<p>As with headers, for compatibility, put blank lines before and after
+blockquotes.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br>&gt; a blockquote</br></br>…and
+after.</td>
+<td>Without blank lines, </br>&gt; a blockquote</br>might not render
+correctly.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+<p>To create a horizontal rule, use three or more asterisks
+(<code>***</code>), dashes (<code>---</code>), or underscores
+(<code>___</code>) on a line by themselves.</p>
+<pre><code>***
+
+---
+
+_________________
+</code></pre>
+<p>The rendered output of all three looks identical:</p>
+<hr />
+<h3 id="horizontal-rule-best-practices">Horizontal Rule Best
+Practices</h3>
+<p>For compatibility, put blank lines before and after horizontal
+rules.</p>
+<table>
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br>—</br></br>…and after a horizontal
+rule.</td>
+<td>Without blank lines, </br>—</br>this would actually be a
+heading.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="links">Links</h2>
+<p>To create a link, enclose the link text in brackets
+(<code>[ ]</code>), followed immediately by the URL in parentheses
+(<code>( )</code>).</p>
+<pre><code>This is a link to awesome [geometric patterns](https://en.wikipedia.org/wiki/Islamic_geometric_patterns) .</code></pre>
+<p>And here is the equivalent in HTML.</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>This is a link to awesome <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://en.wikipedia.org/wiki/Islamic_geometric_patterns&quot;</span><span class="kw">&gt;</span>link<span class="kw">&lt;/a&gt;</span> geometric patterns.</span></code></pre></div>
+<p>The rendered output looks like this:</p>
+<p>This is a link to awesome <a
+href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">geometric
+patterns</a>.</p>
+<h3 id="adding-titles">Adding Titles</h3>
+<p>You can optionally add a title for a link. This will appear as a
+tooltip when the user hovers over the link. To add a title, enclose it
+in quotation marks after the URL.</p>
+<pre><code>This is a link to awesome [geometric patterns](https://en.wikipedia.org/wiki/Islamic_geometric_patterns &quot;These are called Girih tiles. Incredible.&quot;) .</code></pre>
+<p>The rendered output looks like this:</p>
+<p>This is a link to awesome <a
+href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns"
+title="These are called Girih tiles. Incredible.">geometric patterns</a>
+.</p>
+<h3 id="urls-and-email-addresses">URLs and Email Addresses</h3>
+<p>To quickly turn a URL or email address into a link, enclose it in
+angle brackets.</p>
+<pre><code>&lt;https://en.wikipedia.org/wiki/Mariano_Rivera&gt;
+&lt;mariano@rivera.com&gt;</code></pre>
+<p>The rendered output looks like this:</p>
+<p><a href="https://en.wikipedia.org/wiki/Mariano_Rivera"
+class="uri">https://en.wikipedia.org/wiki/Mariano_Rivera</a><br />
+<a href="mailto:mariano@rivera.com"
+class="email">mariano@rivera.com</a></p>
+<h3 id="formatting-links">Formatting Links</h3>
+<p>To emphasize links, add asterisks before and after the brackets and
+parentheses. To denote links as code, add backticks in the brackets.</p>
+<pre><code>**[Substituted tryptamines](https://en.wikipedia.org/wiki/Substituted_tryptamine)** are super interesting.  
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+Want to create an article in Distill? See the help page for the command &lt;a href=&#39;https://pkgs.rstudio.com/distill/reference/create_article.html&#39;&gt;distill::create_article&lt;/a&gt;</code></pre>
+<p>The rendered output looks like this:</p>
+<p><strong><a
+href="https://en.wikipedia.org/wiki/Substituted_tryptamine">Substituted
+tryptamines</a></strong> are super interesting.<br />
+This is the <em><a href="https://www.markdownguide.org">Markdown
+Guide</a></em>.<br />
+Want to create an article in Distill? See the help page for the command
+<a href='https://pkgs.rstudio.com/distill/reference/create_article.html'>distill::create_article</a></p>
+<h2 id="subscript">Subscript</h2>
+<p>This isn’t common, but some Markdown processors allow you to use
+subscript to position one or more characters slightly below the normal
+line of type. To create a subscript, use one tilde symbol
+(<code>~</code>) before and after the characters.</p>
+<pre><code>C~12~H~16~N~2~</code></pre>
+<p>The rendered output looks like this:</p>
+<p>C<sub>12</sub>H<sub>16</sub>N<sub>2</sub></p>
+<p>And of course, the HTML equivalent.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>C<span class="kw">&lt;sub&gt;</span>12<span class="kw">&lt;/sub&gt;</span>H<span class="kw">&lt;sub&gt;</span>16<span class="kw">&lt;/sub&gt;</span>N<span class="kw">&lt;sub&gt;</span>2<span class="kw">&lt;/sub&gt;</span></span></code></pre></div>
+<h2 id="superscript">Superscript</h2>
+<p>Also not common, but some Markdown processors allow you to use
+superscript to position one or more characters slightly above the normal
+line of type. To create a superscript, use one caret symbol
+(<code>^</code>) before and after the characters.</p>
+<pre><code>z = z^2^ + C</code></pre>
+<p>The rendered output looks like this:</p>
+<p>z = z<sup>2</sup> + C</p>
+<p>HTML equivalent.</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>z = z<span class="kw">&lt;sup&gt;</span>2<span class="kw">&lt;/sup&gt;</span> + C</span></code></pre></div>
+<h2 id="escaping-characters">Escaping Characters</h2>
+<p>As you have seen, there are many special characters used to format
+text in Markdown like the asterick (<code>*</code>) and the number or
+pound sign (<code>#</code>). To display a literal character that would
+otherwise be used to format text in a Markdown document, add a backslash
+(<code>\</code>) in front of the character.</p>
+<pre><code>\# Without the backslash, this would be a header.</code></pre>
+<p>The rendered output looks like this:</p>
+<p># Without the backslash, this would be a header.</p>
+<h3 id="characters-you-can-escape">Characters You Can Escape</h3>
+<p>You can use a backslash to escape the following characters.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Character</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>\</td>
+<td>backslash</td>
+</tr>
+<tr class="even">
+<td>`</td>
+<td>backtick</td>
+</tr>
+<tr class="odd">
+<td>*</td>
+<td>asterisk</td>
+</tr>
+<tr class="even">
+<td>_</td>
+<td>underscore</td>
+</tr>
+<tr class="odd">
+<td>{ }</td>
+<td>curly braces</td>
+</tr>
+<tr class="even">
+<td>[ ]</td>
+<td>brackets</td>
+</tr>
+<tr class="odd">
+<td>&lt; &gt;</td>
+<td>angle brackets</td>
+</tr>
+<tr class="even">
+<td>( )</td>
+<td>parentheses</td>
+</tr>
+<tr class="odd">
+<td>#</td>
+<td>pound sign</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td>plus sign</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>minus sign (hyphen)</td>
+</tr>
+<tr class="even">
+<td>.</td>
+<td>dot</td>
+</tr>
+<tr class="odd">
+<td>!</td>
+<td>exclamation mark</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="resources">Resources</h1>
+<p>Here are a few resources I recommend to augment your skill
+development.</p>
+<ul>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Basic Markdown
+Syntax Reference</a> from <em><a
+href="https://www.markdownguide.org/">The Markdown Guide</a></em>, a
+free and open-source reference guide.</li>
+<li><a href="https://www.markdownguide.org/extended-syntax/">Extended
+Markdown Syntax Reference</a>. Advanced features that build on the basic
+Markdown syntax. Also from <em><a
+href="https://www.markdownguide.org/">The Markdown Guide</a></em>.</li>
+<li><a
+href="https://commonmark.org/help/tutorial/index.html">Interactive
+Markdown Tutorial</a> for beginners. Each lesson contains an explanation
+of Markdown syntax. Hit the <strong><em>Try it</em></strong> button to
+test your skills and see what your solution looks like when it is
+rendered. There is also an option to see the HTML equivalent of the
+Markdown text. This is a nice tutorial.</li>
+<li><a href="https://www.tablesgenerator.com/markdown_tables">Markdown
+Tables Generator</a>. Tired of typing all of those hyphens and
+pipes?</li>
+<li><a href="https://dev.w3.org/html5/html-author/charref">Character
+Entity Reference Chart</a> for coding special symblos in Markdown.</li>
+<li><a
+href="https://www.markdownguide.org/hacks/#link-targets">Hacks</a>.
+Workarounds for things not officially supported by Markdown.</li>
+</ul>
+<h3 id="markdown-editors">Markdown Editors</h3>
+<p>Markdown editors are a great tool to learn Markdown because you can
+see a <strong>live preview</strong> of what the rendered text will look
+like. Below I list both online and desktop Markdown editors.</p>
+<h4 id="markdown-online-editors">Markdown Online Editors</h4>
+<p>Online editors are universally supported across operating systems.
+Here are a few to get you started.</p>
+<ul>
+<li><a href="https://stackedit.io/">StackEdit</a>. In-browser Markdown
+editor</li>
+<li><a href="https://dillinger.io/">Dillinger</a>. “The Last Markdown
+Editor, Ever.”</li>
+<li><a href="https://hackmd.io/">HackMD</a>. Scroll down until you see
+the <strong>Use for free</strong> button.</li>
+<li><a href="https://marktwo.app/">MarkTwo</a>. Free, open source
+progressive web app. It features seamless transition between read and
+edit mode, snappy performance for large documents, and efficient,
+continuous, and private syncing via your own Google drive.</li>
+<li><a href="https://mark.reaper.im/">Mark</a>. Simple Web Markdown
+Editor.</li>
+<li><a href="markdown.pioul.fr">Minimalist Online Markdown Editor</a>.
+The name says it all.</li>
+</ul>
+<h4 id="markdown-desktop-editors">Markdown Desktop Editors</h4>
+<p>I only listing free desktop editors here. There are plenty more if
+you are willing to pony up some cash. Some of these are operating system
+specific while others are universal.</p>
+<ul>
+<li><a href="http://abricotine.brrd.fr/">Abricotine</a> Abricotine
+supports very good instant preview. <strong>Universal</strong>.</li>
+<li><a href="https://github.com/marktext/marktext">MarkText</a>.
+MarkText is very similar to Abricotine, but it’s development is much
+faster than Abricotine’s (while isn’t really stable yet).
+<strong>Universal</strong>.</li>
+<li><a href="https://www.zettlr.com/">Zettlr</a>. Zettlr ships with a
+lot of features helpful in writing markdown. It is especially aimed at
+writing research papers in the arts and humanities (and therefore offers
+writing aids such as automatic footnote insertion and in-place editing,
+or a global search). <strong>Universal</strong>.</li>
+<li><a href="https://znote.io/">Znote</a>. Znote is a free, elegant
+program meant to help you write beautifully organized Markdown
+documents. You can organize your texts, notes, and files even better,
+using the simplistic left-side widget organizer for smoothly navigating
+different files. <strong>Universal</strong>.</li>
+<li><a href="http://markdownpad.com/">MarkdownPad</a> and <a
+href="http://markdownpad.com/news/2013/introducing-markdownpad-2/">MarkdownPad
+2</a> are full-featured Markdown editors for
+<strong>Windows</strong>.</li>
+<li><a href="https://macdown.uranusjr.com/">MacDown</a> is an open
+source Markdown editor for <strong>macOS</strong>.</li>
+</ul>
 <h2 class="appendix" id="source-code">Source Code</h2>
 <p>The source code for this page can be accessed on GitHub
 <svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
 by <a
-href="https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-11-lesson-1-module-overview/module-overview.Rmd">clicking
+href="https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-24-lesson-4-markdown-guidebook/markdown.Rmd">clicking
 this link</a>.</p>
-<div class="sourceCode" id="cb1"><pre
+<h2 class="appendix" id="credits">Credits</h2>
+<p>This lesson was modeled (and mostly copied!) from the <a
+href="https://www.markdownguide.org/basic-syntax/">Markdown Basic Syntax
+Guide</a> by <a href="https://www.mattcone.com/">Matt Cone</a> licenced
+under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</p>
+<div class="sourceCode" id="cb20"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references csl-bib-body hanging-indent"
-role="doc-bibliography">
-<div id="ref-baker20161" class="csl-entry" role="doc-biblioentry">
-Baker, Monya. 2016. <span>“1,500 Scientists Lift the Lid on
-Reproducibility.”</span> <em>Nature</em> 533 (7604). <a
-href="https://doi.org/10.1038/533452a">https://doi.org/10.1038/533452a</a>.
-</div>
-<div id="ref-cacioppo2015social" class="csl-entry"
-role="doc-biblioentry">
-Cacioppo, John T, Robert M Kaplan, Jon A Krosnick, James L Olds, and
-Heather Dean. 2015. <span>“Social, Behavioral, and Economic Sciences
-Perspectives on Robust and Reliable Science.”</span> <em>Report of the
-Subcommittee on Replicability in Science Advisory Committee to the
-National Science Foundation Directorate for Social, Behavioral, and
-Economic Sciences</em> 1.
-</div>
-<div id="ref-forrester2017next" class="csl-entry"
-role="doc-biblioentry">
-Forrester, N. 2017. <span>“The Next Generation of Science
-Outreach.”</span> <em>Nature Jobs</em>. <a
-href="http://blogs.nature.com/naturejobs/2017/04/14/the-next-generation-of-science-outreach">http://blogs.nature.com/naturejobs/2017/04/14/the-next-generation-of-science-outreach</a>.
-</div>
-<div id="ref-goodman2016does" class="csl-entry" role="doc-biblioentry">
-Goodman, Steven N, Daniele Fanelli, and John PA Ioannidis. 2016.
-<span>“What Does Research Reproducibility Mean?”</span> <em>Science
-Translational Medicine</em> 8 (341): 341ps12–12. <a
-href="https://doi.org/10.1126/scitranslmed.aaf5027">https://doi.org/10.1126/scitranslmed.aaf5027</a>.
-</div>
-<div id="ref-munafo2017manifesto" class="csl-entry"
-role="doc-biblioentry">
-Munafò, Marcus R, Brian A Nosek, Dorothy VM Bishop, Katherine S Button,
-Christopher D Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan
-Wagenmakers, Jennifer J Ware, and John Ioannidis. 2017. <span>“A
-Manifesto for Reproducible Science.”</span> <em>Nature Human
-Behaviour</em> 1 (1): 1–9. <a
-href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>.
-</div>
-<div id="ref-woelfle2011open" class="csl-entry" role="doc-biblioentry">
-Woelfle, Michael, Piero Olliaro, and Matthew H Todd. 2011. <span>“Open
-Science Is a Research Accelerator.”</span> <em>Nature Chemistry</em> 3
-(10): 745–48. <a
-href="https://doi.org/10.1038/nchem.1149">https://doi.org/10.1038/nchem.1149</a>.
-</div>
-</div>
 <section class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Henceforth, I use the term
-<em>dynamic</em> throughout these lessons to refer to a component of a
-document that does something or is interactive, like a table that
-scrolls or a map you can zoom in on. Do not confuse this with a dynamic
-website.<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>To get the number of citations for
-this article I used the function <code>cr_citation_count</code> from the
-<a
-href="https://cran.r-project.org/web/packages/rcrossref/index.html"><code>rcrossref</code></a>
-package. The function takes a Digital Object Identifier (DOI) as the
-input and searches CrossRef OpenURL to return the number of citations.<a
+<li id="fn1" role="doc-endnote"><p>Note, this is one of those exceptions
+to the opening/closing HTML tags. To insert single line breaks in a text
+you simply add &lt;br&gt; where you want the break<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>E. O. Wilson said that.<a
 href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>If you want to embed a tweet on a
-page, click on the ellipsis icon at the top of the tweet
-<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg>,
-select
-<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg><strong>Embed
-Tweet</strong>, copy the HTML code provided, &amp; plop it right into
-your <code>Rmd</code> file. The only thing is you need to do is wrap the
-entire code in the HTML <code>&lt;center&gt;</code> &amp;
-<code>&lt;/center&gt;</code> tags.<a href="#fnref3"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p><a
-href="https://cran.r-project.org/web/packages/">The Comprehensive R
-Archive Network (CRAN)</a>, R’s central software repository, currently
-contains 18909 packages. Hundreds more can be found in places like
-GitHub and Bioconductor<a href="#fnref4" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>Recent versions of RStudio now have
-the functionality to run <a
-href="https://www.rstudio.com/blog/three-ways-to-program-in-python-with-rstudio/">Python
-code</a> in your R Markdown document.<a href="#fnref5"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6" role="doc-endnote"><p>The figure above is called an image
-map, which is a HTML technique that allows you to create clickable areas
-on an image. I coded this so that each logo contains a different
-hyperlink. Try it out. <a
-href="https://gist.github.com/jarrodscott/31b8f7ab985a291c53538a97a1c3dcdc">Click
-here</a> if you are interested in the source code.<a href="#fnref6"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7" role="doc-endnote"><p>We will cover some of this in future
-lessons on adding custom HTML and CSS code.<a href="#fnref7"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>E. O. Wilson said that too.<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Johannes Kepler said that.<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->

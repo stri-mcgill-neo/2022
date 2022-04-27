@@ -1,0 +1,55 @@
+---
+title: "Post Title"
+description: |
+  A short description of the post.
+author:
+#  - name: "Jarrod J Scott"
+#    orcid_id: 0000-0001-9863-1318
+#    url: https://metacrobe.github.io/
+#    affiliation: Smithsonian Tropical Research Institute
+#    affiliation_url: https://stri.si.edu/
+date: "`r Sys.Date()`"
+preview: files/feature.png
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    #css: ../../assets/styles.css
+repository_url: "https://github.com/stri-mcgill-neo/2022/"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+#is_html = knitr::is_html_output()
+library(reticulate)
+use_condaenv("python_4_r")
+pacman::p_load(tidyverse, reactable, fontawesome,
+               magrittr,
+               install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
+```
+
+
+<aside>
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
+</aside>
+
+
+
+
+
+
+
+
+##  Source Code {.appendix}
+
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 
