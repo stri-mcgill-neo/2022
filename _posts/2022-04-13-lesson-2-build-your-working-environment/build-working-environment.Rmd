@@ -31,6 +31,14 @@ is_html = knitr::is_html_output()
 
 pacman::p_load(tidyverse, fontawesome, scholar, rcrossref, webdriver, rvest,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -44,21 +52,10 @@ htmltools::tagList(
 )
 ```
 
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
-
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
-
-
 We have a wide range of experience levels in this course, so this lesson is devoted to the basics of setting up your working environment and laying down a good foundation for your projects. I would like to give everyone a chance to get everything installed and to get comfortable with these new tools before we dive in. I realize that some of you may have a lot of this done already. Let's begin.
 
 <aside>
-Estimated reading time: `r round(minutes, digits = 0)` minute(s).
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
 </aside>
 
 In this lesson you will install the basic tools needed for the course, namely R, R Studio, and a few R packages. At its simplest, R is like the engine of a car while RStudio is like the dashboard. More precisely, R is the programming language that runs computations, while RStudio is an integrated development environment (IDE) that provides an interface with many convenient features and tools. Just as having access to a speedometer, rear view mirrors, and a navigation system makes driving much easier, using RStudio's interface makes using R much easier as well.
@@ -283,6 +280,6 @@ The site is nothing fancy but the entire project is now archived on the web. I l
 
 And that's it for this lesson.
 
-## Source Code {.appendix}
+##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-13-lesson-2-build-your-working-environment/build-working-environment.Rmd).
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 

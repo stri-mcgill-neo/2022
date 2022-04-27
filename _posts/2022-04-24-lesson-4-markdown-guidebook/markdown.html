@@ -1,0 +1,2667 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Lesson 4: Markdown Guidebook</title>
+
+  <meta property="description" itemprop="description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-04-24"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-04-24"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Lesson 4: Markdown Guidebook"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Lesson 4: Markdown Guidebook"/>
+  <meta property="twitter:description" content="A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","date","output","bibliography","repository_url"]}},"value":[{"type":"character","attributes":{},"value":["Lesson 4: Markdown Guidebook"]},{"type":"character","attributes":{},"value":["A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements. \n"]},{"type":"character","attributes":{},"value":["files/feature.png"]},{"type":"character","attributes":{},"value":["2022-04-24"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../assets/cite.bib"]},{"type":"character","attributes":{},"value":["https://github.com/stri-mcgill-neo/2022/"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["files/feature.png","markdown_files/anchor-4.2.2/anchor.min.js","markdown_files/bowser-1.9.3/bowser.min.js","markdown_files/clipboard-2.0.6/clipboard.min.js","markdown_files/distill-2.2.21/template.v2.js","markdown_files/font-awesome-5.1.0/css/all.css","markdown_files/font-awesome-5.1.0/css/v4-shims.css","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-brands-400.woff2","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-regular-400.woff2","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.eot","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.svg","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.ttf","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff","markdown_files/font-awesome-5.1.0/webfonts/fa-solid-900.woff2","markdown_files/header-attrs-2.13/header-attrs.js","markdown_files/jquery-3.6.0/jquery-3.6.0.js","markdown_files/jquery-3.6.0/jquery-3.6.0.min.js","markdown_files/jquery-3.6.0/jquery-3.6.0.min.map","markdown_files/panelset-0.2.6/panelset.css","markdown_files/panelset-0.2.6/panelset.js","markdown_files/popper-2.6.0/popper.min.js","markdown_files/tippy-6.2.7/tippy-bundle.umd.min.js","markdown_files/tippy-6.2.7/tippy-light-border.css","markdown_files/tippy-6.2.7/tippy.css","markdown_files/tippy-6.2.7/tippy.umd.min.js","markdown_files/webcomponents-2.0.0/webcomponents.js","markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css","markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="markdown_files/header-attrs-2.13/header-attrs.js"></script>
+  <script src="markdown_files/clipboard-2.0.6/clipboard.min.js"></script>
+  <link href="markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+  <script src="markdown_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+  <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clone fa-2x\" style=\"color: #004276\"><\/i>","success":"<i class=\"fa fa-check fa-2x\" style=\"color: #90BE6D\"><\/i>","error":"<i class=\"fa fa-times fa-2x\" style=\"color: #F94144\"><\/i>"})</script>
+  <link href="markdown_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+  <link href="markdown_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+  <link href="markdown_files/panelset-0.2.6/panelset.css" rel="stylesheet" />
+  <script src="markdown_files/panelset-0.2.6/panelset.js"></script>
+  <script src="markdown_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="markdown_files/popper-2.6.0/popper.min.js"></script>
+  <link href="markdown_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="markdown_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="markdown_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="markdown_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="markdown_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="markdown_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="markdown_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Lesson 4: Markdown Guidebook","description":"A lesson devoted to developing and honing your skills writing Markdown-formatted text. Your assignment is to write text and incorporate Markdown-formatted elements.","authors":[],"publishedDate":"2022-04-24T00:00:00.000-05:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Lesson 4: Markdown Guidebook</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>A lesson devoted to developing and honing your skills writing
+Markdown-formatted text. Your assignment is to write text and
+incorporate Markdown-formatted elements.</p></p>
+</div>
+
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#learning-objectives">Learning Objectives</a></li>
+<li><a href="#elements">Elements</a>
+<ul>
+<li><a href="#headings">Headings</a></li>
+<li><a href="#paragraphs">Paragraphs</a></li>
+<li><a href="#line-breaks">Line Breaks</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#subscript">Subscript</a></li>
+<li><a href="#superscript">Superscript</a></li>
+<li><a href="#escaping-characters">Escaping Characters</a></li>
+</ul></li>
+<li><a href="#resources">Resources</a>
+<ul>
+<li><a href="#source-code">Source Code</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<aside>
+Estimated reading time: 17 minute(s).
+</aside>
+<h1 id="markdown">Markdown</h1>
+<p><a href="https://www.markdownguide.org/">Markdown</a> is a
+<em>lightweight markup language with plain-text-formatting syntax</em>.
+What this means is that Markdown is easy-to-write using any generic text
+editor and easy-to-read in its raw form. When you render a page or
+document, R Studio translates the Markdown syntax to HTML code. I
+structured this part of the lesson to show you the Markdown way of
+writing, the HTML equivalent, and what the rendered output looks like.
+You should take note of the structure of the HTML. There are exceptions,
+but most HTML elements are wrapped in <a
+href="https://www.w3schools.com/TAgs/default.asp">tags</a>—an opening
+tag at the beginning of the element that looks like this
+<code>&lt;tag&gt;</code> and a closing tag at the end that looks like
+this <code>&lt;/tag&gt;</code>. Say you want to write a level 1 header
+in HTML. You would code it like so: <code>&lt;h1&gt;</code>Header
+1<code>&lt;/h1&gt;</code>. Moving on.</p>
+<h1 id="learning-objectives">Learning Objectives</h1>
+<p>In this lesson, you will learn Markdown by writing it. You will learn
+how to add emphasis to text (e.g., <strong>bold</strong> or
+<em>italic</em>), create ordered and unordered lists, create links and
+headers, use blockquotes, add line breaks and hyperlink, and more. There
+are a few things I <strong>will not cover</strong> in this lesson,
+specifically Markdown formatting for code blocks, inserting images, and
+creating tables. These will each be covered as part of other
+lessons.</p>
+<h3
+id="assignment"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"/></svg>
+Assignment</h3>
+<p>Your assignment for this lesson is to open up the project you created
+in the previous lesson and start adding Markdown formatted text. You can
+use the <code>index.Rmd</code>, <code>about.Rmd</code>, or create a new
+page if you’re feeling bold. Write whatever you want. If you have field
+notes, you can totally use that text. If you have nothing, use this <a
+href="https://loremipsum.io/">Lorem ipsum generator</a> to make a bunch
+of plain text that you can add to your page.</p>
+<p>Be sure to check out the <a href="#resources">Resources</a> section
+of this lesson for suggested tutorials, references, and markdown
+editors. If you are a beginner, I suggest using a Markdown editor at
+first. Markdown editors are a great tool to learn Markdown because you
+can see a <strong>live preview</strong> of what the rendered text will
+look like.</p>
+<blockquote>
+<p>Your task is to add at least one example of all Markdown elements
+listed below.</p>
+</blockquote>
+<table>
+<tbody>
+<tr class="odd">
+<td>Headings</td>
+<td>Blockquotes</td>
+</tr>
+<tr class="even">
+<td>Paragraphs</td>
+<td>Links</td>
+</tr>
+<tr class="odd">
+<td>Line Breaks</td>
+<td>Subscript</td>
+</tr>
+<tr class="even">
+<td>Emphasis</td>
+<td>Superscript</td>
+</tr>
+<tr class="odd">
+<td>Lists</td>
+<td>Escape Characters</td>
+</tr>
+</tbody>
+</table>
+<p>I recommend using this lesson more as a reference or guide when you
+need to figure out out to format some text element. If you want to
+actually read through this lesson cover-to-cover, that is up to you.</p>
+<blockquote>
+<p>Remember. Knit often!!!</p>
+<p>Note: I heavily style my work with external CSS and this site is no
+different.</p>
+</blockquote>
+<p>So if you render something and it does not look exactly like the
+examples below, this is likely because of CSS.</p>
+<h1 id="elements">Elements</h1>
+<h2 id="headings">Headings</h2>
+<p>To create a heading, add number signs (<code>#</code>) in front of a
+word or phrase. The number of signs you use should correspond to the
+heading level you want. For example, to create a heading level two
+(&lt;h2&gt;), use two number signs (e.g.,
+<code>## This is a Header</code> ). There are 6 header levels. Level 1
+is the largest and mostly used for titles.</p>
+<table class="table table-bordered">
+<thead class="thead-light">
+<tr>
+<th>
+Markdown
+</th>
+<th>
+HTML
+</th>
+<th>
+Rendered Output
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code class="highlighter-rouge"># Header L1</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h1&gt;Header L1&lt;/h1&gt;</code>
+</td>
+<td>
+<h1 class="no-anchor" data-toc-skip>
+Header L1
+</h1>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">## Header L2</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h2&gt;Header L2&lt;/h2&gt;</code>
+</td>
+<td>
+<h2 class="no-anchor" data-toc-skip>
+Header L2
+</h2>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">### Header L3</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h3&gt;Header L3&lt;/h3&gt;</code>
+</td>
+<td>
+<h3 class="no-anchor" data-toc-skip>
+Header L3
+</h3>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">#### Header L4</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h4&gt;Header L 4&lt;/h4&gt;</code>
+</td>
+<td>
+<h4 class="no-anchor">
+Header L4
+</h4>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">##### Header L5</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h5&gt;Header L5&lt;/h5&gt;</code>
+</td>
+<td>
+<h5 class="no-anchor">
+Header L5
+</h5>
+</td>
+</tr>
+<tr>
+<td>
+<code class="highlighter-rouge">###### Header L6</code>
+</td>
+<td>
+<code class="highlighter-rouge">&lt;h6&gt;Header L6&lt;/h6&gt;</code>
+</td>
+<td>
+<h6 class="no-anchor">
+Header L6
+</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="heading-best-practices">Heading Best Practices</h3>
+<p>Applications that use Markdown do not agree on how to handle a
+missing space between the number signs (<code>#</code>) and the heading
+text. For compatibility, <strong>always put a space between the number
+signs and the heading name</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></br># A Heading</br></br></td>
+<td></br>#A Heading</br></br></td>
+</tr>
+</tbody>
+</table>
+<p>For the same reason, you should also <strong>put blank lines before
+and after a heading</strong>.</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br># Heading</br></br>…and after a
+heading.</td>
+<td>Without blank lines, </br># Heading</br>might not render
+correctly.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="paragraphs">Paragraphs</h2>
+<p>To create paragraphs, simply use a blank line to separate one or more
+lines of text.</p>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 35%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>I really like using Markdown.</code></td>
+<td>&lt;p&gt;I really like using Markdown.&lt;/p&gt;</td>
+<td>I really like using Markdown.</td>
+</tr>
+<tr class="even">
+<td><code>I think I'll use it to format</code> </br>
+<code>all of my documents from now on.</code></td>
+<td>&lt;p&gt;I think I’ll use it to format all of my documents from now
+on.&lt;/p&gt;</td>
+<td>I think I’ll use it to format all of my documents from now on.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="paragraph-best-practices">Paragraph Best Practices</h3>
+<p>Unless the paragraph is in a list, do not indent paragraphs with
+spaces or tabs. If you must indent <a
+href="https://www.markdownguide.org/hacks/#indent-tab">try this little
+hack</a></p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Don’t put tabs or spaces <br> in front of your paragraphs.</td>
+<td>    This can result in unexpected <br> formatting problems.</td>
+</tr>
+<tr class="even">
+<td>Keep lines left-aligned like this.</td>
+<td>    Don’t add tabs or spaces <br> in front of paragraphs.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="line-breaks">Line Breaks</h2>
+<table>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 37%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>This is the first line.</code><br>
+<code>And this is the second line.</code></td>
+<td>&lt;p&gt;This is the first line.&lt;br&gt; <br> And this is the
+second line.&lt;/p&gt;</td>
+<td>This is the first line. <br> And this is the second line.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="line-break-best-practices">Line Break Best Practices</h3>
+<p>You can use two or more spaces (commonly referred to as <em>trailing
+whitespace</em>) for line breaks in most Markdown applications, but
+apparently this is a bit controversial. For one it is hard to see
+trailing whitespace in an editor, and many people (accidentally or
+intentionally) put two spaces after every sentence. For this reason, you
+may want to use something other than trailing whitespace for line
+breaks. If your Markdown application supports HTML, you can use the
+&lt;br&gt; HTML tag<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>. For compatibility, use trailing
+white space or the <br> HTML tag at the end of the line.</p>
+<h2 id="emphasis">Emphasis</h2>
+<p>Emphasis can be added by making text <strong>bold</strong> or
+<em>italic</em>.</p>
+<h3 id="bold">Bold</h3>
+<p>To bold text, add either two asterisks (<code>**</code>) or two
+underscores (<code>__</code>) before and after a word or phrase. To bold
+the middle of a word for emphasis, add two asterisks (<code>**</code>)
+without spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 45%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bold text **rocks**.</td>
+<td>Bold text &lt;strong&gt;rocks&lt;/strong&gt;.</td>
+<td>Bold text <strong>rocks</strong>.</td>
+</tr>
+<tr class="even">
+<td>Bold text __rocks__.</td>
+<td>Bold text &lt;b&gt;rocks&lt;/b&gt;.</td>
+<td>Bold text <strong>rocks</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Bold**text**rocks.</td>
+<td>Bold&lt;b&gt;text&lt;/b&gt; rocks.</td>
+<td>Bold<strong>text</strong>rocks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-best-practices">Bold Best Practices</h3>
+<p>Markdown applications do not agree on how to handle underscores
+(<code>_</code>) in the middle of a word. For compatibility, use
+asterisks to bold the middle of a word for emphasis.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bold**text**rocks.</td>
+<td>Bold__text__rocks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="italic">Italic</h3>
+<p>To italicize text, add one asterisk (<code>*</code>) or underscore
+(<code>_</code>) before and after a word or phrase. To italicize the
+middle of a word for emphasis, add one asterisk (<code>*</code>) without
+spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 38%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Italicized text is *awesome*.</td>
+<td>Italicized text is &lt;em&gt;awesome&lt;/em&gt;.</td>
+<td>Italicized text is <em>awesome</em>.</td>
+</tr>
+<tr class="even">
+<td>Italicized text is _awesome_.</td>
+<td>Italicized text is &lt;em&gt;awesome&lt;/em&gt;.</td>
+<td>Italicized text is <em>awesome</em>.</td>
+</tr>
+<tr class="odd">
+<td>Italicized*text*isawesome.</td>
+<td>Italicized&lt;em&gt;text&lt;/em&gt;isawesome.</td>
+<td>Italicized<em>text</em>isawesome.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="italic-best-practices">Italic Best Practices</h3>
+<p>As above, Markdown applications don’t agree on how to handle
+underscores in the middle of a word. For compatibility, use asterisks to
+italicize the middle of a word for emphasis.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Italicized text is *awesome*.</td>
+<td>Italicized text is _awesome_.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-and-italic">Bold and Italic</h3>
+<p>To emphasize text with <strong>bold</strong> and <em>italics</em> at
+the same time, add three asterisks (<code>***</code>) or three
+underscores (<code>___</code>) before and after a word or phrase. To
+bold and italicize the middle of a word for emphasis, add three
+asterisks without spaces around the letters.</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 43%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This text is ***really important***.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="even">
+<td>This text is ___really important___.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="odd">
+<td>This text is __*really important*__.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="even">
+<td>This text is **_really important_**.</td>
+<td>This text is &lt;em&gt;&lt;strong&gt;really
+important&lt;/strong&gt;&lt;/em&gt;.</td>
+<td>This text is <strong><em>really important</em></strong>.</td>
+</tr>
+<tr class="odd">
+<td>This textis***really***important.</td>
+<td>This
+textis&lt;em&gt;&lt;strong&gt;really&lt;/strong&gt;&lt;/em&gt;important.</td>
+<td>This textis<strong><em>really</em></strong>important.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bold-and-italic-best-practices">Bold and Italic Best
+Practices</h3>
+<p>For compatibility, use asterisks to bold and italicize the middle of
+a word for emphasis.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This textis***really***important.</td>
+<td>This textis___really___important.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lists">Lists</h2>
+<p>You can organize items into <strong>ordered</strong> and
+<strong>unordered</strong> lists.</p>
+<h3 id="ordered-lists">Ordered Lists</h3>
+<p>To create an ordered list, add line items with numbers followed by
+periods. The numbers don’t have to be in numerical order, but if list
+starts with the number 1 subsequent list items will be rendered in
+sequential order. In fact, whatever number you start a list with becomes
+the smallest number in the list.</p>
+<p>To write an ordered list in HTML you must enclose each list item in
+the <code>&lt;li&gt;</code> tag and wrap the whole list in the
+<code>&lt;ol&gt;</code> tag.</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 51%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. First item <br> 2. Second item <br> 3. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="even">
+<td>1. First item <br> 1. Second item <br> 1. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="odd">
+<td>1. First item <br> 9. Second item <br> 2. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>1. First item <br> 2. Second item <br> 3. Third item<br></td>
+</tr>
+<tr class="even">
+<td>5. First item <br> 1. Second item <br> 9. Third item</td>
+<td>&lt;ol&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ol&gt;</td>
+<td>5. First item <br> 6. Second item <br> 7. Third item<br></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ordered-list-best-practices">Ordered List Best Practices</h3>
+<p>Some markup languages let you use a parenthesis (<code>)</code>) as a
+delimiter (e.g., <code>1) First item</code>), but not all Markdown
+applications support this, so it isn’t a great option from a
+compatibility perspective. For compatibility, use periods only.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. First item</td>
+<td>1) First item</td>
+</tr>
+<tr class="even">
+<td>2. Second item</td>
+<td>2) Second item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unordered-lists">Unordered Lists</h3>
+<p>To create an unordered list, add a dash (<code>-</code>), an asterisk
+(<code>*</code>), or a plus sign (<code>+</code>) in front of line
+items.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 49%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item <br> - Second item <br> - Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+<tr class="even">
+<td>* First item <br> * Second item <br> * Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+<tr class="odd">
+<td>+ First item <br> + Second item <br> + Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>   &lt;li&gt;Third item &lt;/li&gt;
+<br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br> • Third item<br></td>
+</tr>
+</tbody>
+</table>
+<p>Indent one or more items to create a nested list.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 52%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item <br> - Second item <br>   - Indented item <br>   -
+Indented item <br> - Third item</td>
+<td>&lt;ul&gt; <br>   &lt;li&gt;First item&lt;/li&gt; <br>  
+&lt;li&gt;Second item&lt;/li&gt; <br>     &lt;ul&gt; <br>      
+&lt;li&gt;Indented item&lt;/li&gt; <br>       &lt;li&gt;Indented
+item&lt;/li&gt; <br>     &lt;/ul&gt; <br>   &lt;li&gt;Third item
+&lt;/li&gt; <br> &lt;/ul&gt;</td>
+<td>• First item <br> • Second item <br>   ◦ Indented item <br>   ◦
+Indented item <br> • Third item<br></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unordered-list-best-practices">Unordered List Best
+Practices</h3>
+<p>Markdown applications do not agree on how to handle different
+delimiters in the same list. For compatibility, do not mix and match
+delimiters in the same list—pick one and stick with it.</p>
+<table>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- First item</td>
+<td>* First item</td>
+</tr>
+<tr class="even">
+<td>- Second item</td>
+<td>- Second item</td>
+</tr>
+<tr class="odd">
+<td>- Third item</td>
+<td>+ Third item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adding-elements-in-lists">Adding Elements in Lists</h3>
+<p>To add another element to a list, while preserving the continuity of
+the list, indent the element four spaces or one tab.</p>
+<h4 id="adding-a-paragraph">Adding a paragraph</h4>
+<pre><code>1. This is the first list item.
+2. Here is the second list item.
+
+    I need to add another paragraph below the second list item.
+
+3. And here is the third list item.</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li><p>This is the first list item.</p></li>
+<li><p>Here is the second list item.</p>
+<p>I need to add another paragraph below the second list item.</p></li>
+<li><p>And here is the third list item.</p></li>
+</ol>
+<h4 id="adding-a-blockquote">Adding a blockquote</h4>
+<pre><code>1. This is the first list item.
+2. Here&#39;s the second list item.
+
+     &gt; A blockquote would look great below the second list item.
+
+3. And here&#39;s the third list item.</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li><p>This is the first list item.</p></li>
+<li><p>Here’s the second list item.</p>
+<blockquote>
+<p>A blockquote would look great below the second list item.</p>
+</blockquote></li>
+<li><p>And here’s the third list item.</p></li>
+</ol>
+<h4 id="images">Images</h4>
+<pre><code>1. Check out the file containing the course badge.
+2. Do you know what the pattern is overlaying the map?
+
+    &lt;img src=&quot;../../files/panama_logo.png&quot; width=&quot;250&quot;&gt;
+
+3. Let me know what you think it is!</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li><p>Check out the file containing the course badge.</p></li>
+<li><p>Do you know what the pattern is overlaying the map?</p>
+<p><img src="../../files/panama_logo.png" width="250"></p></li>
+<li><p>Let me know what you think it is!</p></li>
+</ol>
+<h4 id="lists-1">Lists</h4>
+<p>You can nest an unordered list in an ordered list, or vice versa.</p>
+<pre><code>1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item</code></pre>
+<p>The rendered output looks like this:</p>
+<ol type="1">
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul></li>
+<li>Fourth item</li>
+</ol>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>To create a blockquote, add a <code>&gt;</code> in front of a
+paragraph.</p>
+<pre><code>&gt; Ants have the most complicated social organization on earth next to humans.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Ants have the most complicated social organization on earth next to
+humans<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>.</p>
+</blockquote>
+<h3 id="blockquotes-with-multiple-paragraphs">Blockquotes with Multiple
+Paragraphs</h3>
+<pre><code>&gt; Ants have the most complicated social organization on earth next to humans.
+&gt;
+&gt; When you have seen one ant, one bird, one tree, you have not seen them all.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Ants have the most complicated social organization on earth next to
+humans.</p>
+<p>When you have seen one ant, one bird, one tree, you have not seen
+them all<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>.</p>
+</blockquote>
+<h3 id="nested-blockquotes">Nested Blockquotes</h3>
+<p>Blockquotes can be nested by adding a <code>&gt;&gt;</code> in front
+of the paragraph you want to nest.</p>
+<pre><code>&gt; Geometry has two great treasures; one is the Theorem of Pythagoras; the other, the division of a line into extreme and mean ratio.
+&gt;
+&gt;&gt; The first we may compare to a measure of gold; the second we may name a precious jewel.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<p>Geometry has two great treasures; one is the Theorem of Pythagoras;
+the other, the division of a line into extreme and mean ratio.</p>
+<blockquote>
+<p>The first we may compare to a measure of gold; the second we may name
+a precious jewel<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a>.</p>
+</blockquote>
+</blockquote>
+<h3 id="blockquotes-with-other-elements">Blockquotes with Other
+Elements</h3>
+<p>Blockquotes can contain other Markdown formatted elements. Not all
+elements can be used—you will need to experiment to see which ones
+work.</p>
+<pre><code>&gt; ### The sequencing data looks great.
+&gt;
+&gt; - The reads are long.
+&gt; - The error rate is low.
+&gt;
+&gt;  Now we are **ready*** analysis.</code></pre>
+<p>The rendered output looks like this:</p>
+<blockquote>
+<h3 id="the-sequencing-data-looks-great.">The sequencing data looks
+great.</h3>
+<ul>
+<li>The reads are long.</li>
+<li>The error rate is low.</li>
+</ul>
+<p>Now we are <strong>ready</strong> for analysis.</p>
+</blockquote>
+<h3 id="blockquotes-best-practices">Blockquotes Best Practices</h3>
+<p>As with headers, for compatibility, put blank lines before and after
+blockquotes.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br>&gt; a blockquote</br></br>…and
+after.</td>
+<td>Without blank lines, </br>&gt; a blockquote</br>might not render
+correctly.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+<p>To create a horizontal rule, use three or more asterisks
+(<code>***</code>), dashes (<code>---</code>), or underscores
+(<code>___</code>) on a line by themselves.</p>
+<pre><code>***
+
+---
+
+_________________
+</code></pre>
+<p>The rendered output of all three looks identical:</p>
+<hr />
+<h3 id="horizontal-rule-best-practices">Horizontal Rule Best
+Practices</h3>
+<p>For compatibility, put blank lines before and after horizontal
+rules.</p>
+<table>
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Do this</th>
+<th>❌ But not this</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Put a blank line before…</br></br>—</br></br>…and after a horizontal
+rule.</td>
+<td>Without blank lines, </br>—</br>this would actually be a
+heading.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="links">Links</h2>
+<p>To create a link, enclose the link text in brackets
+(<code>[ ]</code>), followed immediately by the URL in parentheses
+(<code>( )</code>).</p>
+<pre><code>This is a link to awesome [geometric patterns](https://en.wikipedia.org/wiki/Islamic_geometric_patterns) .</code></pre>
+<p>And here is the equivalent in HTML.</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>This is a link to awesome <span class="kw">&lt;a</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://en.wikipedia.org/wiki/Islamic_geometric_patterns&quot;</span><span class="kw">&gt;</span>link<span class="kw">&lt;/a&gt;</span> geometric patterns.</span></code></pre></div>
+<p>The rendered output looks like this:</p>
+<p>This is a link to awesome <a
+href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns">geometric
+patterns</a>.</p>
+<h3 id="adding-titles">Adding Titles</h3>
+<p>You can optionally add a title for a link. This will appear as a
+tooltip when the user hovers over the link. To add a title, enclose it
+in quotation marks after the URL.</p>
+<pre><code>This is a link to awesome [geometric patterns](https://en.wikipedia.org/wiki/Islamic_geometric_patterns &quot;These are called Girih tiles. Incredible.&quot;) .</code></pre>
+<p>The rendered output looks like this:</p>
+<p>This is a link to awesome <a
+href="https://en.wikipedia.org/wiki/Islamic_geometric_patterns"
+title="These are called Girih tiles. Incredible.">geometric patterns</a>
+.</p>
+<h3 id="urls-and-email-addresses">URLs and Email Addresses</h3>
+<p>To quickly turn a URL or email address into a link, enclose it in
+angle brackets.</p>
+<pre><code>&lt;https://en.wikipedia.org/wiki/Mariano_Rivera&gt;
+&lt;mariano@rivera.com&gt;</code></pre>
+<p>The rendered output looks like this:</p>
+<p><a href="https://en.wikipedia.org/wiki/Mariano_Rivera"
+class="uri">https://en.wikipedia.org/wiki/Mariano_Rivera</a><br />
+<a href="mailto:mariano@rivera.com"
+class="email">mariano@rivera.com</a></p>
+<h3 id="formatting-links">Formatting Links</h3>
+<p>To emphasize links, add asterisks before and after the brackets and
+parentheses. To denote links as code, add backticks in the brackets.</p>
+<pre><code>**[Substituted tryptamines](https://en.wikipedia.org/wiki/Substituted_tryptamine)** are super interesting.  
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+Want to create an article in Distill? See the help page for the command &lt;a href=&#39;https://pkgs.rstudio.com/distill/reference/create_article.html&#39;&gt;distill::create_article&lt;/a&gt;</code></pre>
+<p>The rendered output looks like this:</p>
+<p><strong><a
+href="https://en.wikipedia.org/wiki/Substituted_tryptamine">Substituted
+tryptamines</a></strong> are super interesting.<br />
+This is the <em><a href="https://www.markdownguide.org">Markdown
+Guide</a></em>.<br />
+Want to create an article in Distill? See the help page for the command
+<a href='https://pkgs.rstudio.com/distill/reference/create_article.html'>distill::create_article</a></p>
+<h2 id="subscript">Subscript</h2>
+<p>This isn’t common, but some Markdown processors allow you to use
+subscript to position one or more characters slightly below the normal
+line of type. To create a subscript, use one tilde symbol
+(<code>~</code>) before and after the characters.</p>
+<pre><code>C~12~H~16~N~2~</code></pre>
+<p>The rendered output looks like this:</p>
+<p>C<sub>12</sub>H<sub>16</sub>N<sub>2</sub></p>
+<p>And of course, the HTML equivalent.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>C<span class="kw">&lt;sub&gt;</span>12<span class="kw">&lt;/sub&gt;</span>H<span class="kw">&lt;sub&gt;</span>16<span class="kw">&lt;/sub&gt;</span>N<span class="kw">&lt;sub&gt;</span>2<span class="kw">&lt;/sub&gt;</span></span></code></pre></div>
+<h2 id="superscript">Superscript</h2>
+<p>Also not common, but some Markdown processors allow you to use
+superscript to position one or more characters slightly above the normal
+line of type. To create a superscript, use one caret symbol
+(<code>^</code>) before and after the characters.</p>
+<pre><code>z = z^2^ + C</code></pre>
+<p>The rendered output looks like this:</p>
+<p>z = z<sup>2</sup> + C</p>
+<p>HTML equivalent.</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>z = z<span class="kw">&lt;sup&gt;</span>2<span class="kw">&lt;/sup&gt;</span> + C</span></code></pre></div>
+<h2 id="escaping-characters">Escaping Characters</h2>
+<p>As you have seen, there are many special characters used to format
+text in Markdown like the asterick (<code>*</code>) and the number or
+pound sign (<code>#</code>). To display a literal character that would
+otherwise be used to format text in a Markdown document, add a backslash
+(<code>\</code>) in front of the character.</p>
+<pre><code>\# Without the backslash, this would be a header.</code></pre>
+<p>The rendered output looks like this:</p>
+<p># Without the backslash, this would be a header.</p>
+<h3 id="characters-you-can-escape">Characters You Can Escape</h3>
+<p>You can use a backslash to escape the following characters.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Character</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>\</td>
+<td>backslash</td>
+</tr>
+<tr class="even">
+<td>`</td>
+<td>backtick</td>
+</tr>
+<tr class="odd">
+<td>*</td>
+<td>asterisk</td>
+</tr>
+<tr class="even">
+<td>_</td>
+<td>underscore</td>
+</tr>
+<tr class="odd">
+<td>{ }</td>
+<td>curly braces</td>
+</tr>
+<tr class="even">
+<td>[ ]</td>
+<td>brackets</td>
+</tr>
+<tr class="odd">
+<td>&lt; &gt;</td>
+<td>angle brackets</td>
+</tr>
+<tr class="even">
+<td>( )</td>
+<td>parentheses</td>
+</tr>
+<tr class="odd">
+<td>#</td>
+<td>pound sign</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td>plus sign</td>
+</tr>
+<tr class="odd">
+<td>-</td>
+<td>minus sign (hyphen)</td>
+</tr>
+<tr class="even">
+<td>.</td>
+<td>dot</td>
+</tr>
+<tr class="odd">
+<td>!</td>
+<td>exclamation mark</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="resources">Resources</h1>
+<p>Here are a few resources I recommend to augment your skill
+development.</p>
+<ul>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Basic Markdown
+Syntax Reference</a> from <em><a
+href="https://www.markdownguide.org/">The Markdown Guide</a></em>, a
+free and open-source reference guide.</li>
+<li><a href="https://www.markdownguide.org/extended-syntax/">Extended
+Markdown Syntax Reference</a>. Advanced features that build on the basic
+Markdown syntax. Also from <em><a
+href="https://www.markdownguide.org/">The Markdown Guide</a></em>.</li>
+<li><a
+href="https://commonmark.org/help/tutorial/index.html">Interactive
+Markdown Tutorial</a> for beginners. Each lesson contains an explanation
+of Markdown syntax. Hit the <strong><em>Try it</em></strong> button to
+test your skills and see what your solution looks like when it is
+rendered. There is also an option to see the HTML equivalent of the
+Markdown text. This is a nice tutorial.</li>
+<li><a href="https://www.tablesgenerator.com/markdown_tables">Markdown
+Tables Generator</a>. Tired of typing all of those hyphens and
+pipes?</li>
+<li><a href="https://dev.w3.org/html5/html-author/charref">Character
+Entity Reference Chart</a> for coding special symblos in Markdown.</li>
+<li><a
+href="https://www.markdownguide.org/hacks/#link-targets">Hacks</a>.
+Workarounds for things not officially supported by Markdown.</li>
+</ul>
+<h3 id="markdown-editors">Markdown Editors</h3>
+<p>Markdown editors are a great tool to learn Markdown because you can
+see a <strong>live preview</strong> of what the rendered text will look
+like. Below I list both online and desktop Markdown editors.</p>
+<h4 id="markdown-online-editors">Markdown Online Editors</h4>
+<p>Online editors are universally supported across operating systems.
+Here are a few to get you started.</p>
+<ul>
+<li><a href="https://stackedit.io/">StackEdit</a>. In-browser Markdown
+editor</li>
+<li><a href="https://dillinger.io/">Dillinger</a>. “The Last Markdown
+Editor, Ever.”</li>
+<li><a href="https://hackmd.io/">HackMD</a>. Scroll down until you see
+the <strong>Use for free</strong> button.</li>
+<li><a href="https://marktwo.app/">MarkTwo</a>. Free, open source
+progressive web app. It features seamless transition between read and
+edit mode, snappy performance for large documents, and efficient,
+continuous, and private syncing via your own Google drive.</li>
+<li><a href="https://mark.reaper.im/">Mark</a>. Simple Web Markdown
+Editor.</li>
+<li><a href="markdown.pioul.fr">Minimalist Online Markdown Editor</a>.
+The name says it all.</li>
+</ul>
+<h4 id="markdown-desktop-editors">Markdown Desktop Editors</h4>
+<p>I only listing free desktop editors here. There are plenty more if
+you are willing to pony up some cash. Some of these are operating system
+specific while others are universal.</p>
+<ul>
+<li><a href="http://abricotine.brrd.fr/">Abricotine</a> Abricotine
+supports very good instant preview. <strong>Universal</strong>.</li>
+<li><a href="https://github.com/marktext/marktext">MarkText</a>.
+MarkText is very similar to Abricotine, but it’s development is much
+faster than Abricotine’s (while isn’t really stable yet).
+<strong>Universal</strong>.</li>
+<li><a href="https://www.zettlr.com/">Zettlr</a>. Zettlr ships with a
+lot of features helpful in writing markdown. It is especially aimed at
+writing research papers in the arts and humanities (and therefore offers
+writing aids such as automatic footnote insertion and in-place editing,
+or a global search). <strong>Universal</strong>.</li>
+<li><a href="https://znote.io/">Znote</a>. Znote is a free, elegant
+program meant to help you write beautifully organized Markdown
+documents. You can organize your texts, notes, and files even better,
+using the simplistic left-side widget organizer for smoothly navigating
+different files. <strong>Universal</strong>.</li>
+<li><a href="http://markdownpad.com/">MarkdownPad</a> and <a
+href="http://markdownpad.com/news/2013/introducing-markdownpad-2/">MarkdownPad
+2</a> are full-featured Markdown editors for
+<strong>Windows</strong>.</li>
+<li><a href="https://macdown.uranusjr.com/">MacDown</a> is an open
+source Markdown editor for <strong>macOS</strong>.</li>
+</ul>
+<h2 class="appendix" id="source-code">Source Code</h2>
+<p>The source code for this page can be accessed on GitHub
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+by <a
+href="https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-24-lesson-4-markdown-guidebook/markdown.Rmd">clicking
+this link</a>.</p>
+<h2 class="appendix" id="credits">Credits</h2>
+<p>This lesson was modeled (and mostly copied!) from the <a
+href="https://www.markdownguide.org/basic-syntax/">Markdown Basic Syntax
+Guide</a> by <a href="https://www.mattcone.com/">Matt Cone</a> licenced
+under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Note, this is one of those exceptions
+to the opening/closing HTML tags. To insert single line breaks in a text
+you simply add &lt;br&gt; where you want the break<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>E. O. Wilson said that.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>E. O. Wilson said that too.<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Johannes Kepler said that.<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+<h3 id="updates-and-corrections">Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/stri-mcgill-neo/2022/issues/new">create an issue</a> on the source repository.</p>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

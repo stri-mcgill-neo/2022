@@ -26,6 +26,14 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 pacman::p_load(tidyverse, fontawesome, scholar, rcrossref,
                webdriver, rvest,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -39,20 +47,11 @@ htmltools::tagList(
 )
 ```
 
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
-
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
 
 # Overview & Objectives
 
 <aside>
-Estimated reading time: `r round(minutes, digits = 0)` minute(s).
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
 </aside>
 
 Welcome to the Data Curation/R Markdown module of the STRI-McGill 2022 course on Neotropical Biology, Environments, and Conservation (BIOL 640/553) & Foundations of Environmental Policy (ENVR 610). This module is meant as a complement for the rest of the curriculum and our main goals here are two-fold. First, is to **create interactive, data-driven, web products** that capture analytical workflows, raw data, and data outputs. Second is to give you the tools, motivation, and inspiration to make your science more **accessible**, **transparent**, and **reproducible**.
@@ -279,4 +278,4 @@ That's all for now.
 
 ##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-11-lesson-1-module-overview/module-overview.Rmd). 
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 
