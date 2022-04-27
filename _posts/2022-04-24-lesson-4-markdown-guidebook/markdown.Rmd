@@ -52,11 +52,11 @@ for (i in 1:nrow(tmp_1)) {
 }
 ```
 
+# Markdown
+
 <aside>
 Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
 </aside>
-
-# Markdown
 
 [Markdown](https://www.markdownguide.org/) is a *lightweight markup language with plain-text-formatting syntax*. What this means is that Markdown is easy-to-write using any generic text editor and easy-to-read in its raw form. When you render a page or document, R Studio translates the Markdown syntax to HTML code. I structured this part of the lesson to show you the Markdown way of writing, the HTML equivalent, and what the rendered output looks like. You should take note of the structure of the HTML. There are exceptions, but most HTML elements are wrapped in [tags](https://www.w3schools.com/TAgs/default.asp)---an opening tag at the beginning of the element that looks like this `<tag>` and a closing tag at the end that looks like this `</tag>`. Say you want to write a level 1 header in HTML. You would code it like so: `<h1>`Header 1`</h1>`. Moving on.
 
