@@ -112,7 +112,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","base_url","preview","params"]}},"value":[{"type":"character","attributes":{},"value":["Showcase"]},{"type":"character","attributes":{},"value":["A showcase of R Markdown Projects. If you have a project you would like to share, let me know and I will post it here!\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://stri-mcgill-neo.github.io/2022/"]},{"type":"character","attributes":{},"value":["files/panama_logo.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["update_all","check_url"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","base_url","preview","params"]}},"value":[{"type":"character","attributes":{},"value":["Showcase"]},{"type":"character","attributes":{},"value":["A showcase of R Markdown Projects. If you have a project you would like to share, let me know and I will post it here!\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","css"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["assets/css/b4cards.css","assets/css/cards.css"]}]}]},{"type":"character","attributes":{},"value":["https://stri-mcgill-neo.github.io/2022/"]},{"type":"character","attributes":{},"value":["files/panama_logo.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["update_all","check_url"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2172,6 +2172,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     border-left-color: #006ddb;
     margin: 10px 0;
     padding: 5px 30px;
+    font-style: normal;
   }
 
   d-article li {
@@ -2314,20 +2315,20 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   }
    **/
   p code {
-    background-color: #E8E8E8;
-    border-radius: 3px;
-    font-size: 0.8em;
+    background-color: #F1F0EA;
+    border-radius: 4px;
+    font-size: 0.9em;
     font-family: 'Monaco', 'PT Mono', monospace;
     overflow-x: scroll !important;
     margin-bottom: 20px;
-    color: #BF2727;
+    color: #006DDB;
   }
 
   li code {
     background-color: #E8E8E8;
     border-radius: 3px;
     font-size: 0.8em;
-    font-family: 'Monaco', 'PT Mono', monospace;
+    font-family: monospace, 'Monaco', 'PT Mono';
     overflow-x: scroll !important;
     margin-bottom: 20px;
     color: #BF2727;
@@ -2558,10 +2559,16 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     color: var(--color-white);
   }
 
+
+  d-article table td {
+    font-size: 0.9em;
+  }
+
   </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/css/b4cards.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/css/cards.css" type="text/css"/>
 
 </head>
 
@@ -2625,169 +2632,140 @@ some web products I have created with R Markdown. It is not that I think
 these are particularly amazing, it is just that since I coded
 everything, I know how all of this works. So if you are looking for
 ideas and inspiration have a look around.</p>
-<p>If you would like to share something you have created, let me know
-and I will post it on this page :)</p>
-<p>Sites and source code are linked on the right of each image. Use the
-buttons to filter the showcase by category:</p>
-<div id="myBtnContainer">
-<p><button class="btn active" onclick="filterSelection(&#39;all&#39;)">Show
-all</button>
-<button class="btn" onclick="filterSelection(&#39;distill&#39;)">Distill</button>
-<button class="btn" onclick="filterSelection(&#39;publication&#39;)">Publication</button>
-<button class="btn" onclick="filterSelection(&#39;presentation&#39;)">Presentation</button>
-<button class="btn" onclick="filterSelection(&#39;blogdown&#39;)">Blogdown</button>
-<button class="btn" onclick="filterSelection(&#39;course&#39;)">Course</button></p>
-</div>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div class="filterDiv distill publication">
-<h3>
-BocasBiome
-</h3>
-<center>
+<p>If you would like to share something you have created, please let me
+know—I would love to add it to this page. Use the buttons to filter the
+showcase by category:</p>
+<p></br></p>
+<div class="layout-chunk" data-layout="l-body-outset">
+<div>
+<p>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Show-all&#39;).show(400, &#39;swing&#39;)}, 400);">Show all</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Distill&#39;).show(400, &#39;swing&#39;)}, 400);">Distill</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Publication&#39;).show(400, &#39;swing&#39;)}, 400);">Publication</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Slides&#39;).show(400, &#39;swing&#39;)}, 400);">Slides</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Blogdown&#39;).show(400, &#39;swing&#39;)}, 400);">Blogdown</button>
+<button class="btn btn-primary" type="button" onClick="$(&#39;.bs4cards-blahblahblah&#39;).hide(400, &#39;swing&#39;);setTimeout(function() {$(&#39;.bs4cards-Course&#39;).show(400, &#39;swing&#39;)}, 400);">Course</button>
+</p>
+<div class="row p-0 row-cols-1 row-cols-md-2 row-cols-lg-3" style="margin-left: -.2rem; margin-right: -.2rem; margin-top: 1rem; margin-bottom: 1rem; ">
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Distill bs4cards-Publication" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://bocasbiome.github.io/" style="color: inherit;">
+<img src="files/showcase/images/bocasbiome.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://bocasbiome.github.io/">
-<img src="files/showcase/images/bocasbiome.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">BocasBiome</h5>
 </a>
-</center>
-<a href="https://bocasbiome.github.io/" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/bocasbiome/web" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">Minimalist publication site written in R Markdown and made with the Distill website template.</p>
 </div>
-<div class="filterDiv presentation">
-<h3>
-Cacao fermentation
-</h3>
-<center>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Distill; Publication</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Slides" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://istmobiome.github.io/cacao/talk.html" style="color: inherit;">
+<img src="files/showcase/images/cacao_fermentation.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://istmobiome.github.io/cacao/talk.html">
-<img src="files/showcase/images/cacao_fermentation.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">Cacao fermentation</h5>
 </a>
-</center>
-<a href="https://istmobiome.github.io/cacao/talk.html" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/istmobiome/istmobiome.github.io/tree/master/cacao" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">Slide show about Cacao Fermentation. Written in R Markdown and created with reveal.js.</p>
 </div>
-<div class="filterDiv presentation">
-<h3>
-How the Isthmus of Panama changed the world
-</h3>
-<center>
-<a href="https://istmobiome.github.io/the-isthmus/the-isthmus.html">
-<img src="files/showcase/images/how_the_isthmus_of_panama_changed_the_world.png" width="600" style="float: left; width: 80%;"/>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Slides</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Blogdown bs4cards-Publication" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://istmobiome.rbind.io/" style="color: inherit;">
+<img src="files/showcase/images/istmobiome.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
 </a>
-</center>
-<a href="https://istmobiome.github.io/the-isthmus/the-isthmus.html" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/istmobiome/istmobiome.github.io/tree/master/the-isthmus" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
-</div>
-<div class="filterDiv distill publication">
-<h3>
-Hypocolypse
-</h3>
-<center>
-<a href="https://hypocolypse.github.io/">
-<img src="files/showcase/images/hypocolypse.png" width="600" style="float: left; width: 80%;"/>
-</a>
-</center>
-<a href="https://hypocolypse.github.io/" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/hypocolypse/web" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
-</div>
-<div class="filterDiv blogdown publication">
-<h3>
-Istmobiome
-</h3>
-<center>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://istmobiome.rbind.io/">
-<img src="files/showcase/images/istmobiome.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">Istmobiome</h5>
 </a>
-</center>
-<a href="https://istmobiome.rbind.io/" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/istmobiome/istmobiome-web" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">Istmobiome Project site written in R Markdown and created with blogdown and Hugo.</p>
 </div>
-<div class="filterDiv publication">
-<h3>
-ProjectDIGEST
-</h3>
-<center>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Blogdown; Publication</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Distill bs4cards-Publication" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://hypocolypse.github.io/" style="color: inherit;">
+<img src="files/showcase/images/hypocolypse.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
+<a href="https://hypocolypse.github.io/">
+<h5 class="card-title my-auto px-3 pt-3 pb-1">Hypocolypse</h5>
+</a>
+<p class="card-text my-auto px-3 pb-3 pt-1">Hypocolypse project publication site written in R Markdown and made with the Distill website template.</p>
+</div>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Distill; Publication</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Publication" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://projectdigest.github.io/" style="color: inherit;">
+<img src="files/showcase/images/projectdigest.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://projectdigest.github.io/">
-<img src="files/showcase/images/projectdigest.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">ProjectDIGEST</h5>
 </a>
-</center>
-<a href="https://projectdigest.github.io/" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/projectdigest/web" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">ProjectDIGEST publication site written in R Markdown and made using the native website template.</p>
 </div>
-<div class="filterDiv presentation">
-<h3>
-Rethinking Diversity
-</h3>
-<center>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Publication</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Slides" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://istmobiome.github.io/rethink-d/rethink-d.html" style="color: inherit;">
+<img src="files/showcase/images/rethinking_diversity.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://istmobiome.github.io/rethink-d/rethink-d.html">
-<img src="files/showcase/images/rethinking_diversity.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">Rethinking Diversity</h5>
 </a>
-</center>
-<a href="https://istmobiome.github.io/rethink-d/rethink-d.html" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/istmobiome/istmobiome.github.io/tree/master/rethink-d" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">Slide show about microbial diversity written in R Markdown and created with the xaringan package.</p>
 </div>
-<div class="filterDiv course">
-<h3>
-STRI-McGill-NEO-2020
-</h3>
-<center>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Slides</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Slides" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://istmobiome.github.io/the-isthmus/the-isthmus.html" style="color: inherit;">
+<img src="files/showcase/images/how_the_isthmus_of_panama_changed_the_world.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
+<a href="https://istmobiome.github.io/the-isthmus/the-isthmus.html">
+<h5 class="card-title my-auto px-3 pt-3 pb-1">How the Isthmus of Panama changed the world</h5>
+</a>
+<p class="card-text my-auto px-3 pb-3 pt-1">Slide show about the consequences of the Isthmus of Panama closing. Written in R Markdown and created with the xaringan package.</p>
+</div>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Slides</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Course" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://istmobiome.github.io/neo-bess/web-guide.html" style="color: inherit;">
+<img src="files/showcase/images/stri-mcgill-neo-2020.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://istmobiome.github.io/neo-bess/web-guide.html">
-<img src="files/showcase/images/stri-mcgill-neo-2020.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">STRI-McGill-NEO-2020</h5>
 </a>
-</center>
-<a href="https://istmobiome.github.io/neo-bess/web-guide.html" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/istmobiome/istmobiome.github.io/tree/master/neo-bess" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">STRI-McGill-NEO course site (2020) written in R Markdown and made with the flexdashboard framework.</p>
 </div>
-<div class="filterDiv course">
-<h3>
-STRI-McGill-NEO-2022
-</h3>
-<center>
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Course</div>
+</div>
+<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah bs4cards-Show-all bs4cards-Distill bs4cards-Course" style="padding: .2rem ; border-width: 0; border-radius: 1rem 1rem 1rem 1rem ;">
+<a href="https://stri-mcgill-neo.github.io/2022/" style="color: inherit;">
+<img src="files/showcase/images/stri-mcgill-neo-2022.png" class="card-img-top" style="border-style:solid; border-color:inherits; border-width:1px 1px 0 1px; border-radius: 1rem 1rem 0 0 ;"/>
+</a>
+<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: #FFFFFFFF; border-style:solid; border-color:inherits; border-width:1px; border-radius: 0 0 0 0 ;">
 <a href="https://stri-mcgill-neo.github.io/2022/">
-<img src="files/showcase/images/stri-mcgill-neo-2022.png" width="600" style="float: left; width: 80%;"/>
+<h5 class="card-title my-auto px-3 pt-3 pb-1">STRI-McGill-NEO-2022</h5>
 </a>
-</center>
-<a href="https://stri-mcgill-neo.github.io/2022/" class="icon-link">
-<i class="fas fa-external-link-alt" style="display: inline-block"></i>
-Site </a> <br/>
-<a href="https://github.com/stri-mcgill-neo/2022" class="icon-link">
-<i class="fab fa-github" style="display: inline-block"></i> Source </a>
-<hr/>
+<p class="card-text my-auto px-3 pb-3 pt-1">STRI-McGill-NEO course site (2022) written in R Markdown and made with Distill blog template.</p>
 </div>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<script src = "assets/js/filter-buttons.js"></script>
-<div class="sourceCode" id="cb3"><pre
+<div class="card-footer small text-muted px-3 py-auto" style="border-style:solid; border-color:inherits; border-width:0 1px 1px 1px; border-radius: 0 0 1rem 1rem ;">Distill; Course</div>
+</div>
+</div>
+</div>
+</div>
+<script src = "assets/js/escape-html.js"></script>
+<h2 class="appendix" id="source-code">Source Code</h2>
+<p>The source code for this page can be accessed on GitHub
+<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+by <a
+href="https://github.com/stri-mcgill-neo/2022/blob/main/index.Rmd,%20https://github.com/stri-mcgill-neo/2022/blob/main/lessons.Rmd,%20https://github.com/stri-mcgill-neo/2022/blob/main/showcase.Rmd,%20https://github.com/stri-mcgill-neo/2022/blob/main/tips-n-tricks.Rmd">clicking
+this link</a>.</p>
+<div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
@@ -2795,9 +2773,13 @@ role="doc-endnotes">
 <ol>
 <li id="fn1" role="doc-endnote"><p>The inspiration for this page comes
 from <a href="https://distillery.rbind.io/showcase.html">the Distillery
-showcase page</a>. The code was harvested and modified from <a
-href="https://github.com/jhelvy/distillery">the Distillery GitHub
-repop</a><a href="#fnref1" class="footnote-back"
+showcase page</a> and <a
+href="https://www.jhelvy.com/projects.html">John Paul Helveston personal
+website</a>. I used the <a
+href="https://github.com/djnavarro/bs4cards">bs4cards</a> R package for
+the gallery. The code was harvested and modified from <a
+href="https://github.com/jhelvy/jhelvy_distill/blob/master/projects.Rmd">jhelvy/jhelvy_distill
+GitHub repo</a><a href="#fnref1" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
