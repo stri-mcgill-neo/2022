@@ -69,3 +69,16 @@ As with [file and directory naming]("_posts/2022-04-21-naming-things/naming-thin
 
 
 
+##  Source Code {.appendix}
+
+```{r, eval=TRUE, echo=FALSE}
+rm(list = ls(pattern = "tmp_"))
+tmp_ldir <-  normalizePath(".")
+tmp_rmd <- list.files(tmp_ldir, pattern = ".Rmd")
+tmp_finf <-paste(tmp_ldir, tmp_rmd, sep = "/")
+tmp_ghub <- stringr::str_replace(tmp_finf, 
+                                 "^.*STRI-MCGILL-NEO/2022", 
+                                 "https://github.com/stri-mcgill-neo/2022/blob/main")
+```
+
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r tmp_ghub`). 

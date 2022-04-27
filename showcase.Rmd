@@ -4,8 +4,10 @@ description: |
   A showcase of R Markdown Projects. If you have a project you would like to share, let me know and I will post it here!
 output:
   distill::distill_article:
-    toc: true
-    #keep_md: true
+#    theme:
+#      version: 4
+    toc: false
+    css: [assets/css/b4cards.css, assets/css/cards.css]
 base_url: https://stri-mcgill-neo.github.io/2022/
 preview: files/panama_logo.png
 params:
@@ -16,24 +18,41 @@ params:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Load libraries and functions
-source(file.path("files", "functions.R"))
+source(file.path("assets", "functions.R"))
+library(distilltools)
+library(tidyverse)
+library(fontawesome)
 ```
 
-This page^[The inspiration for this page comes from [the Distillery showcase page](https://distillery.rbind.io/showcase.html). The code was harvested and modified from [the Distillery GitHub repop](https://github.com/jhelvy/distillery)] is currently just a collection of some web products I have created with R Markdown. It is not that I think these are particularly amazing, it is just that since I coded everything, I know how all of this works. So if you are looking for ideas and inspiration have a look around. 
+This page^[The inspiration for this page comes from [the Distillery showcase page](https://distillery.rbind.io/showcase.html) and [John Paul Helveston personal website](https://www.jhelvy.com/projects.html). I used the [bs4cards](https://github.com/djnavarro/bs4cards) R package for the gallery. The code was harvested and modified from [jhelvy\/jhelvy_distill GitHub repo](https://github.com/jhelvy/jhelvy_distill/blob/master/projects.Rmd)] is currently just a collection of some web products I have created with R Markdown. It is not that I think these are particularly amazing, it is just that since I coded everything, I know how all of this works. So if you are looking for ideas and inspiration have a look around. 
 
-If you would like to share something you have created, let me know and I will post it on this page :)
+If you would like to share something you have created, please let me know---I would love to add it to this page. Use the buttons to filter the showcase by category:
+
+</br>
 
 ```{r build-content, include=FALSE}
-sites <- clean_sites(read_csv("files/showcase/sites.csv"), params$check_url)
-#update_screenshots(sites, params$update_all)
-rmd_chunks <- make_showcase_chunks(sites, image_width = 600)
-button_filters <- buttons_filter(sites)
-```
-
-Sites and source code are linked on the right of each image. Use the buttons to filter the showcase by category:
-
-```{r insert-showcase, child = c(button_filters, rmd_chunks)}
+# Read in projects csv file 
+projects <- readr::read_csv(here::here("files/showcase", "bs4cards.csv"))
 ```
 
 
-<script src = "assets/js/filter-buttons.js"></script>
+```{r projects, echo=FALSE, layout="l-body-outset"}
+projects %>% 
+  bs4cards::cards(
+    title = title,
+    text = description,
+    link = url,
+    image = src,
+    label_colour = "#ffffff",
+    tags = paste("Show all;", tags),
+    footer = tags,
+    border_radius = 5
+  )
+```
+
+
+<script src = "assets/js/escape-html.js"></script>
+
+##  Source Code {.appendix}
+
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 

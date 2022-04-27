@@ -25,6 +25,14 @@ use_condaenv("python_4_r")
 pacman::p_load(tidyverse, reactable, fontawesome,
                magrittr,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -39,25 +47,11 @@ htmltools::tagList(
 )
 ```
 
-```{r, echo=FALSE, eval=TRUE}
-# This is needed to use PANELS
-xaringanExtra::use_panelset()
-```
-
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
-
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
 
 I would like to take a few moments to share some quick tips on how to use this site. Everything discussed here will be covered more extensively in future lessons. In this post I simply want to highlight some of the key elements I use on this site for (what I hope) is a more enjoyable learning experience.
 
 <aside>
-Estimated reading time: `r round(minutes, digits = 0)` minute(s), based on an average speed of 200 words per minute.
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s), based on an average speed of 200 words per minute..
 </aside>
 
 First, the site is written in R Markdown and constructed using the [Distill blog template](https://rstudio.github.io/distill/blog.html)---one of the template choices you have for your projects. Therefore, this site both ***hosts all of the lessons*** and ***itself is a teaching/learning tool***.
@@ -80,7 +74,6 @@ Within each lesson, I also will use a few different [FontAwesome](https://fontaw
 - I use this icon `r fa(name = "lightbulb", fill = "steelblue")` to highlight little tricks I use to do something, like embed a tweet or insert these icons^[To add icons to your project install the `fontawesome` R package and use the function `fa` within inline R code. We will cover inline code in a future lesson.]. These tricks are mostly beyond what is expected of you but are included in case you want to jazz up your projects a bit.  
 - I use this icon  `r fa(name = "book-open", fill = "steelblue")` to point out additional readings and tutorials that can help you fine-tune your skills.    
 
-
 I also use inline text formatting to highlight specific coding elements like file types (e.g., R Markdown or `.Rmd`), R packages (e.g., `fontawesome`), commands (e.g., `ggplot`), and so on.
 
 One other tool I will use on occasion are panels or tab sets. This allows me to display related information in a relatively small space. For example, let's say I wanted to show you several different options for displaying tabular data using the `kable` function from the `knitr` package.
@@ -90,7 +83,7 @@ One other tool I will use on occasion are panels or tab sets. This allows me to 
 ::: {.panel}
 #### Basic HTML table
 
-```{r, eval=TRUE}
+```{r blah, eval=TRUE}
 data(iris)
 knitr::kable(summary(iris))
 ```
@@ -316,6 +309,6 @@ If you see something on this site that you like but cannot figure out how to cod
 
 Again, we will go through the details of everything in due course. I just wanted to give you a brief introduction to some of the important pieces of this puzzle.
 
-## Source Code {.appendix}
+##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-04-using-this-site/using-this-site.Rmd).
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 

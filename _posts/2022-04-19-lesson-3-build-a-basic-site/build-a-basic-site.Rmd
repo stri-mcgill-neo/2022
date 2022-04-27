@@ -32,6 +32,14 @@ is_html = knitr::is_html_output()
 
 pacman::p_load(tidyverse, fontawesome, slickR, downlit,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -45,24 +53,14 @@ htmltools::tagList(
 )
 ```
 
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
 
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
 
 # Learning Objectives
 
 In this lesson, you will create your first site. Remember, you have the choice of a [Distill website](https://rstudio.github.io/distill/website.html) or a [Distill blog](https://rstudio.github.io/distill/blog.html). Since the structure of a Distill website is a bit simpler we will start there. This lesson is designed to lay down the conceptual and mechanical framework you need to get started. Your job is to understand this material because it is the basis for everything that comes after. If you do not understand something, please ask. Chances are pretty good that you are not alone.
 
 <aside>
-
-Estimated reading time: `r round(minutes, digits = 0)` minute(s).
-
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
 </aside>
 
 > If you have not already done so, please read the short post on [Naming Things](../2022-04-21-naming-things/index.html) in the Tip n' Tricks section before getting started.
@@ -489,13 +487,10 @@ If you get an error in the `Render` tab or your page fails to render, first copy
 
 ### Build a Distill blog
 
-6\. Go back to the section on [building a distill website](#build-a-distill-website) and build a blog instead. Make sure to give it a different name ;) 
+6\. Go back to the section on [building a distill website](#build-a-distill-website) and build a blog instead. Make sure to give it a different name ;) Now compare the default output of the two site types. 
 
 That's all for now. Coming up next we will go through Markdown syntax, incorporating R code, building tables, and creating figure. Thanks for stopping by. 
 
-
 ##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-19-lesson-3-build-a-basic-site/build-a-basic-site.Rmd). 
-
-
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 

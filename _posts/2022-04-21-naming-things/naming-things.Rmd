@@ -2,7 +2,7 @@
 title: "Naming Things"
 description: |
   A brief introduction to best practices for file and directory naming that will help keep you sane.
-preview: files/feature.jpg
+preview: files/feature.png
 #author:
 #  - name: "Jarrod"
 #    orcid_id: 0000-0001-9863-1318
@@ -13,7 +13,7 @@ date: 2022-04-21
 output:
   distill::distill_article:
     self_contained: false
-    toc: true
+    toc: false
     toc_depth: 2
     #css: ../../assets/styles.css
 bibliography: ../../assets/cite.bib  
@@ -29,9 +29,16 @@ draft: false
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 is_html = knitr::is_html_output()
-
 pacman::p_load(tidyverse, fontawesome, slickR,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -45,21 +52,10 @@ htmltools::tagList(
 )
 ```
 
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
-
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
-
-
 This is a  brief note on *best practices* for naming files and directories. There is no universal convention that I am aware of but you can save yourself a lot of trouble by following a few simple rules when naming files and directories.
 
 <aside>
-Estimated reading time: `r round(minutes, digits = 0)` minute(s).
+Estimated reading time: `r round(reading_time(), digits = 0)` minute(s).
 </aside>
 
 
@@ -83,10 +79,6 @@ Whatever approach you choose, I think the main key is to be consistent. If you u
 
 The feature photo for this post---[A small amateur insect collection by](https://commons.wikimedia.org/wiki/File:Small-insect-collection.jpg) [Debivort](https://en.wikipedia.org/wiki/User:Debivort) at the English-language Wikipedia---was retrieved from Wikimedia Commons and Licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/). Original image found [here](https://upload.wikimedia.org/wikipedia/commons/1/1f/Small-insect-collection.jpg).
 
-## Source Code {.appendix}
+##  Source Code {.appendix}
 
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](https://github.com/stri-mcgill-neo/2022/blob/main/_posts/2022-04-21-naming-things/naming-things.Rmd).
-
-
-
-
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 
