@@ -1,7 +1,7 @@
 ---
 title: "Lesson 3: Build  📖 a Basic Site"
 description: |
-  In this lesson we go through the steps building your first site. We cover the three building blocks of the web (HTML, CSS, JS), build a basic site with Distill, discuss the rendering process, and . 
+  In this lesson we go through the steps for creating your first site. We cover the three building blocks of the web (HTML, CSS, JS), generate a basic site with Distill, and discuss the rendering process. 
 preview: files/feature.png
 #author:
 #  - name: "Jarrod"

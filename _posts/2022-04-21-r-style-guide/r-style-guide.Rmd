@@ -1,7 +1,7 @@
 ---
 title: "R style guide"
 description: |
-  A brief introduction to best practices for file and directory naming that will help keep you sane.
+  A brief introduction to best practices for styling R code.
 #preview: files/feature.png
 #author:
 #  - name: "Jarrod"
@@ -32,6 +32,14 @@ is_html = knitr::is_html_output()
 
 pacman::p_load(tidyverse, fontawesome, slickR,
                install = FALSE, update = FALSE)
+source(file.path("../../assets", "functions.R"))
+```
+
+```{r echo=FALSE, eval=TRUE}
+# This is needed to add a COPY CODE button to code chunks
+clipboard_button()
+# This is needed to use PANELS
+xaringanExtra::use_panelset()
 ```
 
 ```{r, xaringanExtra-clipboard, echo=FALSE, eval=TRUE}
@@ -45,21 +53,11 @@ htmltools::tagList(
 )
 ```
 
-```{r echo=FALSE, eval=TRUE}
-ldir <-  normalizePath(".")
-rmd <- list.files(ldir, pattern = ".Rmd")
-finf <- file.info(paste(ldir, rmd, sep = "/"), extra_cols = FALSE)
-
-bytes <- finf$size
-words <- bytes/10
-minutes <- words/200
-```
-
 As with [file and directory naming]("_posts/2022-04-21-naming-things/naming-things.html) there is no universally accepted best practices when it comes to naming things in R. 
 
 
 
-
+[The tidyverse style guide](https://style.tidyverse.org/index.html)
 
 
 
@@ -71,14 +69,4 @@ As with [file and directory naming]("_posts/2022-04-21-naming-things/naming-thin
 
 ##  Source Code {.appendix}
 
-```{r, eval=TRUE, echo=FALSE}
-rm(list = ls(pattern = "tmp_"))
-tmp_ldir <-  normalizePath(".")
-tmp_rmd <- list.files(tmp_ldir, pattern = ".Rmd")
-tmp_finf <-paste(tmp_ldir, tmp_rmd, sep = "/")
-tmp_ghub <- stringr::str_replace(tmp_finf, 
-                                 "^.*STRI-MCGILL-NEO/2022", 
-                                 "https://github.com/stri-mcgill-neo/2022/blob/main")
-```
-
-The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r tmp_ghub`). 
+The source code for this page can be accessed on GitHub `r fa(name = "github")` by [clicking this link](`r source_code()`). 
